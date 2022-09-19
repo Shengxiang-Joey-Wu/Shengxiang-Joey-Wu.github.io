@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Shengxiang (Joey) Wu"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Postdoc Beijing Computational Science Research Center, Ph.D. Texas A&M University, Bsc. Peking University"
+  location         : "Xiamen"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : "https://scholar.google.com/citations?user=beyb6qUAAAAJ&hl=en&oi=ao"
+  email            : "shengxiangwu996@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

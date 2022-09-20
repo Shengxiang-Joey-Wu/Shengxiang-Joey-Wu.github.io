@@ -8,4 +8,4 @@ venue: 'ACS Energy Letters'
 ---
 This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/Wu-2019-ACS-Energy-Letters.pdf.pdf)
+[Download paper here](http://ShengxiangWuPlasmonic.github.io/files/Wu-2019-ACS-Energy-Letters.pdf.pdf)

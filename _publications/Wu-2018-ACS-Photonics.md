@@ -5,7 +5,7 @@ permalink: /publication/Wu-2018-ACS-Photonics
 date: 2018-05-07
 venue: 'ACS Photonics'
 ---
-<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_1.jpg" width="400">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_1.png" width="400">
 
 This paper talks about the plasmonic hot carriers.
 

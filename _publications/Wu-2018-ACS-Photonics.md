@@ -2,7 +2,6 @@
 title: "Optical Power Conversion via Tunneling of Plasmonic Hot Carriers"
 collection: publications
 permalink: /publication/Wu-2018-ACS-Photonics
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2018-05-07
 venue: 'ACS Photonics'
 ---

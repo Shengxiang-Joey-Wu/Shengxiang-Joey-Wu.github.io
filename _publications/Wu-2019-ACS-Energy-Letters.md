@@ -5,7 +5,7 @@ permalink: /publication/Wu-2019-ACS-Energy-Letters
 date: 2019-09-19
 venue: 'ACS Energy Letters'
 ---
-<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_2.jpg" width="400">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_2.jpg" width="500">
 
 This paper is about the number 2. The number 3 is left for future work.
 

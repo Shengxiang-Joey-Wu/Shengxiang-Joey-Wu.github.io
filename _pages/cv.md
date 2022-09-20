@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.S. in Chemistry, Peking University, 2015
-* Ph.D in Chemistry, Texas A&M University (Advisor: Prof. Matthew Sheldon), 2020
+* Ph.D in Chemistry, Texas A&M University, 2020
 
 Work experience
 ======

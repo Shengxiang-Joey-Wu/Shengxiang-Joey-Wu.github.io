@@ -5,6 +5,10 @@ permalink: /publication/Wu-2021-Journal-of-Applied-Physics
 date: 2021-05-04
 venue: 'Journal of Applied Physics'
 ---
-This paper is about the number 3. The number 4 is left for future work.
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_3.jpg" width="500">
+</p>
+
+In this paper, 
 
 [Download paper here](http://ShengxiangWuPlasmonic.github.io/files/Wu-2021-Journal-of-Applied-Physics.pdf)

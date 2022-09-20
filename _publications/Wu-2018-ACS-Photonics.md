@@ -1,5 +1,6 @@
 ---
 title: "Optical Power Conversion via Tunneling of Plasmonic Hot Carriers"
+authors: Shengxiang Wu
 collection: publications
 permalink: /publication/Wu-2018-ACS-Photonics
 date: 2018-05-07

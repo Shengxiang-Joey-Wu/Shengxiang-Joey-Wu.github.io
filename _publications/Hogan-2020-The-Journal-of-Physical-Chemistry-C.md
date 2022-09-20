@@ -6,7 +6,7 @@ date: 2019-12-10
 venue: 'The Journal of Physical Chemistry C'
 ---
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_1.jpg" width="400">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/jpcc_cover.jpg" width="400">
 </p>  
 
 Authors: Nicki Hogan, **Shengxiang Wu**, and Matthew Sheldon $^\dagger$

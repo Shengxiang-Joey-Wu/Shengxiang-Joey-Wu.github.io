@@ -24,4 +24,11 @@ Note: There is another type of plasmon, the surface plasmon polariton (SPP) that
 
 Localized Surface Plasmon Resonance (LSPR)
 =====
-If one illuminates a plasmonic nanosphere with varied wavelengths, one may found a peak in the absorption or scattering spectrum, which indicates a resonance (LSPR). The wavelength/frequency that this peak occurs is termed the surface plasmon resonance frequency. Now you can imagine why I am not satisfied with *plasmons are the collective oscillations of electrons*: oscillations do not necessarily yield a resonance. This insatisfactory is resolved if we view the plasmonic nanoparticle with its dielectric environment as [a nanoscaled LC-circuit](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.095504), then the LSPR emerges naturally and simiarily as the LC-resonator. With this in mind, we can imagine that the electrons oscillate much stronger at plasmon resonance frequency compare to the out-of-resonance condition.
+If one illuminates a plasmonic nanosphere with varied wavelengths, one may found a peak in the absorption or scattering spectrum, which indicates a resonance (LSPR). The wavelength/frequency that this peak occurs is termed the surface plasmon resonance frequency. Now you can imagine why I am not satisfied with *plasmons are the collective oscillations of electrons*: oscillations do not necessarily yield a resonance. This insatisfactory is resolved if we view the plasmonic nanoparticle with its dielectric environment as [a nanoscaled LC-circuit](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.095504), then the LSPR emerges naturally and simiarily as in a LC-resonator. With this in mind, we can imagine that the electrons oscillate much stronger at plasmon resonance frequency compare to the out-of-resonance condition.
+
+The surface plasmon resonance can be tailored easily by modifying the composiiton, size, shape, and the dielectric environment of the nanoparticle. This makes plasmonic nanostructures extremely promising in various applications, such as sensing, photodetection, etc.
+
+
+
+
+

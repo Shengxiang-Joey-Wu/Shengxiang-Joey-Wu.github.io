@@ -32,6 +32,8 @@ The surface plasmon resonance can be tailored easily by modifying the composiito
 <img src="http://ShengxiangWuPlasmonic.github.io/images/Figure_2.jpg" width="500">
 </p>  
 
+Damping of LSPR
+=====
 
 
 

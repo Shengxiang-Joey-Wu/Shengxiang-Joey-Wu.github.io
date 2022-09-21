@@ -18,7 +18,9 @@ Plasmonic Nanostructures
 <img src="http://ShengxiangWuPlasmonic.github.io/images/Figure_1.jpg" width="500">
 </p>  
 
-The oscillaltion of free electrons is simply due to the response of electrons (a negatively charged particle) to the alternating electric field of light (electromagnetic waves). This oscillation is usually occured at the metal/dielectric interface and if it is restricted to a nanostructure with well-defined shape, the localized surface plasmon (LSP) emerges. And we termed nanoparticles that support LSP the plasmonic nanostructures. It is also found that surface plasmon can propagate along the surface (known as surface plasmon polariton, SPP), which is important in nanophotonic applications such as waveguides. 
+The oscillaltion of free electrons is simply due to the response of electrons (a negatively charged particle) to the alternating electric field of light (electromagnetic waves). This oscillation is usually occured at the metal/dielectric interface and if it is restricted to a nanostructure with well-defined shape, the localized surface plasmon (LSP) emerges. And we termed nanoparticles that support LSP the plasmonic nanostructures. 
+
+Note: There is an another type of plasmon, the surface plasmon polariton (SPP) that can propagate along the surface, which is important in nanophotonic applications such as waveguides. 
 
 Localized Surface Plasmon Resonance (LSPR)
 =====

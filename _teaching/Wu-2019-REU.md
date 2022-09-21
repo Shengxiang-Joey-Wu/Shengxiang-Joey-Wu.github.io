@@ -8,4 +8,4 @@ date: 2019-06-01
 location: "College Station, TX"
 ---
 
-[Mentee Summary](https://www.youtube.com/watch?v=u-FUYFbS8RI)
+[Program Summary](https://www.youtube.com/watch?v=u-FUYFbS8RI)

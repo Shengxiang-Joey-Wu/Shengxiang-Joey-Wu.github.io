@@ -14,4 +14,6 @@ Plasmonic Nanostructures
 ======
 *What is plasmon?* This is the question I asked the first day I entered the graduate school. Many papers introduce plasmons as the collective oscillation of electrons. Yet not entirely satisfied to definition because two questions are still not answered: 1) why there is a resonance present when illuminating plasmonic nanostructures? 2) why people always refer to noble metals (e.g., gold, silver) when talking about plasmonic nanostructures?, let's accept this definition and restrict our attention to noble metals for the time being. 
 
+![](/images/Figure_1.jpg)
+
 The oscillaltion of free electrons

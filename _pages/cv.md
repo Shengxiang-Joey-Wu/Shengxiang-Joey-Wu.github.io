@@ -22,7 +22,7 @@ Work experience
   * Songshan Lake Materials Labolatory
 
 * Nov. 2020 - July 2022: Postdoctoral Fellow
-  * Beijing Computational Science Research Fellow
+  * Beijing Computational Science Research Center
   * Advisor: Prof. Shiwu Gao
   
 Skills

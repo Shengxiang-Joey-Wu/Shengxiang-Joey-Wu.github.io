@@ -6,7 +6,7 @@ date: 2020-04-03
 venue: 'Angewandte Chemie International Edition'
 ---
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_6.jpg" width="400">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_6.JPG" width="400">
 </p>  
 
 Authors: Kun-Yu Wang, Liang Feng, Tian-Hao Yan, **Shengxiang Wu**, Elizabeth A. Joseph, and HongCai Zhou $^\dagger$

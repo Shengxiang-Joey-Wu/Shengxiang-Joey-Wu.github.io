@@ -31,7 +31,6 @@ Skills
   * Electron Beam Lithography (EBL)
   * Photolithography
   * Atomic Layer Deposition (ALD)
-  * Wire Bonding
 * Material Characterization
   * Raman Spectroscopy
   * Atomic Force Microscopy (AFM)

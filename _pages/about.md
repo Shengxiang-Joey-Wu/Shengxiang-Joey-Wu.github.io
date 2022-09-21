@@ -34,6 +34,11 @@ The surface plasmon resonance can be tailored easily by modifying the composiito
 
 Damping of LSPR
 =====
+What happens after one excites the localized surface plasmon, especially at its LSPR? Of course we do not expect the oscillation of electrons to last forever as there are many ways for electrons to scatter off. It turns out that the LSP can undergo two major damping channels: the radiative damping (observed as light scattering) and the non-radiative damping (observed as absorption). In addition to these two channels, it is also found that LSP can dephase through scattering with adsorbded molecules or nearby semiconductors, and this damping channel is identified as the [Chemical Interface Damping](https://pubs.acs.org/doi/10.1021/acs.accounts.0c00872).
 
+Specifically, I would like to narrow the focus to the non-radiative decay of surface plasmon, which was historically considered as 'loss'. While there are continuous effort to minimize this 'loss', it turns our that the non-radiative decay of surface plasmon may lead to energetic carriers that can be harvested in many fields, e.g., photodetection, photocatalysis, etc.
+
+Dynamics of Plasmonic Nonthermal Carriers
+=====
 
 

@@ -1,10 +1,10 @@
 ---
-title: "The Connection Between Hot Carrier Dynamics and SERS Background"
+title: "95th ACS Colloid and Surface Science Symposium"
 collection: talks
 type: "Talk"
+venue: "Virtual"
 permalink: /talks/Wu-2021-95th-ACS-Colloid-and-Surface-Science-Symposium
 date: 2021-06-14
-location: "Virtual"
 ---
 
 <p align="center">

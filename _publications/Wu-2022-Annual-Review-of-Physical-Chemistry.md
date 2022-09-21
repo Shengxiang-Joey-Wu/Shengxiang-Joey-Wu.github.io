@@ -6,4 +6,4 @@ venue: 'Annual Review of Physical Chemistry'
 ---
 (in review)
 
-Authors: **Shengxiang Wu**, Yu Chen, and Shiwu Gao $^\dagger$
+Authors: **Shengxiang Wu** and Matthew Sheldon $^\dagger$

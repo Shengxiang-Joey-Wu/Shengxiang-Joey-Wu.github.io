@@ -28,7 +28,9 @@ If one illuminates a plasmonic nanosphere with varied wavelengths, one may found
 
 The surface plasmon resonance can be tailored easily by modifying the composiiton, size, shape, and the dielectric environment of the nanoparticle (see the extinction spectrum below). This makes plasmonic nanostructures extremely promising in various applications, such as sensing, photodetection, etc.
 
-
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/Figure_2.jpg" width="500">
+</p>  
 
 
 

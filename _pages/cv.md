@@ -27,12 +27,21 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* NANOFABRICATION
+  * Electron Beam Lithography (EBL)
+  * Photolithography
+  * Atomic Layer Deposition (ALD)
+  * Wire Bonding
+* Material Characterization
+  * Raman Spectroscopy
+  * Atomic Force Microscopy (AFM)
+  * Scanning Electron Microscopy
+  * X-Ray Powder Diffraction (XRD)
+* Electromagnetic Simulation
+  * Finite-Difference Time-Domain (FDTD) Method
+* Material Calculation
+  * MATLAB (home-made code)
+  * GPAW (first-principle calculation)
 
 Publications
 ======

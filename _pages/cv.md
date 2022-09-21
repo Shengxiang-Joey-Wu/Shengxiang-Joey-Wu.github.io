@@ -39,8 +39,8 @@ Skills
 * Electromagnetic Simulation
   * Finite-Difference Time-Domain (FDTD) Method
 * Material Calculation
-  * MATLAB (home-made code)
-  * GPAW (first-principle calculation)
+  * MATLAB
+  * GPAW + ASE
 
 Publications
 ======

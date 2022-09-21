@@ -69,4 +69,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Served as volunteer in Chemistry Open House
+* Served as representative of analytical division and International liason at Graduate Student Association of Chemistry (gsac)

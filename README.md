@@ -1,2 +1,3 @@
-This repo is forked from https://github.com/academicpages/academicpages.github.io
+# Howdy
+Welcome to my academic website
 

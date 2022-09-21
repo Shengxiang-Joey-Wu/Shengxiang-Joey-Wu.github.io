@@ -13,18 +13,17 @@ Education
 ======
 * B.S. in Chemistry, Peking University, 2015
 * Ph.D in Chemistry, Texas A&M University, 2020
+  * Advisor: Prof. Matthew Sheldon
+  * Thesis: FROM DYNAMICS TO STEADY STATE: COMPUTING AND PROBING PLASMONIC HOT CARRIERS
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Aug. 2022 - Present: Associate Research Fellow
+  * Songshan Lake Materials Labolatory
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Nov. 2020 - July 2022: Postdoctoral Fellow
+  * Beijing Computational Science Research Fellow
+  * Advisor: Prof. Shiwu Gao
   
 Skills
 ======

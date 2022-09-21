@@ -24,7 +24,14 @@ Work experience
 * Nov. 2020 - July 2022: Postdoctoral Fellow
   * Beijing Computational Science Research Center
   * Advisor: Prof. Shiwu Gao
-  
+
+Honors and Awards
+=====
+* Outstanding Postdoc, Beijing Computational Science Research Center, 2021
+* Student Award, International Precious Metals Institute, 2016
+* Outstanding Graduate, Peking Univeristy, 2015
+* Gold Metal, 25th Chinese Chemistry Olympiad (CCHO), 2011
+
 Skills
 ======
 * NANOFABRICATION

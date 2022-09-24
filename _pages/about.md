@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Howdy! Welcome to my academic website. My name is Shengxiang (Joey) Wu, and I would like to document my academic progress here and share some scientific notes on my [Blog Posts](https://shengxiangwuplasmonic.github.io/year-archive/). I name this website "Plasmonics for Clean Energy" because I truly believe and hope my interested research area - 'plasmonic nanostructures' can provide clean energy for the world and help our planet fighting against climate change.
+Howdy! Welcome to my academic website. My name is Shengxiang (Joey) Wu, and I would like to document my academic progress here and share some science notes on my [Blog Posts](https://shengxiangwuplasmonic.github.io/year-archive/). I name this website "Plasmonics for Clean Energy" because I truly believe and hope my interested research area - 'plasmonic nanostructures' can provide clean energy for the world and help our planet fighting against climate change.
 

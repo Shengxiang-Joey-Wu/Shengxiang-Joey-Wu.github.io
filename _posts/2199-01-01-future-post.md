@@ -1,7 +1,8 @@
 ---
 title: 'About My Blogs'
 date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
----
+permalink: /posts/2199/01/blog-post-1/
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+---
+My blogs are not only for collaboration with fellows working in similar areas, but also designed to repharase scientific terms in an easier way so people (especially me) can understand. The blogs are written in a language such that an undergraduate chemistry student should have no problem understanding it. But in case I take something for granted without providing transparent explanation, please email me so I can improve it. 
+

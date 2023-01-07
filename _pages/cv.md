@@ -20,7 +20,7 @@ Work experience
 ======
 * Jan. 2023 - Present: Postdoctoral Researcher
   * Emory University
-  * * Advisor: Prof. Tianquan (Tim) Lian
+  * Advisor: Prof. Tianquan (Tim) Lian
 
 * Nov. 2020 - Oct. 2022: Postdoctoral Researcher
   * Beijing Computational Science Research Center

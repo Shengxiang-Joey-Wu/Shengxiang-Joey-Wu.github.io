@@ -18,10 +18,11 @@ Education
 
 Work experience
 ======
-* Aug. 2022 - Present: Associate Research Fellow
-  * Songshan Lake Materials Labolatory
+* Jan. 2023 - Present: Postdoctoral Researcher
+  * Emory University
+  * * Advisor: Prof. Tianquan (Tim) Lian
 
-* Nov. 2020 - July 2022: Postdoctoral Fellow
+* Nov. 2020 - Oct. 2022: Postdoctoral Researcher
   * Beijing Computational Science Research Center
   * Advisor: Prof. Shiwu Gao
 

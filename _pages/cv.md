@@ -22,9 +22,8 @@ Work experience
   * Emory University
   * Advisor: Prof. Tianquan (Tim) Lian
 
-* Nov. 2020 - Oct. 2022: Postdoctoral Researcher
+* Nov. 2020 - Oct. 2022: Postdoctoral Fellow
   * Beijing Computational Science Research Center
-  * Advisor: Prof. Shiwu Gao
 
 Honors and Awards
 =====

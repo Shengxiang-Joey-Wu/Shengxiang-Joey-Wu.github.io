@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Chemistry, Texas A&M University, 2020
+* Ph.D. in Chemistry, Texas A&M University, 2020
   * Advisor: Prof. Matthew Sheldon
   * Thesis: *FROM DYNAMICS TO STEADY STATE: COMPUTING AND PROBING PLASMONIC HOT CARRIERS*
 * B.S. in Chemistry, Peking University, 2015
@@ -28,13 +28,16 @@ Work experience
 
 Honors and Awards
 =====
-* Outstanding Postdoc, Beijing Computational Science Research Center, 2021
+* Outstanding Postdoc Fellow, Beijing Computational Science Research Center, 2021
 * Student Award, International Precious Metals Institute, 2016
-* Outstanding Graduate, Peking Univeristy, 2015
+* Outstanding Graduate, Peking University, 2015
 * Gold Metal, 25th Chinese Chemistry Olympiad (CCHO), 2011
 
 Skills
 ======
+* Programming Language
+  * MATLAB (MathWorks Certified MATLAB Associate)
+  * Python
 * NANOFABRICATION
   * Electron Beam Lithography (EBL)
   * Photolithography
@@ -42,13 +45,15 @@ Skills
 * Material Characterization
   * Raman Spectroscopy
   * Atomic Force Microscopy (AFM)
-  * Scanning Electron Microscopy
+  * Scanning Electron Microscopy (SEM)
   * X-Ray Powder Diffraction (XRD)
-* Electromagnetic Simulation
-  * Finite-Difference Time-Domain (FDTD) Method
-* Material Calculation
-  * MATLAB
+* Electromagnetic and Heat Transfer Simulation
+  * Finite-Difference Time-Domain (FDTD) Method - Lumerical FDTD
+  * Finite Element Method (FEM) - COMSOL Multiphysics
+* First-Principle Calculation
+  * MATLAB 
   * GPAW + ASE
+  * Gaussian 16
 
 Publications
 ======
@@ -70,5 +75,5 @@ Teaching
   
 Service and leadership
 ======
-* Served as volunteer in Chemistry Open House
-* Served as representative of analytical division and International liason at Graduate Student Association of Chemistry (gsac)
+* Served as a volunteer in the Chemistry Open House
+* Served as representative of the analytical division and International liaison at the Graduate Student Association of Chemistry (GSAC)

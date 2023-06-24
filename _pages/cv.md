@@ -38,6 +38,13 @@ Skills
 * Programming Language
   * MATLAB (MathWorks Certified MATLAB Associate)
   * Python
+* Scientific Calculation and Modelling
+  * Electromagnetic and Heat Transfer Simulation
+    * Finite-Difference Time-Domain (FDTD) Method - Lumerical FDTD
+    * Finite Element Method (FEM) - COMSOL Multiphysics
+  * First-Principle Calculation
+    * GPAW + ASE
+    * Gaussian 16
 * NANOFABRICATION
   * Electron Beam Lithography (EBL)
   * Photolithography
@@ -47,13 +54,6 @@ Skills
   * Atomic Force Microscopy (AFM)
   * Scanning Electron Microscopy (SEM)
   * X-Ray Powder Diffraction (XRD)
-* Electromagnetic and Heat Transfer Simulation
-  * Finite-Difference Time-Domain (FDTD) Method - Lumerical FDTD
-  * Finite Element Method (FEM) - COMSOL Multiphysics
-* First-Principle Calculation
-  * MATLAB 
-  * GPAW + ASE
-  * Gaussian 16
 
 Publications
 ======

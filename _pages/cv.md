@@ -11,10 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in Chemistry, Peking University, 2015
 * Ph.D in Chemistry, Texas A&M University, 2020
   * Advisor: Prof. Matthew Sheldon
   * Thesis: *FROM DYNAMICS TO STEADY STATE: COMPUTING AND PROBING PLASMONIC HOT CARRIERS*
+* B.S. in Chemistry, Peking University, 2015
+
 
 Work experience
 ======

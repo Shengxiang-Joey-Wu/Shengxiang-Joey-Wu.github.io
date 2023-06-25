@@ -1,3 +1,3 @@
 # Howdy
-Welcome to my academic website
+Welcome to my personal website.
 

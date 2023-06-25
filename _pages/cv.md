@@ -28,7 +28,7 @@ Work experience
 
 Honors and Awards
 =====
-* Outstanding Postdoc Fellow, Beijing Computational Science Research Center, 2021
+* Division Postdoc Fellowship, Beijing Computational Science Research Center, 2021
 * Student Award, International Precious Metals Institute, 2016
 * Outstanding Graduate, Peking University, 2015
 * Gold Metal, 25th Chinese Chemistry Olympiad (CCHO), 2011

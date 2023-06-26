@@ -74,7 +74,7 @@ $$\hbar\omega_{sn}=E_s^0-E_n^0,$$
 
 If, for simplicity, we consider the special case for which the system is in state $n$ at $t=0$. Then $a_n(0)=1$ and all other $a_n(t)=0$. Then
 
-$$a_s(t)=\frac{-i}{\hbar}\int_0^tH'_{sn}(t')e^{i\omega_{sn}t'}\mathrm{d}t'$$
+$$a_s(t)=\frac{-i}{\hbar}\int_0^tH'_{sn}(t')e^{i\omega_{sn}t'}\mathrm{d}t'\qquad\mathrm{for}\;s\neq n,$$
 
 The eq. 12 just showed that $H'(t)$ can induce transitions from state $n$ to other states ($s\neq n$).
 

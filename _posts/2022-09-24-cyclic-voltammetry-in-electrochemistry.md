@@ -55,53 +55,53 @@ $$\mathrm{Ox}+n\mathrm{e^-}\rightleftarrows \mathrm{Red},\qquad\mathrm{(eq.2a)}$
 
 $$E=E^0+\frac{RT}{nF}\ln\frac{C_\mathrm{Ox}}{C_\mathrm{Red}},\qquad\mathrm{(eq.2b)}$$
 
-where $C_\mathrm{Ox}$ and $C_\mathrm{Red}$ are the concentrationsa of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The potential evaluated in Nernst equation is also a thermodynamics property, but it turns out also affecting the reaction rates through the transition state theory (Fig. 1): the ratio between $\mathrm{Ox}$ and $\mathrm{Red}$ species alters the relative position of $\mathrm{Ox}$ (A) and $\mathrm{Red}$ (B) in the potential energy surface (PES), therefore, it also alters the activation energies felt by $\mathrm{Ox}$ and $\mathrm{Red}$ (will explained in detail below). 
+where $C_\mathrm{Ox}$ and $C_\mathrm{Red}$ are the concentrationsa of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The potential evaluated in the Nernst equation is also a thermodynamics property, but it turns out also affecting the reaction rates through the transition state theory (Figure 1): the ratio between $\mathrm{Ox}$ and $\mathrm{Red}$ species alters the relative position of $\mathrm{Ox}$ (A) and $\mathrm{Red}$ (B) in the potential energy surface (PES), therefore, it also alters the activation energies felt by $\mathrm{Ox}$ and $\mathrm{Red}$ (will be explained in detail below). 
 
 ***
 
-The above preliminary knowledge shall leave us on the same page and can be found in many undergraduate chemistry textbooks. In below, we started to derive the cyclic voltammetry, which is inspired by [*J. Chem. Educ.* 2018, 95, 2, 197–206](https://pubs.acs.org/doi/10.1021/acs.jchemed.7b00361), [*J. Chem. Educ.* 2015, 92, 9, 1490–1496](https://pubs.acs.org/doi/10.1021/acs.jchemed.5b00225), and [Electrochemical methods: fundamentals and applications. John Wiley & Sons: 2022.](https://www.wiley.com/en-us/Electrochemical+Methods%3A+Fundamentals+and+Applications%2C+2nd+Edition-p-9780471043720).
+The above preliminary knowledge shall leave us on the same page and can be found in many undergraduate chemistry textbooks. Below, we started to derive the cyclic voltammetry, which is inspired by [*J. Chem. Educ.* 2018, 95, 2, 197–206](https://pubs.acs.org/doi/10.1021/acs.jchemed.7b00361), [*J. Chem. Educ.* 2015, 92, 9, 1490–1496](https://pubs.acs.org/doi/10.1021/acs.jchemed.5b00225), and [Electrochemical methods: fundamentals and applications. John Wiley & Sons: 2022.](https://www.wiley.com/en-us/Electrochemical+Methods%3A+Fundamentals+and+Applications%2C+2nd+Edition-p-9780471043720).
 
 Electron Transfer Process (A General Description)
 =====
 
-Since the redox reactions involve electron transfer, it wouldn't hurt if we first study the electron transfer process in general (Fig. 2). The simplist scenario is the one electron transfer process that reduces $\mathrm{Ox_1}$ to its reductive form $\mathrm{Red_1}$.
+Since the redox reactions involve electron transfer, it wouldn't hurt if we first study the electron transfer process in general (Figure 2). The simplest scenario is the one-electron transfer process that reduces $\mathrm{Ox_1}$ to its reductive form $\mathrm{Red_1}$.
 
 $$\mathrm{Ox_1}+\mathrm{e^-}\rightarrow \mathrm{Red_1}$$
 
-Imagine we are electrons, why sometimes do we flow from A to B and sometimes from B to A? What is the driving force behind that? Well, simply put, we always want to flow to somewhere we feel more comfortable (low potential energy). This is universal regardless if it is a homogeneous electron transfer or heterogeneous electron transfer (Fig. 2): To reduce $\mathrm{Ox_1}$ to $\mathrm{Red_1}$, the electrons may be injected from another reducing agent $\mathrm{Red_2}$ where the electrons are more uncomfortable (high potential energy) or from an electrode that is purposely maintained at the high (negative) potential.
+Imagine we are electrons, why sometimes do we flow from A to B and sometimes from B to A? What is the driving force behind that? Well, simply put, we always want to flow to somewhere we feel more comfortable (low potential energy). This is universal regardless if it is a homogeneous electron transfer or heterogeneous electron transfer (Figure 2): To reduce $\mathrm{Ox_1}$ to $\mathrm{Red_1}$, the electrons may be injected from another reducing agent $\mathrm{Red_2}$ where the electrons are more uncomfortable (high potential energy) or from an electrode that is purposely maintained at the high (negative) potential.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure2.jpg" width="542">
 </p>
 
-At this stage, it is important for us to go through this in mind: 1) electrons tend to flow from high energy to low energy, 2) for electrodes, positive potential tends to lower electron energy (electrons are more comfortable), thus prevents electrons flowing out from electrode, and *vice versa*.
+At this stage, it is important for us to go through this in mind: 1) electrons tend to flow from high energy to low energy, 2) for electrodes, positive potential tends to lower electron energy (electrons are more comfortable), thus preventing electrons flowing out from electrode, and *vice versa*.
 
 Diffusion In An Electrochemical Cell
 =====
 
-Now we are ready to see what my collegues usually do in the lab: constructing an electrochemical (EC) cell and perform analysis such as CV. A representative EC cell (3 electrode configuration) is shown in Fig. 3. As the name suggests, it contains three electrodes: the working electrode is the one we are primarily interested as it drives the targeted redox reactions (either the electrolyte or the electrode itself), the counter electrode is just for circuit connection purpose (it can extract or inject electrons to electrolyte solutions easily), and the reference electrode tells us what is the potential now of working electrode, that is, when reporting potential we usually write *vs. reference electrode*.  
+Now we are ready to see what my colleagues usually do in the lab: constructing an electrochemical (EC) cell and performing analysis such as CV. A representative EC cell (3-electrode configuration) is shown in Figure 3. As the name suggests, it contains three electrodes: the working electrode is the one we are primarily interested in as it drives the targeted redox reactions (either the electrolyte or the electrode itself), the counter electrode is just for circuit connection purposes (it can extract or inject electrons to electrolyte solutions easily), and the reference electrode tells us what is the potential now of working electrode, that is, when reporting potential we usually write *vs. reference electrode*.  
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure3.jpg" width="663">
 </p>
 
-There is one key difference between an EC cell and an ordinary electric circuit: the current measured in an EC cell is dictated by the reaction rates of oxidation of $\mathrm{Red}$ (inject electrons to electrode) and reduction of $\mathrm{Ox}$ (extract electrons from electrode) occured on the electrode surface, while the current measured in an ordinary electric circuit is determined by the voltage drop and the resistance (Ohm's law). In an EC cell, therefore, the current depends on the reaction rates, which is further related to the concentrations of Ox and Red species and the potential provided by the working electrode (see below). What's important is that besides the reactions that consume or produce redox couples, both Ox and Red are suffered from diffusion in the EC cell (see inset in Fig. 3).
+There is one key difference between an EC cell and an ordinary electric circuit: the current measured in an EC cell is dictated by the reaction rates of oxidation of $\mathrm{Red}$ (inject electrons to the electrode) and reduction of $\mathrm{Ox}$ (extract electrons from the electrode) occurred on the electrode surface, while the current measured in an ordinary electric circuit is determined by the voltage drop and the resistance (Ohm's law). In an EC cell, therefore, the currents depend on the reaction rates, which are further related to the concentrations of Ox and Red species and the potential provided by the working electrode (see below). What's important is that besides the reactions that consume or produce redox couples, both Ox and Red are suffered from diffusion in the EC cell (see inset in Figure 3).
 
-If, for simplicity, we treat the diffusion in one dimension only, that is, we assume both $\mathrm{Ox}$ and $\mathrm{Red}$ only diffuse perpendicular to the electrode surface and the electrode surface is perfectly smooth, then we can use [the Fick's second law of diffusion](https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion) (eq. 8) to describe diffusion of $\mathrm{Ox}$ and $\mathrm{Red}$ from and approach to surface.
+If, for simplicity, we treat the diffusion in one dimension only, that is, we assume both $\mathrm{Ox}$ and $\mathrm{Red}$ only diffuse perpendicular to the electrode surface and the electrode surface is perfectly smooth, then we can use [the Fick's second law of diffusion](https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion) (eq. 3) to describe the diffusion of $\mathrm{Ox}$ and $\mathrm{Red}$ out from and approach to the surface.
 
-$$\frac{\delta C}{\delta t}=D\frac{\delta^2 C}{\delta x^2}$$
+$$\frac{\delta C}{\delta t}=D\frac{\delta^2 C}{\delta x^2},\qquad\mathrm{(eq.3)}$$
 
 where $D$ is the diffusion coefficient. And the direction of diffusion is from high concentration to low concentration.
 
-Potential Modifies Activation Energy
+Applied Potential Modifies Activation Energy
 =====
-There is one significant question remained, that is, how the applied electric potential alters the PES (or equivalently, the reaction coordinates)? To illustrate this, we can consider a reduction process in which the reactant is the $\mathrm{Ox}+\mathrm{e}^-$ (assume it is an one-electron, one-step process) and the electrons are from the working electrode. As we went through together that positive potential tends to lower electron energy while negative potential raises the energy up, we can plot three scenarios in Fig. 4, wherein the applied electric potential is referenced to the standard (or formal) potential $E^0$ of the redox couple under consideration.
+There is one significant question remaining, that is, how the applied electric potential alters the PES (or equivalently, the reaction coordinates)? To illustrate this, we can consider a reduction process in which the reactant is the $\mathrm{Ox}+\mathrm{e}^-$ (assume it is a one-electron, one-step process) and the electrons are from the working electrode. As we went through together that positive potential tends to lower electron energy while negative potential raises the energy up, we can plot three scenarios in Figure 4, wherein the applied electric potential is referenced to the standard (or formal) potential $E^0$ of the redox couple under consideration.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure4.jpg" width="672">
 </p>
 
-To avoid confusion, I have replaced activation energy $E_a$ with free energy of activation $\Delta G$ (they are the same thing here), and the subscript $c$ and $a$ stands for cathode (where reduction happens) and anode (where oxidation happens) respectively. It is shown in the lower left and middle panel in Fig. 4, that if the potential is changed by $\Delta E>0$ to a new value, the relative energy of the electron resident on the electrode change by $-F\Delta E=-F(E-E^0)$; hence the $\mathrm{Ox}+\mathrm{e^-}$ curve moves down by that amount. Apparently (I hate this word), the barrier for reduction, $\Delta G_c$, has become greater than $\Delta G_c^0$, and the barrier for oxidation, $\Delta G_a$ has become less than $\Delta G_a^0$ by a fraction of the total energy change. Let us call that fraction $1-\alpha$, where $\alpha$, the *transfer coefficient*, can range from zero to unity $[2]$.
+To avoid confusion, I have replaced activation energy $E_a$ with the free energy of activation $\Delta G$ (they are the same thing here), and the subscript $c$ and $a$ stands for cathode (where reduction happens) and anode (where oxidation happens), respectively. It is shown in the lower left and middle panel in Figure 4, that if the potential is changed by $\Delta E>0$ to a new value, the relative energy of the electron resident on the electrode change by $-F\Delta E=-F(E-E^0)$; hence the $\mathrm{Ox}+\mathrm{e^-}$ curve moves down by that amount. Apparently (I hate this word), the barrier for reduction, $\Delta G_c$, has become greater than $\Delta G_c^0$, and the barrier for oxidation, $\Delta G_a$ has become less than $\Delta G_a^0$ by a fraction of the total energy change. Let us call that fraction $1-\alpha$, where $\alpha$, the *transfer coefficient*, can range from zero to unity.<sup>2</sup>
 
 Therefore, we have the following two expressions for the activation energies for anodic and cathodic barriers:
 

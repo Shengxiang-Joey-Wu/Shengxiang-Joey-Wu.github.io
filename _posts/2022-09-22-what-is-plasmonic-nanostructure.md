@@ -2,7 +2,7 @@
 title: 'What is Plasmonic Nanostructure?'
 date: 2022-09-22
 permalink: /posts/2022/09/what-is-plasmonic-nanostructure/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/Blog2_Figure1.jpg" width="559">
+excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/wipn_TOC.jpg" width="528">
 tags:
   - Plasmonics
   - Nanostructure
@@ -12,7 +12,7 @@ Plasmonic Nanostructures
 *What is a plasmon?* This is the question I asked the first day I entered graduate school as I had just switched from a *Chemistry* major. Many papers introduce plasmons as **the collective oscillation of electrons** as illustrated in Figure 1. Yet not entirely satisfied with this definition because two questions are still not answered: 1) why there is a resonance present when illuminating plasmonic nanostructures? 2) why do people always refer to noble metals (e.g., gold, silver) when talking about plasmonic nanostructures? let's accept this definition and restrict our attention to noble metals for the time being. An alternative introduction to plasmonic nanoparticles and the answers to the two questions can be found using equivalent circuit theory.<sup>[1](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.095504)</sup>
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/Blog2_Figure1.jpg" width="559">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/wipn_Figure1.jpg" width="559">
 </p>  
 
 Following this naive rationale, the collective oscillation of free electrons is simply due to the response of electrons (a negatively charged particle) to the alternating electric field of light (electromagnetic waves). This oscillation occurred at the metal/dielectric interface and if it is restricted to a nanostructure with a well-defined shape, the localized surface plasmon (LSP) emerges. And we termed nanoparticles that support LSP the plasmonic nanostructures. 
@@ -26,7 +26,7 @@ If one excites a plasmonic nanosphere with broadband illumination, one may find 
 The surface plasmon resonance can be tailored easily by modifying the composition, size, shape, and dielectric environment (Figure 2). This makes plasmonic nanostructures extremely promising in various applications, such as sensing, photodetection, etc.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/Blog2_Figure2.jpg" width="630">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/wipn_Figure2.jpg" width="630">
 </p>  
 
 Damping of LSPR
@@ -40,7 +40,7 @@ Dynamics of Plasmonic Nonthermal Carriers
 In fact, photothermal heating is just the last stage of the non-radiative decay of surface plasmon (absorption). There are early stages where the plasmonic energy is temporarily stored in the electronic subsystem, rather than in lattice phonons as shown in Figure 3.<sup>[3](https://www.annualreviews.org/doi/abs/10.1146/annurev-physchem-062422-014911)</sup> I prefer to term the carriers (electrons and holes) at the first stage immediately after non-radiative decay the **nonthermal carriers** (see [Blog Posts](https://shengxiangwuplasmonic.github.io/year-archive/) for calculation examples), as their energy distribution is not a Fermi-Dirac like distribution. That being said, the energy profile of nonthermal carriers cannot be described using an effective temperature. The nonthermal carriers are extremely short-lived (~100 fs) and relax within the electronic subsystem through electron-electron scatterings, and these scatterings move the carriers to the second stage. In the second stage, the carriers still have greater energy compared with lattice phonons, but now their energy profile is Fermi-Dirac-like and thus can be described using an effective temperature $T_e$, and thus termed **hot carriers**. In the final stage (photothermal heating), the electrons are thermalized with phonons through electron-phonon scatterings (~ps to ns), and I call these carriers **thermalized carriers**. 
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/Blog2_Figure3.jpg" width="571">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/wipn_Figure3.jpg" width="571">
 </p>  
 
 I would like to note here that since both nonthermal carriers and hot carriers are more energetic than thermalized carriers, we may find in many literatures where people (including me) use *hot carriers* and *nonthermal carriers* interchangeably. Part of my research interest lies in utilizing plasmon-induced nonthermal and hot carriers to catalyze (electro)chemical reactions with high yield and selectivity.

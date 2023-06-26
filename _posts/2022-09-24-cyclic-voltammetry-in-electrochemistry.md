@@ -59,7 +59,7 @@ where $C_\mathrm{Ox}$ and $C_\mathrm{Red}$ are the concentrationsa of $\mathrm{O
 
 ***
 
-The above preliminary knowledge shall leave us on the same page and can be found in many undergraduate chemistry textbooks. Now, we started to derive the cyclic voltammetry.<sup>1-3</sup>.
+The above preliminary knowledge shall leave us on the same page and can be found in many undergraduate chemistry textbooks. Now, we started to derive the cyclic voltammetry.<sup>1-3</sup>
 
 Electron Transfer Process (A General Description)
 =====

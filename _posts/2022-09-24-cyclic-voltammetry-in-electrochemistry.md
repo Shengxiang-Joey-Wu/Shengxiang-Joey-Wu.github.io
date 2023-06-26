@@ -8,7 +8,7 @@ tags:
   - Electrochemistry
 ---
 
-There was always a cyclic voltammetry (CV) running on the lab computer (remotely controlled by my collegues) everytime I passed by. I got really curious about the CV map, especially why there are two $y$ (current) values corresponds to one $x$ (potential) value. What's get me more curious is that my collegues can show to each other the CV map and talk science about it. I was too shy to ask how they do it (don't be like me), so I decided to figure it out myself, not only because I was curious but also if I want to perform photoelectrochemistry experiments on plasmonic nanoparticles someday, I gotta know how the CV works and what it can tell me. So I write this blog to educate myself:
+There was always a cyclic voltammetry (CV) running on the lab computer (remotely controlled by my colleagues) every time I passed by. I got really curious about the CV map, especially why there are two $y$ (current) values corresponding to one $x$ (potential) value. What got me more curious is that my colleagues can show each other the CV map and talk science about it. I was too shy to ask how they do it (don't be like me), so I decided to figure it out myself, not only because I was curious but also if I want to perform photoelectrochemistry experiments on plasmonic nanoparticles someday, I gotta know how the CV works and what it can tell me. So I write this blog to educate myself:
 
 
 Preliminary Knowledge
@@ -25,17 +25,17 @@ The equilibrium constant is defined as $K=\frac{[B]}{[A]}$, and once the equilib
 
 **kinetics**
 
-At equilibrium, however, it does not mean that the reaction is 'frozen' - it is just because the forward reaction rate $v_f$ equals to the backward reaction rate $v_b$ so the concentration of reactants and products do not change with time. Assuming the forward and backward reactions are both first-order reactions, then the reaction rates and the equilibrium condition can be written as:
+At equilibrium, however, it does not mean that the reaction is 'frozen' - it is just because the forward reaction rate $v_f$ equals the backward reaction rate $v_b$ so the concentration of reactants and products do not change over time. Assuming the forward and backward reactions are both first-order reactions, then the reaction rates and the equilibrium condition can be written as:
 
-$$v_f =k_f[A],\qquad v_b=k_b[B]$$
+$$v_f =k_f[A],\qquad v_b=k_b[B],\qquad\mathrm{(eq.1a)}$$
 
-$$v_f=v_b\Rightarrow k_f[A]=k_b[B]$$
+$$v_f=v_b\Rightarrow k_f[A]=k_b[B],\qquad\mathrm{(eq.1b)}$$
 
-where the $k_f$ and $k_b$ are the rate constants of forward and backward reactions, respectively. Both equilibrium constant (thermodynamic concept) and kinetics are important as the former tells us what equilibrium lools like and the later tells us how fast we can get there.
+where the $k_f$ and $k_b$ are the rate constants of forward and backward reactions, respectively. Both equilibrium constant (thermodynamic concept) and kinetics are important as the former tells us what equilibrium looks like and the latter tells us how fast we can get there.
 
 **activation energy and the Arrhenius equation** 
 
-In most cases, there is a 'hill' that reactant A needs to surpass before forming product B even the reaction is energetic favorable $(\Delta_rG<0)$. The peak of the 'hill' is usually represented by a transition state (TS) or activated complex, and we can therefore define activation energies for forward $(E_{a,f})$ and backward $(E_{a,b})$. reactions. This is the basic of transition state theory (Fig. 1).
+In most cases, there is a 'hill' that reactant A needs to surpass before forming product B even if the reaction is energetic favorable $(\Delta_rG<0)$. The peak of the 'hill' is usually represented by a transition state (TS) or activated complex, and we can therefore define activation energies for forward $(E_{a,f})$ and backward $(E_{a,b})$. reactions. This is the basis of the transition state theory (Figure 1).
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure1.jpg" width="329">
@@ -45,15 +45,15 @@ In most cases, there is a 'hill' that reactant A needs to surpass before forming
 
 $$k=Ae^{\frac{-E_a}{RT}}$$
 
-where $A$ is a pre-exponential factor, it contains everything that we don't know (lol) about rate constant and ideally it should be temperature-insensitive. One can imagine that the rate constant would be greater (reaction is faster) if activation energy is smaller (or temperature is higher) and other reaction parameters are kept the same.
+where $A$ is a pre-exponential factor, it contains everything that we don't know (lol) about rate constant and ideally it should be temperature-insensitive. One can imagine that the rate constant would be greater (the reaction is faster) if activation energy is smaller (or temperature is higher) if other reaction parameters are kept the same.
 
 **the Nernst equation**
 
 The potential of a redox $(\mathrm{Ox}/\mathrm{Red})$ couple is characterized by the [Nernst equation](https://en.wikipedia.org/wiki/Nernst_equation), which links the potential to the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The Nernst equation in the general case is:
 
-$$\mathrm{Ox}+n\mathrm{e^-}\rightleftarrows \mathrm{Red}$$
+$$\mathrm{Ox}+n\mathrm{e^-}\rightleftarrows \mathrm{Red},\qquad\mathrm{(eq.2a)}$$
 
-$$E=E^0+\frac{RT}{nF}\ln\frac{C_\mathrm{Ox}}{C_\mathrm{Red}}$$
+$$E=E^0+\frac{RT}{nF}\ln\frac{C_\mathrm{Ox}}{C_\mathrm{Red}},\qquad\mathrm{(eq.2b)}$$
 
 where $C_\mathrm{Ox}$ and $C_\mathrm{Red}$ are the concentrationsa of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The potential evaluated in Nernst equation is also a thermodynamics property, but it turns out also affecting the reaction rates through the transition state theory (Fig. 1): the ratio between $\mathrm{Ox}$ and $\mathrm{Red}$ species alters the relative position of $\mathrm{Ox}$ (A) and $\mathrm{Red}$ (B) in the potential energy surface (PES), therefore, it also alters the activation energies felt by $\mathrm{Ox}$ and $\mathrm{Red}$ (will explained in detail below). 
 

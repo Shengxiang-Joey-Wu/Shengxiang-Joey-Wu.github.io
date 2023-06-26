@@ -123,7 +123,7 @@ For the long time limit ($t\rightarrow\infty$), we also rewrite eq. 13 as
 
 $$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2)=4\vert H_{sn}'\vert^2\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2,$$
 
-Here, we've defined $\Delta E=E_s-E_n=\omega_{sn}\hbar$. Let us further define $D_t(\Delta E)\equiv4\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2$, we plot $D_t(\Delta E)$ vs. $\Delta E$ in order to visualize its properties (Figure 1).
+Here, we've defined $\Delta E=E_s-E_n=\omega_{sn}\hbar$. Let us further define $D_t(\Delta E)\equiv4\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2$, we plot $D_t(\Delta E)$ vs. $\Delta E$ to visualize its properties (Figure 1).
 
 Figure 1 shows that $D_t(\Delta E)$ has large values only for $-2\pi\hbar/t<\Delta E<2\pi\hbar/t$ (the region between dashed lines), where the maximum $D_t(0)=t^2/\hbar^2$ increases rapidly with time. Furthermore, since $\int_{-\infty}^\infty D_t(x)\mathrm{d}x=2\pi t/\hbar$, we define the function
 
@@ -159,11 +159,15 @@ $$a_s(t)=\frac{-i}{\hbar}\int_{t_0}^t V_{sn}(\tau)e^{i\omega_{sn}\tau}\mathrm{d}
 
 Since $e^{i\theta}-1=2ie^{i\theta/2}\sin(\theta/2)$
 
-Eq. XX becomes
+Eq. 27 becomes
 
 $$a_s(t)=\frac{-iV_{sn}}{\hbar}[\frac{e^{i(\omega_{sn}-\omega)t/2}\sin[(\omega_{sn}-\omega)t/2]}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t/2}\sin[(\omega_{sn}+\omega)t/2]}{\omega_{sn}+\omega}],$$
 
-The first term in eq. XX is *absorption* while the second term is *stimulated emission*.
+The first term in eq. 28 is *absorption* while the second term is *stimulated emission*.
+
+Notice that the terms in eq. 28 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the energy splitting between quantum states. Consider the resonance conditions that will maximize each term (Figure 3):
+
+
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.
 2. Manjavacas, A.; Liu, J. G.; Kulkarni, V.; Nordlander, P. Plasmon-Induced Hot Carriers in Metallic Nanoparticles. *ACS Nano* **2014**, *8* (8), 7630-7638.

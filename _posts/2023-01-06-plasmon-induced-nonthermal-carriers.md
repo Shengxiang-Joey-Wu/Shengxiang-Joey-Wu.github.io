@@ -104,7 +104,7 @@ and the rate of transition $R=\mathrm{d}P(t)/\mathrm{d}t$ in units of $\mathrm{s
 
 $$R=\frac{2\pi}{\hbar}\rho(E_n)|H_{sn}'|^2$$
 
-The eq. 17 is indeed the well-known Fermi-Golden rule.
+The eq. 18 is indeed the well-known Fermi-Golden rule.
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

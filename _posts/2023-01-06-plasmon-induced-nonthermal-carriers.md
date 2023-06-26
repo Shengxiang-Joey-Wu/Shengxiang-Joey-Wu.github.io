@@ -21,23 +21,36 @@ Preliminary Knowledge
 [The Fermi-Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, because we are interested in the transition probability of exciting an electron (hole), after a non-radiative decay of excited plasmon, from its initial state to possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of the Fermi-Golden rule. (You may find derivation of the Fermi-Golden rule in many textbooks and online materials.)
 
 It is essential a perturbation problem, let's for now assume the perturbation is from the electromagnetic filed of light (we will consider the effect of localized surface plasmon later), then the Hamiltonian of the system can be written as
+
 $$H=H_0+H',$$
+
 where $H_0$ is the unperturbed Hamiltonian and $H'$ represents perturbation. Let's say $H_0$ satisfied the time-dependent $\mathrm{Schr\ddot{o}dinger}$ equation (TDSE):
+
 $$i\hbar\frac{\partial\Psi_0}{\partial t}=H_0\Psi_0,$$
+
 where the wavefunction $\Psi_0$ has the generic form:
+
 $$\Psi_0=\psi_0(\mathbf{r})e^{-iE_0t/\hbar},$$
 
 Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $|u\rangle$ represents the eigenfunctions of $H_0$, that is, $|u\rangle=\{u_1,u_2,\dots,u_n\}$. Then since any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
+
 $$\Psi_0=\sum_na_n^0u_n^0e^{-iE_n^0t/\hbar},$$
+
 The subscript and suerscript $0$ denotes that it is evaluated at $t=0$ (no perturbation).
 The unperturbed state described by $H_0$ has a set of energy eigenvalues such that
+
 $$H_0u_n=E_nu_n,$$
+
 By comparing eq. 3 and eq. 4, it is easy (hopefully for you as well) to tell that $\psi_0(\mathbf{r})=\sum_na_n^0u_n^0$ (a wavefunction can be described as a linear combination of complete orthonormal set $|u\rangle$). Note that the expansion coefficients $a_n^0$ are independent of time.
 
 Suppose now we have a state described by wavefunction $\Psi$, and we are interested in how this wavefunction evolves (after the perturbation $H'$). We then put the wavefunction $\Psi$ in eq. 1 and use the TDSE
+
 $$H\Psi=i\hbar\frac{\partial\Psi}{\partial t}=(H_0+H')\Psi,$$
+
 and
+
 $$\Psi=\sum_na_n(t)u_n^0e^{-iE_n^0t/\hbar},$$
+
 Note that now the prefactors $a_n(t)$ depend on time.
 Substituting eq. 7 into eq. 6, multiplying by the complex conjugate $u_s^{0*}$ and using the orthonormality of the wave functions,
 
@@ -52,9 +65,13 @@ $$H_{sn}'=\int u_s^{0*}H'u_n^0\mathrm{d}\tau,$$
 The $\int\mathrm{d}\tau$ denotes integration over the full range of all the coordinates of a system.
 
 For a small perturbation, the time variation of $a_n(t)$ is slow, then $a_n(t)\cong a_n(0)$ and
+
 $$a_s(t)-a_s(0)\cong\frac{-i}{\hbar}\sum_na_n(0)\int_0^tH_{sn}'(t')e^{i\omega_{sn}t'}\mathrm{d}t',$$
+
 where 
+
 $$\hbar\omega_{sn}=E_s^0-E_n^0,$$
+
 If, for simplicity, we consider the special case for which the system is in state $n$ at $t=0$. Then $a_n(0)=1$ and all other $a_n(t)=0$. Then
 
 $$a_s(t)=\frac{-i}{\hbar}\int_0^tH'_{sn}(t')e^{i\omega_{sn}t'}\mathrm{d}t'$$

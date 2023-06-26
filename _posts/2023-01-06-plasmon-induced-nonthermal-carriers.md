@@ -41,7 +41,7 @@ The unperturbed state described by $H_0$ has a set of energy eigenvalues such th
 
 $$H_0u_n=E_nu_n,$$
 
-By comparing eq. 3 and eq. 4, it is easy (hopefully for you as well) to tell that $\psi_0(\mathbf{r})=\sum_na_n^0u_n^0$ (a wavefunction can be described as a linear combination of complete orthonormal set $|u\rangle$). Note that the expansion coefficients $a_n^0$ are independent of time.
+By comparing eq. 3 and eq. 4, it is easy (hopefully for you as well) to tell that $\psi_0(\mathbf{r})=\sum_na_n^0u_n^0$ (a wavefunction can be described as a linear combination of complete orthonormal set $\vert u\rangle$). Note that the expansion coefficients $a_n^0$ are independent of time.
 
 Suppose now we have a state described by wavefunction $\Psi$, and we are interested in how this wavefunction evolves (after the perturbation $H'$). We then put the wavefunction $\Psi$ in eq. 1 and use the TDSE
 
@@ -78,6 +78,33 @@ $$a_s(t)=\frac{-i}{\hbar}\int_0^tH'_{sn}(t')e^{i\omega_{sn}t'}\mathrm{d}t'\qquad
 
 The eq. 12 just showed that $H'(t)$ can induce transitions from state $n$ to other states ($s\neq n$).
 
+If $H'$ is independent of time,
+
+$$a_s(t)=\frac{-i}{\hbar}H'_{sn}\int_0^te^{i\omega_{sn}t'}\mathrm{d}t'=-H_{sn}'\frac{(e^{i\omega_{sn}t}-1)}{\hbar\omega_{sn}},$$
+
+Therefore,
+
+$$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
+
+For many techniques, the result of perturbation is a final state that places particle in the continuum, that is, a free particle. In this case, an explicit final state can be replaced by a density of final states. Such a density is defined as the number of energy levels per unit energy interval $\mathrm{d}E$. The *transition probability* $P(t)$ for discrete states is given as
+
+$$P(t)=\sum_s|a_s(t)|^2=4|H_{sn}'|^2\sum\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
+
+For a continuum, the summation is replaced by an integral so that
+
+$$P(t)=4|H_{sn}'|^2\int_{-\infty}^\infty\rho(E_s)\sin^2(\omega_{sn}t/2)/(\hbar^2\omega_{sn}^2)\mathrm{d}\hbar\omega_{sn},$$
+
+The major contribution to this integral occurs at $\omega_{sn}=0$, similar to a delta function. Hence, $\rho(E_s)\sim\rho(E_n)$. Furthermore, the integral in (1.16) is of the form $\int_{-\infty}^\infty\sin^2(\alpha x)/x^2\mathrm{d}x=\pi\alpha$, where $\alpha=\frac{t}{2\hbar}$.
+
+Therefore, the integral reduces to
+
+$$P(t)=4|H_{sn}'|^2\rho(E_n)(\frac{\pi t}{2\hbar}),$$
+
+and the rate of transition $R=\mathrm{d}P(t)/\mathrm{d}t$ in units of $\mathrm{s^{-1}}$ is equal to 
+
+$$R=\frac{2\pi}{\hbar}\rho(E_n)|H_{sn}'|^2$$
+
+The eq. 17 is indeed the well-known Fermi-Golden rule.
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

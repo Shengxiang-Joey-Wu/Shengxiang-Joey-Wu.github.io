@@ -15,7 +15,9 @@ During my Ph.D. study and postdoctoral work, I have followed [ref. 2](https://pu
 
 Preliminary Knowledge
 ======
+
 **The Fermi-Golden Rule**
+
 "In quantum physics, Fermi's golden rule is a formula that describes the transition rate (the probability of a transition per unit time) from one energy eigenstate of a quantum system to a group of energy eigenstates in a continuum, as a result of a weak perturbation" — Wikipedia.
 
 [The Fermi-Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, because we are interested in the transition probability of exciting an electron (hole), after a non-radiative decay of excited plasmon, from its initial state to possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of the Fermi-Golden rule. (You may find the derivation of the Fermi-Golden rule in many textbooks and online materials.)
@@ -139,10 +141,29 @@ $$R=\frac{\mathrm{d}P}{\mathrm{d}t}=\frac{2\pi}{\hbar}|H_{sn}'|^2\delta_t(E_s-E_
 
 Eq. 23 is another common representation of the Fermi-Golden Rule.
 
-Harmonic Perturbation
-=====
+***
 
+**Harmonic Perturbation**
 
+So far, we've only considered the constant perturbation ($H'$ is independent of time once it is turned on). Now we consider the interaction of a system with an oscillating perturbation turned on at time $t_0=0$ (Figure 2). The results will be used to describe how a light field induces transitions in a system through dipole interactions.
+
+Again, we are looking to calculate the transition probability between states $n$ and $s$. Here, we treat the light field classically:
+
+$$H'=V(t)=V\cos(\omega t),$$
+
+$$H'_{sn}(t)=V_{sn}\cos(\omega t)=\frac{V_{sn}}{2}[e^{-i\omega t}+e^{i\omega t}],$$
+
+Setting $t_0\rightarrow 0$, first-order perturbation theory eq. 12 leads to 
+
+$$a_s(t)=\frac{-i}{\hbar}\int_{t_0}^t V_{sn}(\tau)e^{i\omega_{sn}\tau}\mathrm{d}\tau=\frac{-iV_{sn}}{2\hbar}\int_0^t[e^{i(\omega_{sn}-\omega)\tau}+e^{i(\omega_{sn}+\omega)\tau}]\mathrm{d}\tau=\frac{-V_{sn}}{2\hbar}[\frac{e^{i(\omega_{sn}-\omega)t}-1}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t}-1}{\omega_{sn}+\omega}],$$
+
+Since $e^{i\theta}-1=2ie^{i\theta/2}\sin(\theta/2)$
+
+Eq. XX becomes
+
+$$a_s(t)=\frac{-iV_{sn}}{\hbar}[\frac{e^{i(\omega_{sn}-\omega)t/2}\sin[(\omega_{sn}-\omega)t/2]}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t/2}\sin[(\omega_{sn}+\omega)t/2]}{\omega_{sn}+\omega}],$$
+
+The first term in eq. XX is *absorption* while the second term is *stimulated emission*.
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.
 2. Manjavacas, A.; Liu, J. G.; Kulkarni, V.; Nordlander, P. Plasmon-Induced Hot Carriers in Metallic Nanoparticles. *ACS Nano* **2014**, *8* (8), 7630-7638.

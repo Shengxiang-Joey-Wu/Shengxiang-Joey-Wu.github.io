@@ -21,7 +21,23 @@ Preliminary Knowledge
 [The Fermi-Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, because we are interested in the transition probability of exciting an electron (hole), after a non-radiative decay of excited plasmon, from its initial state to possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of the Fermi-Golden rule. (You may find derivation of the Fermi-Golden rule in many textbooks and online materials.)
 
 It is essential a perturbation problem, let's for now assume the perturbation is from the electromagnetic filed of light (we will consider the effect of localized surface plasmon later), then the Hamiltonian of the system can be written as
-$$H=H_0+H'$$
+$$H=H_0+H',$$
+where $H_0$ is the unperturbed Hamiltonian and $H'$ represents perturbation. Let's say $H_0$ satisfied the time-dependent $\mathrm{Schr\ddot{o}dinger}$ equation (TDSE):
+$$i\hbar\frac{\partial\Psi_0}{\partial t}=H_0\Psi_0,$$
+where the wavefunction $\Psi_0$ has the generic form:
+$$\Psi_0=\psi_0(\mathbf{r})e^{-iE_0t/\hbar},$$
+
+Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $|u\rangle$ represents the eigenfunctions of $H_0$, that is, $|u\rangle=\{u_1,u_2,\dots,u_n\}$. Then since any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
+$$\Psi_0=\sum_na_n^0u_n^0e^{-iE_n^0t/\hbar},$$
+The subscript and suerscript $0$ denotes that it is evaluated at $t=0$ (no perturbation).
+
+
+
+
+
+
+
+
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

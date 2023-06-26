@@ -1,7 +1,7 @@
 ---
 title: 'What is Plasmonic Nanostructure?'
 date: 2022-09-22
-permalink: /posts/2022/09/blog-post-2/
+permalink: /posts/2022/09/what-is-plasmonic-nanostructure/
 excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/Blog2_Figure1.jpg" width="559">
 tags:
   - Plasmonics

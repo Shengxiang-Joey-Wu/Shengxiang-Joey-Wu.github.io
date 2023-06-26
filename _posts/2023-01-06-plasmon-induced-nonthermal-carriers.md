@@ -129,6 +129,18 @@ $$\delta_t(\Delta E)=\frac{\hbar}{2\pi t}D_t(\Delta E),$$
 
 which is a representation of the $\delta$-function in the limit $t\rightarrow\infty$.
 
+If we plug eq. 22 into eq. 21, 
+
+$$P(t)=|a_s(t)|^2=|H_{sn}'|^2D_t(\Delta E)=\frac{2\pi t}{\hbar}\delta_t(E_s-E_n),$$
+
+And the transition rate $R=\mathrm{d}P/\mathrm{d}t$ becomes
+
+$$R=\frac{\mathrm{d}P}{\mathrm{d}t}=\frac{2\pi}{\hbar}|H_{sn}'|^2\delta_t(E_s-E_n),$$
+
+Eq. 23 is another common representation of the Fermi-Golden Rule.
+
+Harmonic Perturbation
+=====
 
 
 **References**

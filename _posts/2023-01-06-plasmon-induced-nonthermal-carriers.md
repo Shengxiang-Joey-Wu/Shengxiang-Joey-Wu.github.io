@@ -15,7 +15,13 @@ During my Ph.D. study and postdoctoral work, I have followed [ref. 2](https://pu
 
 Preliminary Knowledge
 ======
-The Fermi-Golden Rule
+**The Fermi-Golden Rule**
+"In quantum physics, Fermi's golden rule is a formula that describes the transition rate (the probability of a transition per unit time) from one energy eigenstate of a quantum system to a group of energy eigenstates in a continuum, as a result of a weak perturbation" — Wikipedia.
+
+[The Fermi-Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, because we are interested in the transition probability of exciting an electron (hole), after a non-radiative decay of excited plasmon, from its initial state to possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of the Fermi-Golden rule. (You may find derivation of the Fermi-Golden rule in many textbooks and online materials.)
+
+It is essential a perturbation problem, let's for now assume the perturbation is from the electromagnetic filed of light (we will consider the effect of localized surface plasmon later), then the Hamiltonian of the system can be written as
+$$H=H_0+H'$$
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

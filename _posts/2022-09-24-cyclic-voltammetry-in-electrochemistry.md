@@ -27,9 +27,9 @@ The equilibrium constant is defined as $K=\frac{[B]}{[A]}$, and once the equilib
 
 At equilibrium, however, it does not mean that the reaction is 'frozen' - it is just because the forward reaction rate $v_f$ equals the backward reaction rate $v_b$ so the concentration of reactants and products do not change over time. Assuming the forward and backward reactions are both first-order reactions, then the reaction rates and the equilibrium condition can be written as:
 
-$$v_f =k_f[A],\qquad v_b=k_b[B],\qquad\mathrm{(eq.1a)}$$
+$$v_f =k_f[A],\qquad v_b=k_b[B],$$
 
-$$v_f=v_b\Rightarrow k_f[A]=k_b[B],\qquad\mathrm{(eq.1b)}$$
+$$v_f=v_b\Rightarrow k_f[A]=k_b[B],$$
 
 where the $k_f$ and $k_b$ are the rate constants of forward and backward reactions, respectively. Both equilibrium constant (thermodynamic concept) and kinetics are important as the former tells us what equilibrium looks like and the latter tells us how fast we can get there.
 
@@ -51,9 +51,9 @@ where $A$ is a pre-exponential factor, it contains everything that we don't know
 
 The potential of a redox $(\mathrm{Ox}/\mathrm{Red})$ couple is characterized by the [Nernst equation](https://en.wikipedia.org/wiki/Nernst_equation), which links the potential to the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The Nernst equation in the general case is:
 
-$$\mathrm{Ox}+n\mathrm{e^-}\rightleftarrows \mathrm{Red},\qquad\mathrm{(eq.2a)}$$
+$$\mathrm{Ox}+n\mathrm{e^-}\rightleftarrows \mathrm{Red},$$
 
-$$E=E^0+\frac{RT}{nF}\ln\frac{C_\mathrm{Ox}}{C_\mathrm{Red}},\qquad\mathrm{(eq.2b)}$$
+$$E=E^0+\frac{RT}{nF}\ln\frac{C_\mathrm{Ox}}{C_\mathrm{Red}},$$
 
 where $C_\mathrm{Ox}$ and $C_\mathrm{Red}$ are the concentrationsa of $\mathrm{Ox}$ and $\mathrm{Red}$ species. The potential evaluated in the Nernst equation is also a thermodynamics property, but it turns out also affecting the reaction rates through the transition state theory (Figure 1): the ratio between $\mathrm{Ox}$ and $\mathrm{Red}$ species alters the relative position of $\mathrm{Ox}$ (A) and $\mathrm{Red}$ (B) in the potential energy surface (PES), therefore, it also alters the activation energies felt by $\mathrm{Ox}$ and $\mathrm{Red}$ (will be explained in detail below). 
 
@@ -87,9 +87,9 @@ Now we are ready to see what my colleagues usually do in the lab: constructing a
 
 There is one key difference between an EC cell and an ordinary electric circuit: the current measured in an EC cell is dictated by the reaction rates of oxidation of $\mathrm{Red}$ (inject electrons to the electrode) and reduction of $\mathrm{Ox}$ (extract electrons from the electrode) occurred on the electrode surface, while the current measured in an ordinary electric circuit is determined by the voltage drop and the resistance (Ohm's law). In an EC cell, therefore, the currents depend on the reaction rates, which are further related to the concentrations of Ox and Red species and the potential provided by the working electrode (see below). What's important is that besides the reactions that consume or produce redox couples, both Ox and Red are suffered from diffusion in the EC cell (see inset in Figure 3).
 
-If, for simplicity, we treat the diffusion in one dimension only, that is, we assume both $\mathrm{Ox}$ and $\mathrm{Red}$ only diffuse perpendicular to the electrode surface and the electrode surface is perfectly smooth, then we can use [the Fick's second law of diffusion](https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion) (eq. 3) to describe the diffusion of $\mathrm{Ox}$ and $\mathrm{Red}$ out from and approach to the surface.
+If, for simplicity, we treat the diffusion in one dimension only, that is, we assume both $\mathrm{Ox}$ and $\mathrm{Red}$ only diffuse perpendicular to the electrode surface and the electrode surface is perfectly smooth, then we can use [the Fick's second law of diffusion](https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion) (eq. 8) to describe the diffusion of $\mathrm{Ox}$ and $\mathrm{Red}$ out from and approach to the surface.
 
-$$\frac{\delta C}{\delta t}=D\frac{\delta^2 C}{\delta x^2},\qquad\mathrm{(eq.3)}$$
+$$\frac{\delta C}{\delta t}=D\frac{\delta^2 C}{\delta x^2},$$
 
 where $D$ is the diffusion coefficient. And the direction of diffusion is from high concentration to low concentration.
 
@@ -105,43 +105,43 @@ To avoid confusion, I have replaced activation energy $E_a$ with the free energy
 
 Therefore, we have the following two expressions for the activation energies for anodic and cathodic barriers:
 
-$$\Delta G_a=\Delta G_a^0-(1-\alpha)F(E-E^0)$$
+$$\Delta G_a=\Delta G_a^0-(1-\alpha)F(E-E^0),$$
 
-$$\Delta G_c=\Delta G_c^0+\alpha F(E-E^0)$$
+$$\Delta G_c=\Delta G_c^0+\alpha F(E-E^0),$$
 
 If we assume the rate constants $k_f$ and $k_b$ have the Arrhenius form, we have
 
-$$k_f=A_fe^{-\Delta G_c/RT}=A_fe^{-\Delta G_c^0/RT}e^{-\alpha F(E-E^0)}=k_f^0e^{-\alpha F(E-E^0)}=k^0e^{-\alpha F(E-E^0)}$$
+$$k_f=A_fe^{-\Delta G_c/RT}=A_fe^{-\Delta G_c^0/RT}e^{-\alpha F(E-E^0)}=k_f^0e^{-\alpha F(E-E^0)}=k^0e^{-\alpha F(E-E^0)},$$
 
-$$k_b=A_be^{-\Delta G_a/RT}=A_be^{-\Delta G_a^0/RT}e^{(1-\alpha) F(E-E^0)}=k_b^0e^{(1-\alpha) F(E-E^0)}=k^0e^{(1-\alpha) F(E-E^0)}$$
+$$k_b=A_be^{-\Delta G_a/RT}=A_be^{-\Delta G_a^0/RT}e^{(1-\alpha) F(E-E^0)}=k_b^0e^{(1-\alpha) F(E-E^0)}=k^0e^{(1-\alpha) F(E-E^0)},$$
 
-The last $^"=^"$ in above two equations is simply because $E^0$ can be chosen at the formal potential of the interested redox pair, which gives $k_f^0=k_b^0=k^0$.
+The last $^"=^"$ in the above two equations is simply because $E^0$ can be chosen at the formal potential of the interested redox pair, which gives $k_f^0=k_b^0=k^0$.
 
 Final Step: The Point Method
 =====
 
-Now we have everything we need to know to evaluate the current (the $y$ values) in a CV measurement. However, evaluating the diffusion using eq. 8 turns out to be difficult, we then use the point method similar to ref $[3]$ that evaluate diffusion in the discrete form:
+Now we have everything we need to know to evaluate the current (the $y$ values) in a CV measurement. However, evaluating the diffusion using eq. 8 turns out to be difficult, we then use the point method<sup>3</sup> to evaluate diffusion in the discrete form:
 
 $$\frac{C_j-C_i}{\Delta t}=\frac{D[C_{i-1}-2C_i+C_{i+1}]}{\Delta_x^2}$$
 
 $$C_j=C_i+\lambda(C_{i-1}-2C_i+C_{i+1})$$
 
-where $\lambda=D\Delta t/\Delta x^2$, and the distance (measured from the electrode surface) and time increments, $\Delta x$ and $\Delta t$, are originated from the point method (Fig. 5a). In Fig. 5b, we displays the potential sweep in one cycle during CV measurement: the potential of working electrode is sweeped from a high potential to low potential (or *vice versa*), and then back to its original value. The CV measurement gets its name since during the potential sweep, the current due to redox reactions is measured simultaneously.
+where $\lambda=D\Delta t/\Delta x^2$, and the distance (measured from the electrode surface) and time increments, $\Delta x$ and $\Delta t$, are originated from the point method (Figure 5a). In Figure 5b, we display the potential sweep in one cycle during CV measurement: the potential of the working electrode is swept from a high potential to a low potential (or *vice versa*), and then back to its original value. The CV measurement gets its name since during the potential sweep, the current due to redox reactions is measured simultaneously.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure5.jpg" width="765">
 </p>
 
-The first column represents the concentration at the electrode surface, which are calculated values discussed in the following. The boundary conditions are applied in order to use the point method: 1) the last column contains concentrations furthest from the electrode surface, and is thus filled with the bulk concentration. The top row of the grid contains concentration values at the start of the simulation, and it is filled with the bulk concentration as well. Equation 14 is then used to fill the rest of the grid (should combined with consumption or production due to redox reactions, otherwise there will be no diffusion and you will fill the grid with bulk conditions everywhere).
+The first column represents the concentration at the electrode surface, which are calculated values discussed below. The boundary conditions are applied in order to use the point method: 1) the last column contains concentrations furthest from the electrode surface and is thus filled with the bulk concentration. The top row of the grid contains concentration values at the start of the simulation, and it is filled with the bulk concentration as well. Equation 14 is then used to fill the rest of the grid (it should be combined with consumption or production due to redox reactions, otherwise there will be no diffusion and you will fill the grid with bulk conditions everywhere).
 
 Result and Discussion
 =====
 
-We are almost there, I promise. We now can work out the diffusion in its descrete form, but we need to bear in mind that the redox reactions also modifies the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ at the electrode surface, and the redox current is the one my collegues record in the CV measurement. In this sense, the redox reactions caused the concentration gradient at the electrode surface, and drives the diffusion: 
+We are almost there, I promise. We now can work out the diffusion in its discrete form, but we need to bear in mind that the redox reactions also modify the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ at the electrode surface, and the redox current is the one my colleagues record in the CV measurement. In this sense, the redox reactions caused the concentration gradient at the electrode surface, and drives the diffusion: 
 
 $$J_\mathrm{Ox}=-D[C_\mathrm{Ox,1}-C_\mathrm{Ox,0}]/\Delta x$$ 
 
-where $J$ is the current denstiy. This equation describes that if the electrode consumes the $\mathrm{Ox}$ and then the diffusion of $\mathrm{Ox}$ occurs toward electrode. Unfortunately, this equation cannot be used directly in the simulation because the concentration of the $\mathrm{Ox}$ at the electrode surface $(C_\mathrm{Ox,0})$ is still unknown. However, this equation can be arranged to $C_\mathrm{Ox,0}=C_\mathrm{Ox,1}+(J_\mathrm{Ox}\Delta x/D)$. Similarly, $C_\mathrm{Red,0}=C_\mathrm{Red,1}+(J_\mathrm{Red}\Delta x/D)$. Futhermore, since the flux of the oxidized form can also be written as a rate equation $(J_\mathrm{Ox}=k_fC_\mathrm{Ox,0}-k_bC_\mathrm{Red,0})$, and the substitution of the two previous equations into the rate equation, one can reach
+where $J$ is the current density. This equation describes that if the electrode consumes the $\mathrm{Ox}$ and then the diffusion of $\mathrm{Ox}$ occurs toward the electrode. Unfortunately, this equation cannot be used directly in the simulation because the concentration of the $\mathrm{Ox}$ at the electrode surface $(C_\mathrm{Ox,0})$ is still unknown. However, this equation can be arranged to $C_\mathrm{Ox,0}=C_\mathrm{Ox,1}+(J_\mathrm{Ox}\Delta x/D)$. Similarly, $C_\mathrm{Red,0}=C_\mathrm{Red,1}+(J_\mathrm{Red}\Delta x/D)$. Furthermore, since the flux of the oxidized form can also be written as a rate equation $(J_\mathrm{Ox}=k_fC_\mathrm{Ox,0}-k_bC_\mathrm{Red,0})$, and the substitution of the two previous equations into the rate equation, one can reach
 
 $$-J_\mathrm{Ox}=\frac{k_fC_\mathrm{Ox,1}-k_bC_\mathrm{Red,1}}{1+\frac{k_f\Delta x}{D}+\frac{k_b\Delta x}{D}}$$
 
@@ -151,21 +151,21 @@ where $k_f$ and $k_b$ are obtained from eqs. 11 and 12 at each applied potential
 
 $$i_\mathrm{Total}=-nFAJ_\mathrm{Ox}$$
 
-where $A$ is the active area of the electrode. One more thing to note: aside from the diffusion we now have the equations that describes the modification of concentrations at the electrode surface:
+where $A$ is the active area of the electrode. One more thing to note: aside from the diffusion we now have the equations that describe the modification of concentrations at the electrode surface:
 
 $$C_\mathrm{Ox,0}=C_\mathrm{Ox,1}+\frac{J_\mathrm{Ox}\Delta x}{D}$$
 
 $$C_\mathrm{Red,0}=C_\mathrm{Red,1}+\frac{J_\mathrm{Red}\Delta x}{D}$$
 
-The eqs. 19 and 20, along with eq. 14 dictates the whole concentration profile from the electrode suface to the bulk solution.
+The eqs. 19 and 20, along with eq. 14 dictates the whole concentration profile from the electrode surface to the bulk solution.
 
-The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Fig. 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](http://ShengxiangWuPlasmonic.github.io/files/Sample_CV_MATLAB.zip)
+The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Figure 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](http://ShengxiangWuPlasmonic.github.io/files/Sample_CV_MATLAB.zip)
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure6.jpg" width="750">
 </p>
 
-Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where potential (and resistance) dictates current. In a CV measurement, the current is originated from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, difussion, etc, also play important roles in determining reaction rates, thus can result two current values for single potential value.
+Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where the potential (and resistance) dictates current. In a CV measurement, the current is originated from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, diffusion, etc, also play important roles in determining reaction rates, and thus can result in two current values for a single potential value.
 
 References
 =====

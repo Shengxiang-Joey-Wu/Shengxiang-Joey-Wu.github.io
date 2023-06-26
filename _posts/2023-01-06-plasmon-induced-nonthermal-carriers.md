@@ -32,7 +32,7 @@ where the wavefunction $\Psi_0$ has the generic form:
 
 $$\Psi_0=\psi_0(\mathbf{r})e^{-iE_0t/\hbar},$$
 
-Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $|u\rangle$ represents the eigenfunctions of $H_0$, that is, $|u\rangle=\{u_1,u_2,\dots,u_n\}$. Then since any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
+Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $\vert u\rangle$ represents the eigenfunctions of $H_0$, that is, $\vert u\rangle=\{u_1,u_2,\dots,u_n\}$. Then since any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
 
 $$\Psi_0=\sum_na_n^0u_n^0e^{-iE_n^0t/\hbar},$$
 

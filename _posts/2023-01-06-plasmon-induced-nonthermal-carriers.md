@@ -106,6 +106,29 @@ $$R=\frac{2\pi}{\hbar}\rho(E_n)|H_{sn}'|^2$$
 
 Eq. 18 is indeed the well-known Fermi-Golden rule.
 
+Sometimes you may see the Fermi-Golden rule attached with a $\delta$ function, here we can demonstrate this process.
+We can rewrite eq. 14 as 
+
+$$|a_s(t)|^2=4|H'_{sn}|^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2)=\frac{|H_{sn}'|^2}{\hbar^2}t^2\frac{\sin^2(\omega_{sn}t/2)}{\omega_{sn}^2t^2/4}=\frac{|H_{sn}'|^2}{\hbar^2}t^2\mathrm{sinc}^2(\omega_{sn}t/2),$$
+
+Since $\lim\limits_{x\rightarrow 0}\mathrm{sinc}(x)=1$, eq. 19 becomes
+
+$$|a_s(t)|^2=\frac{|H_{sn}'|^2}{\hbar^2}t^2,$$
+
+Thus, the short-time behavior is *quadratic* with time.
+
+For the long time limit ($t\rightarrow\infty$), we also rewrite eq. 13 as 
+
+$$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2)=4\vert H_{sn}'\vert^2\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2,$$
+
+Here, we've defined $\Delta E=E_s-E_n=\omega_{sn}\hbar$. Let us further define $D_t(\Delta E)\equiv4\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2$, we plot $D_t(\Delta E)$ vs. $\Delta E$ in order to visualize its properties (Figure 1).
+
+Figure 1 shows that $D_t(\Delta E)$ has large values only for $-2\pi\hbar/t<\Delta E<2\pi\hbar/t$ (the region between dashed lines), where the maximum $D_t(0)=t^2/\hbar^2$ increases rapidly with time. Furthermore, since $\int_{-\infty}^\infty D_t(x)\mathrm{d}x=2\pi t/\hbar$, we define the function
+
+$$\delta_t(\Delta E)=\frac{\hbar}{2\pi t}D_t(\Delta E),$$
+
+which is a representation of the $\delta$-function in the limit $t\rightarrow\infty$.
+
 
 
 **References**

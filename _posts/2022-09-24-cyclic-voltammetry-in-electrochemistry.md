@@ -1,8 +1,8 @@
 ---
 title: 'Cyclic Voltammetry in Electrochemistry'
 date: 2022-09-24
-permalink: /posts/2022/09/blog-post-3/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/Blog_3_TOC.jpg" width="564">
+permalink: /posts/2022/09/cyclic-voltammetry-in-electrochemistry/
+excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_TOC.jpg" width="728">
 tags:
   - Cyclic Voltammetry
   - Electrochemistry

@@ -68,7 +68,7 @@ Since the redox reactions involve electron transfer, it wouldn't hurt if we firs
 
 $$\mathrm{Ox_1}+\mathrm{e^-}\rightarrow \mathrm{Red_1}$$
 
-Imagine we are electrons, why sometimes we flow from A to B and sometimes from B to A? What is the driving force behind that? Well, simply put, we always want to flow to somewhere we feel more comfortable (low potential energy). This is universal regardlessly if it is a homogeneous electron transfer or heterogeneous electron transfer (Fig. 2): To reduce $\mathrm{Ox_1}$ to $\mathrm{Red_1}$, the electrons may be injected from another reducing agent $\mathrm{Red_2}$ where the electrons are more uncomfortable (high potential energy) or from electrode that is purposely maintained at high (negative) potential.
+Imagine we are electrons, why sometimes do we flow from A to B and sometimes from B to A? What is the driving force behind that? Well, simply put, we always want to flow to somewhere we feel more comfortable (low potential energy). This is universal regardless if it is a homogeneous electron transfer or heterogeneous electron transfer (Fig. 2): To reduce $\mathrm{Ox_1}$ to $\mathrm{Red_1}$, the electrons may be injected from another reducing agent $\mathrm{Red_2}$ where the electrons are more uncomfortable (high potential energy) or from an electrode that is purposely maintained at the high (negative) potential.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/Blog_3_Fig_6.jpg" width="516">

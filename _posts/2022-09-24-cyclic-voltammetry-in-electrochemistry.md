@@ -162,7 +162,7 @@ The eqs. 19 and 20, along with eq. 14 dictates the whole concentration profile f
 The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Fig. 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](http://ShengxiangWuPlasmonic.github.io/files/Sample_CV_MATLAB.zip)
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure8.jpg" width="750">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure6.jpg" width="750">
 </p>
 
 Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where potential (and resistance) dictates current. In a CV measurement, the current is originated from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, difussion, etc, also play important roles in determining reaction rates, thus can result two current values for single potential value.

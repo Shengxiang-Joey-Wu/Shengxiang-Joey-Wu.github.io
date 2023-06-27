@@ -197,13 +197,18 @@ Note here that we define that $\hbar\omega_s\equiv\varepsilon_f$ and $\hbar\omeg
 
 By introducing a damping factor $\gamma=\hbar/\tau$ in eq. 34, and substituting eq. 34 in eq. 33 (note that we switched notation here $\vert V_{sn}\vert^2=\vert M_{fi}\vert^2$)
 
-$$R=\frac{2}{\tau}[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vertM_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
+$$R=\frac{2}{\tau}[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
 
 After accounting for the spin and the occupation probability dictated by Fermi-Dirac distribution, eq. 35 becomes
 
 $$R=\frac{4}{\tau}f(\varepsilon_i)(1-f(\varepsilon_f))[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
 
 If one considers all the possible initial states, eq. 36 would become the eq. 1 in ref. 2.
+
+Wavefunctions of Spherical Nanoparticles
+=====
+
+Then all we need to do is to find the appropriate basis set for conduction electrons in plasmonic nanoparticles. For simplicity, we consider the  
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

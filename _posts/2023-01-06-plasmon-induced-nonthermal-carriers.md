@@ -34,7 +34,7 @@ where the wavefunction $\Psi_0$ has the generic form:
 
 $$\Psi_0=\psi_0(\mathbf{r})e^{-iE_0t/\hbar},$$
 
-Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $\vert u\rangle$ represents the eigenfunctions of $H_0$, that is, $\vert u\rangle=\{u_1,u_2,\dots,u_n\}$. Then since any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
+Since the Hamiltonian (Energy) operator is a Hermitian operator, its eigenfunctions shall form a complete set. Let's use $\vert u\rangle$ represents the eigenfunctions of $H_0$, that is, $\vert u\rangle=\{u_1,u_2,\dots,u_n\}$. Because any wavefunctions can be represented as the linear combination of the eigenfunctions (if these eigenfunctions form a complete set), eq. 3 can be written more generally as
 
 $$\Psi_0=\sum_na_n^0u_n^0e^{-iE_n^0t/\hbar},$$
 
@@ -66,7 +66,7 @@ $$H_{sn}'=\int u_s^{0*}H'u_n^0\mathrm{d}\tau,$$
 
 The $\int\mathrm{d}\tau$ denotes integration over the full range of all the coordinates of a system.
 
-For a small perturbation, the time variation of $a_n(t)$ is slow, then $a_n(t)\cong a_n(0)$ and
+For a small perturbation, the time variation of $a_n(t)$ is slow, so $a_n(t)\cong a_n(0)$ and
 
 $$a_s(t)-a_s(0)\cong\frac{-i}{\hbar}\sum_na_n(0)\int_0^tH_{sn}'(t')e^{i\omega_{sn}t'}\mathrm{d}t',$$
 
@@ -74,7 +74,7 @@ where
 
 $$\hbar\omega_{sn}=E_s^0-E_n^0,$$
 
-If, for simplicity, we consider the special case for which the system is in state $n$ at $t=0$. Then $a_n(0)=1$ and all other $a_n(t)=0$. Then
+If, for simplicity, we consider the special case for which the system is in state $n$ at $t=0$, that is, $a_n(0)=1$ and all other $a_n(0)=0$. Then
 
 $$a_s(t)=\frac{-i}{\hbar}\int_0^tH'_{sn}(t')e^{i\omega_{sn}t'}\mathrm{d}t'\qquad\mathrm{for}\;s\neq n,$$
 
@@ -88,30 +88,10 @@ Therefore,
 
 $$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
 
-For many techniques, the result of perturbation is a final state that places a particle in the continuum, that is, a free particle. In this case, an explicit final state can be replaced by a density of final states. Such a density is defined as the number of energy levels per unit energy interval $\mathrm{d}E$. The *transition probability* $P(t)$ for discrete states is given as
+Now we can perform some mathematical tricks on eq. 14, 
 
-$$P(t)=\sum_s|a_s(t)|^2=4|H_{sn}'|^2\sum\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
-
-For a continuum, the summation is replaced by an integral so that
-
-$$P(t)=4|H_{sn}'|^2\int_{-\infty}^\infty\rho(E_s)\sin^2(\omega_{sn}t/2)/(\hbar^2\omega_{sn}^2)\mathrm{d}\hbar\omega_{sn},$$
-
-The major contribution to this integral occurs at $\omega_{sn}=0$, similar to a delta function. Hence, $\rho(E_s)\sim\rho(E_n)$. Furthermore, the integral in (1.16) is of the form $\int_{-\infty}^\infty\sin^2(\alpha x)/x^2\mathrm{d}x=\pi\alpha$, where $\alpha=\frac{t}{2\hbar}$.
-
-Therefore, the integral reduces to
-
-$$P(t)=4|H_{sn}'|^2\rho(E_n)(\frac{\pi t}{2\hbar}),$$
-
-and the rate of transition $R=\mathrm{d}P(t)/\mathrm{d}t$ in units of $\mathrm{s^{-1}}$ is equal to 
-
-$$R=\frac{2\pi}{\hbar}\rho(E_n)|H_{sn}'|^2$$
-
-Eq. 18 is indeed the well-known Fermi-Golden rule.
-
-Sometimes you may see the Fermi-Golden rule attached with a $\delta$ function, here we can demonstrate this process.
-We can rewrite eq. 14 as 
-
-$$|a_s(t)|^2=4|H'_{sn}|^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2)=\frac{|H_{sn}'|^2}{\hbar^2}t^2\frac{\sin^2(\omega_{sn}t/2)}{\omega_{sn}^2t^2/4}=\frac{|H_{sn}'|^2}{\hbar^2}t^2\mathrm{sinc}^2(\omega_{sn}t/2),$$
+$$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2) \\
+=\frac{\vert H_{sn}'\vert^2}{\hbar^2}t^2\frac{\sin^2(\omega_{sn}t/2)}{\omega_{sn}^2t^2/4}=\frac{\vert H_{sn}'\vert^2}{\hbar^2}t^2\mathrm{sinc}^2(\omega_{sn}t/2),$$
 
 Since $\lim\limits_{x\rightarrow 0}\mathrm{sinc}(x)=1$, eq. 19 becomes
 

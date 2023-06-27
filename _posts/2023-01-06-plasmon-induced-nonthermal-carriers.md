@@ -224,7 +224,7 @@ $$\hat{L}^2=-\hbar^2(\frac{\partial^2}{\partial\theta^2}+\cot\theta\frac{\partia
 
 where $\hat{L}$ is the angular momentum operator.
 
-Therefore, (1.30) can be transformed as
+Therefore, eq. 37 can be transformed as
 
 $$\hat{H}=-\frac{\hbar^2}{2m}(\frac{\partial^2}{\partial r^2}+\frac{2}{r}\frac{\partial}{\partial r})+\frac{1}{2mr^2}\hat{L}^2+V(r),$$
 
@@ -239,6 +239,16 @@ Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, 
 $$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...;\qquad\hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
 
 Using the above eigenvalues, (1.31) can be transformed as
+
+$$-\frac{\hbar^2}{2m}(\frac{\partial^2\psi}{\partial r^2}+\frac{2}{r}\frac{\partial\psi}{\partial r})+\frac{l(l+1)\hbar^2}{2mr^2}\psi+V(r)\psi=E\psi,$$
+
+The eigenfunctions of $\hat{L}^2$ are spherical harmonics $Y_l^m(\theta, \phi)$, and since $\hat{L}^2$ does not involve $r$, it is possible to multiply $Y_l^m$ by an arbitrary function of $r$ and still have eigenfunctions of $\hat{L}^2$ and $\hat{L}_z$.
+
+$$\psi=R(r)Y_l^m(\theta,\phi),$$
+
+Plug the variable-separated wavefunction in (1.29) and divide both sides by $Y_l^m$, one may get an ordinary differential equation for the unknown function $R(r)$
+
+$$-\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[\frac{l(l+1)\hbar^2}{2mr^2}+V(r)]R=ER,$$
 
 
 **References**

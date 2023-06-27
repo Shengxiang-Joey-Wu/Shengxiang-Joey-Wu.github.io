@@ -208,7 +208,25 @@ If one considers all the possible initial states, eq. 36 would become the eq. 1 
 Wavefunctions of Spherical Nanoparticles
 =====
 
-Then all we need to do is to find the appropriate basis set for conduction electrons in plasmonic nanoparticles. For simplicity, we consider the  
+Then all we need to do is to find the appropriate basis set for conduction electrons in plasmonic nanoparticles. For simplicity, we consider nanoparticles with a spherical shape, this would leave us a central force problem when solving the TISE:
+
+$$\hat{H}=\hat{T}+\hat{V}=-(\frac{\hbar^2}{2m})\nabla^2+V(r),$$
+
+where $\nabla^2\equiv\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}$.
+
+For spherical shape, it is convenient to work within the spherical coordinates, so we rewrite the Laplace operator in spherical coordinates,
+
+$$\nabla^2\equiv\frac{\partial^2}{\partial r^2}+\frac{2}{r}\frac{\partial}{\partial r}+\frac{1}{r^2}\frac{\partial^2}{\partial\theta^2}+\frac{1}{r^2}\cot{\theta}\frac{\partial}{\partial\theta}+\frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2},$$
+
+It can be shown that (in any quantum mechanics/chemistry book) 
+
+$$\hat{L}^2=-\hbar^2(\frac{\partial^2}{\partial\theta^2}+\cot\theta\frac{\partial}{\partial\theta}+\frac{1}{\sin^2{\theta}}\frac{\partial^2}{\partial\phi^2}),$$
+
+where $\hat{L}$ is the angular momentum operator.
+
+Therefore, (1.30) can be transformed as
+
+
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

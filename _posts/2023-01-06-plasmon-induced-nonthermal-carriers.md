@@ -302,7 +302,32 @@ Then the allowed energy (implicitly included in $k$ and $\kappa$) can be found b
 
 The parameter $V_0$ is crucial since it determines the material's work function. For $D=15\;\mathrm{nm}$ Ag nano-sphere, we choose $V_0=-10.04\;\mathrm{eV}$ to ensure the correct work function ($~4.5\;\mathrm{eV}$).  For a wavefunction to be well-behaved, we require it to be normalized, $\int_{-\infty}^\infty \psi^*\psi\mathrm{d}\tau=1$. After normalization, we can pick three random state wavefunctions (Figure 7) to visualize that the boundary conditions are fulfilled. As shown in Figure 7, the found wavefunctions are indeed continuous and smooth across the interface (solid line for inside the sphere, and dashed line for outside the sphere).
 
-Another requirement is the orthogonal property. Since the orthogonal property is auto-satisfied in spherical harmonics $Y_{l}^m$, we test the orthogonal property for radial wavefunctions that correspond to the same $l$.
+Another requirement is the orthogonal property. Since the orthogonal property is auto-satisfied in spherical harmonics $Y_{l}^m$, we test the orthogonal property for radial wavefunctions that correspond to the same $l$ (Figure 11).
+
+Nonthermal Carrier Generation
+=====
+
+Now we have all the tools we need to calculate the generation rate and energy distribution of nonthermal carriers - we have equipped with the formula derived from the Fermi-Golden rule (1.29) and the wavefunctions to describe the conduction band electrons in nanospheres. By looking at (1.29), we realize the only remaining puzzle is the transition matrix element $M_{fi}=\langle\psi_\mathrm{f}|eV'|\psi_\mathrm{i\rangle}$, where $V'$ is the **overall** potential that electrons feel when the illumination is on. The overall potential for spherical nanospheres can be written as $V'=V_\mathrm{ext}+V_\mathrm{p}$, where $V_\mathrm{ext}$ is the external potential and $V_\mathrm{p}$ is the plasmon-induced potential, the latter can be written as (from entry-level electromagnetics books):
+
+$$V_\mathrm{p}(r,\omega)=\begin{cases} \frac{\varepsilon-1}{\varepsilon+2}E_0r\cos\theta\qquad\mathrm{inside\;the\;metal}\\\frac{\varepsilon-1}{\varepsilon+2}\frac{R^3}{r^2}E_0\cos\theta\qquad\mathrm{outside\;the\;metal}\end{cases},$$
+
+And the external perturbation is simply $V_\mathrm{ext}=-E_0r\cos\theta$. For silver, we use the Drude model $\varepsilon=\varepsilon_\mathrm{b}-\frac{\omega_\mathrm{pl}^2}{\omega^2+\mathrm{i}\omega\gamma}$ with background dielectric function $\varepsilon_\mathrm{b}=4.18$, a plasma frequency $\omega_\mathrm{pl}=9.07\;\mathrm{eV}$, and a plasmon damping of $\gamma=60\;\mathrm{meV}$.<sup>2</sup> 
+
+One more trick to note here, the transition matrix element is evaluated below
+
+$$\vert \langle\psi_\mathrm{f}\vert V'\vert\psi_\mathrm{i}\rangle\vert^2=e^2E_0^2\vert\langle R_f\vert V'(r)\vert R_i\rangle\vert ^2\vert \langle Y_{l_\mathrm{f}}^{m_\mathrm{f}}\vert\cos\theta\vert Y_{l_\mathrm{i}}^{m_\mathrm{i}}\rangle\vert^2,$$
+
+Luckily, we do not need to deal with the explicit expression in (1.40). It turns out that $\vert\langle Y_{l_\mathrm{f}}^{m_\mathrm{f}}\vert\cos\theta\vert Y_{l_\mathrm{i}}^{m_\mathrm{i}}\rangle\vert^2$ can be evaluated analytically as
+
+$$\vert\langle Y_{l_\mathrm{f}}^{m_\mathrm{f}}|\cos\theta|Y_{l_\mathrm{i}}^{m_\mathrm{i}}\rangle|^2=2\frac{(l_\mathrm{min}-m+1)(l_\mathrm{min}+m+1)}{(2l_\mathrm{min}+3)(2l_\mathrm{min}+1)},$$
+
+where $l_\mathrm{min}$ is the smaller value between $l_\mathrm{f}$ and $l_\mathrm{i}$. Note the selection rule is that $l_\mathrm{f}-l_\mathrm{i}=\pm 1$ and $m_\mathrm{f}=m_\mathrm{i}$.
+
+**Finally**, we can put everything together and evaluate the transition probability per unit time (equivalently, the excitation rate) using (1.29) in Fig. 14. For comparison, we also put the results from ref. 2 side by side. 
+
+If you are interested in the detailed MATLAB code to perform this calculation, please email me at shengxiangwu996@gmail.com.
+
+
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

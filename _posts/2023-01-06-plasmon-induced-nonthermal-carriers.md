@@ -167,6 +167,31 @@ The first term in eq. 28 is *absorption* while the second term is *stimulated em
 
 Notice that the terms in eq. 28 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the energy splitting between quantum states. Consider the resonance conditions that will maximize each term (Figure 3):
 
+We first analyze the absorption part:
+
+$$P(t)=|a_s(t)|^2=\frac{|V_{sn}|^2}{\hbar^2(\omega_{sn}-\omega)^2}\sin^2[\frac{1}{2}(\omega_{sn}-\omega)t],$$
+
+We then do a similar transformation as in eq. 21,
+
+$$P(t)=|V_{sn}|^2\frac{\sin^2[\frac{1}{2}(\omega_{sn}-\omega)\hbar t/\hbar]}{\hbar^2(\omega_{sn}-\omega)^2}=|V_{sn}|^2\frac{\sin^2[\frac{1}{2}\Delta Et/\hbar]}{\Delta E^2}=\frac{2\pi t}{\hbar}|V_{sn}|^2\delta_t(\Delta E)=\frac{2\pi t}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n-\omega)),$$
+
+Note that $\Delta E$ here is defined as $\Delta E\equiv\hbar(\omega_s-\omega_n-\omega)$. The transition rate for this absorption process is therefore
+
+$$R_{\mathrm{abs}}=\frac{\mathrm{d}P(t)}{\mathrm{d}t}=\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n-\omega)),$$
+
+Similarly, the transition rate for the stimulated emission process is
+
+$$R=\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n+\omega)),$$
+
+The overall transition rate (probability per unit time) to state $s$ is then
+
+$$R=\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n-\omega))+\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n+\omega)),$$
+
+Note that within the long time limit, we neglect interferences between the resonant and anti-resonant terms.
+
+Furthermore, the Dirac delta function can be expressed in a Lorentzian function form to account for the relaxation process,
+
+$$\delta(\hbar(\omega_s-\omega_n\pm\omega))=\delta(\varepsilon_f-\varepsilon_i\pm\hbar\omega)=\frac{1}{\pi}\lim_{\gamma\rightarrow 0}\frac{\gamma}{(\varepsilon_f-\varepsilon_i\pm\hbar\omega)^2+\gamma^2},$$
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

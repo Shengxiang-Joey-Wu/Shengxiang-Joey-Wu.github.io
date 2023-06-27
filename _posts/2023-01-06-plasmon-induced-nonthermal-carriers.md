@@ -291,7 +291,7 @@ Now we have all the tools we need to calculate the generation rate and energy di
 
 $$V_p(r,\omega)=\begin{cases} \frac{\varepsilon-1}{\varepsilon+2}E_0r\cos\theta\qquad\mathrm{inside\;sphere}\\\frac{\varepsilon-1}{\varepsilon+2}\frac{R^3}{r^2}E_0\cos\theta\qquad\mathrm{outside\;sphere}\end{cases},$$
 
-And the external perturbation is simply $V_ext=-E_0r\cos\theta$. For silver, we use the Drude model $\varepsilon=\varepsilon_b-\frac{\omega_{pl}^2}{\omega^2+\mathrm{i}\omega\gamma}$ with background dielectric function $\varepsilon_\mathrm{b}=4.18$, a plasma frequency $\omega_{pl}=9.07\;\mathrm{eV}$, and a plasmon damping of $\gamma=60\;\mathrm{meV}$.<sup>2</sup> 
+And the external perturbation is simply $V_{ext}=-E_0r\cos\theta$. For silver, we use the Drude model $\varepsilon=\varepsilon_b-\frac{\omega_{pl}^2}{\omega^2+\mathrm{i}\omega\gamma}$ with background dielectric function $\varepsilon_\mathrm{b}=4.18$, a plasma frequency $\omega_{pl}=9.07\;\mathrm{eV}$, and a plasmon damping of $\gamma=60\;\mathrm{meV}$.<sup>2</sup> 
 
 One more trick to note here, the transition matrix element is evaluated below
 

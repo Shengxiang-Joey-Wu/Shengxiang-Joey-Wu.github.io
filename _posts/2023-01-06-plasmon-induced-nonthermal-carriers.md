@@ -125,15 +125,15 @@ Eq. 20 is indeed the well-known Fermi's Golden Rule.
 
 **Harmonic Perturbation**
 
-So far, we've only considered the constant perturbation ($H'$ is independent of time once it is turned on). Now we consider the interaction of a system with an oscillating perturbation turned on at time $t_0=0$ (Figure 2). The results will be used to describe how a light field induces transitions in a system through dipole interactions.
+So far, we've only considered the constant perturbation, that is, $H'$ is independent of time once it is turned on. Now we consider the interaction with an oscillating perturbation turned on at time $t_0=0$ (Figure 2). The results will be used to describe how a light field induces transitions in a system through dipole interactions.
 
-Again, we are looking to calculate the transition probability between states $n$ and $s$. Here, we treat the light field classically:
+Again, we want to know the rate of transition between states $n$ and $s$. Here, we treat the light field classically:
 
 $$H'=V(t)=V\cos(\omega t),$$
 
 $$H'_{sn}(t)=V_{sn}\cos(\omega t)=\frac{V_{sn}}{2}[e^{-i\omega t}+e^{i\omega t}],$$
 
-Setting $t_0\rightarrow 0$, first-order perturbation theory eq. 12 leads to 
+Setting $t_0\rightarrow 0$, and applying the first-order perturbation theory to eq. 12,
 
 $$a_s(t)=\frac{-i}{\hbar}\int_{t_0}^t V_{sn}(\tau)e^{i\omega_{sn}\tau}\mathrm{d}\tau=\frac{-iV_{sn}}{2\hbar}\int_0^t[e^{i(\omega_{sn}-\omega)\tau}+e^{i(\omega_{sn}+\omega)\tau}]\mathrm{d}\tau=\frac{-V_{sn}}{2\hbar}[\frac{e^{i(\omega_{sn}-\omega)t}-1}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t}-1}{\omega_{sn}+\omega}],$$
 

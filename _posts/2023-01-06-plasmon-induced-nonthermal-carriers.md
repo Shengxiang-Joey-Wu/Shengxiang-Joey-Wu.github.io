@@ -270,6 +270,10 @@ Since $x=\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}r$, the above equation becomes
 
 $$x^2\frac{d^2y}{dx^2}+2x\frac{dy}{dx}+(x^2-l(l+1))y=0,$$
 
+It turns out that eq. 5 has analytical solutions: the two linearly independent solutions are spherical Bessel functions of the first kind $j_l$ and spherical Bessel functions of the second kind $y_l$.
+
+$$j_l(x)=(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\sin{x}}{x},\qquad y_l(x)=-(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\cos{x}}{x},$$
+
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.
 2. Manjavacas, A.; Liu, J. G.; Kulkarni, V.; Nordlander, P. Plasmon-Induced Hot Carriers in Metallic Nanoparticles. *ACS Nano* **2014**, *8* (8), 7630-7638.

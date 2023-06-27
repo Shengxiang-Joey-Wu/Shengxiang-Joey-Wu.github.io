@@ -216,7 +216,7 @@ $$[\hat{H}, \hat{L}^2]=0\qquad \mathrm{if}\;V=V(r) \\
 
 [\hat{H}, \hat{L_z}]=0\qquad\mathrm{if}\;V=V(r),$$
 
-Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, $\hat{L}^2$, and $\hat{L}_z$ for the central-force problem. Such that
+Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, $\hat{L}^2$, and $\hat{L}_z$ for the central-force problem,
 
 $$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...\\
 \hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
@@ -229,11 +229,11 @@ The eigenfunctions of $\hat{L}^2$ are spherical harmonics $Y_l^m(\theta, \phi)$,
 
 $$\psi=R(r)Y_l^m(\theta,\phi),$$
 
-Plug the variable-separated wavefunction in eq. 44 and divide both sides by $Y_l^m$, one may get an ordinary differential equation for the unknown function $R(r)$
+Plug the variable-separated wavefunction in eq. 39 and divide both sides by $Y_l^m$, one may get an ordinary differential equation for the unknown function $R(r)$
 
 $$-\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[\frac{l(l+1)\hbar^2}{2mr^2}+V(r)]R=ER,$$
 
-Then we can do a little bit of transformation on eq. 46 to get help from mathematics (sometimes a friend majoring in mathematics is a plus),
+Then we transform eq. 46 a little bit and then enlist mathematical solutions (sometimes a friend majoring in mathematics is a plus),
 
 $$-\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[\frac{l(l+1)\hbar^2}{2mr^2}+V(r)]R=ER \\
 \Rightarrow -\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[(V(r)-E)+\frac{l(l+1)\hbar^2}{2mr^2}]R=0 \\

@@ -226,6 +226,19 @@ where $\hat{L}$ is the angular momentum operator.
 
 Therefore, (1.30) can be transformed as
 
+$$\hat{H}=-\frac{\hbar^2}{2m}(\frac{\partial^2}{\partial r^2}+\frac{2}{r}\frac{\partial}{\partial r})+\frac{1}{2mr^2}\hat{L}^2+V(r),$$
+
+And it can also be shown that 
+
+$$[\hat{H}, \hat{L}^2]=0\qquad \mathrm{if}\;V=V(r),$$
+
+$$[\hat{H}, \hat{L_z}]=0\qquad\mathrm{if}\;V=V(r),$$
+
+Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, $\hat{L}^2$, and $\hat{L}_z$ for the central-force problem. Such that
+
+$$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...;\qquad\hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
+
+Using the above eigenvalues, (1.31) can be transformed as
 
 
 **References**

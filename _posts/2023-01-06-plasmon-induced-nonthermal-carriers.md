@@ -133,25 +133,24 @@ $$H'=V(t)=V\cos(\omega t),$$
 
 $$H'_{sn}(t)=V_{sn}\cos(\omega t)=\frac{V_{sn}}{2}[e^{-i\omega t}+e^{i\omega t}],$$
 
-Setting $t_0\rightarrow 0$, and applying the first-order perturbation theory to eq. 12,
+Setting $t_0\rightarrow 0$, and substitute eq. 22 into eq. 12,
 
-$$a_s(t)=\frac{-i}{\hbar}\int_{t_0}^t V_{sn}(\tau)e^{i\omega_{sn}\tau}\mathrm{d}\tau=\frac{-iV_{sn}}{2\hbar}\int_0^t[e^{i(\omega_{sn}-\omega)\tau}+e^{i(\omega_{sn}+\omega)\tau}]\mathrm{d}\tau=\frac{-V_{sn}}{2\hbar}[\frac{e^{i(\omega_{sn}-\omega)t}-1}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t}-1}{\omega_{sn}+\omega}],$$
+$$a_s(t)=\frac{-i}{\hbar}\int_{t_0}^t V_{sn}(\tau)e^{i\omega_{sn}\tau}\mathrm{d}\tau=\frac{-iV_{sn}}{2\hbar}\int_0^t[e^{i(\omega_{sn}-\omega)\tau}+e^{i(\omega_{sn}+\omega)\tau}]\mathrm{d}\tau \\
+=\frac{-V_{sn}}{2\hbar}[\frac{e^{i(\omega_{sn}-\omega)t}-1}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t}-1}{\omega_{sn}+\omega}],$$
 
-Since $e^{i\theta}-1=2ie^{i\theta/2}\sin(\theta/2)$
-
-Eq. 27 becomes
+Since $e^{i\theta}-1=2ie^{i\theta/2}\sin(\theta/2)$, eq. 23 becomes
 
 $$a_s(t)=\frac{-iV_{sn}}{\hbar}[\frac{e^{i(\omega_{sn}-\omega)t/2}\sin[(\omega_{sn}-\omega)t/2]}{\omega_{sn}-\omega}+\frac{e^{i(\omega_{sn}+\omega)t/2}\sin[(\omega_{sn}+\omega)t/2]}{\omega_{sn}+\omega}],$$
 
-The first term in eq. 28 is *absorption* while the second term is *stimulated emission*.
+The first term in eq. 24 is *absorption* while the second term is called *stimulated emission*.
 
-Notice that the terms in eq. 28 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the energy splitting between quantum states. Consider the resonance conditions that will maximize each term (Figure 3):
+Notice that the terms in eq. 24 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the transition energy between quantum states (Figure 3).
 
 We first analyze the absorption part:
 
-$$P(t)=|a_s(t)|^2=\frac{|V_{sn}|^2}{\hbar^2(\omega_{sn}-\omega)^2}\sin^2[\frac{1}{2}(\omega_{sn}-\omega)t],$$
+$$P(t)=\vert a_s(t)\vert^2=\frac{\vert V_{sn}\vert^2}{\hbar^2(\omega_{sn}-\omega)^2}\sin^2[\frac{1}{2}(\omega_{sn}-\omega)t],$$
 
-We then do a similar transformation as in eq. 21,
+We then do a similar transformation as in eqs. 17-18,
 
 $$P(t)=|V_{sn}|^2\frac{\sin^2[\frac{1}{2}(\omega_{sn}-\omega)\hbar t/\hbar]}{\hbar^2(\omega_{sn}-\omega)^2} \\
 =|V_{sn}|^2\frac{\sin^2[\frac{1}{2}\Delta Et/\hbar]}{\Delta E^2} \\
@@ -166,7 +165,7 @@ Similarly, the transition rate for the stimulated emission process is
 
 $$R=\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n+\omega)),$$
 
-The overall transition rate (probability per unit time) to state $s$ is then
+The overall transition rate (probability per unit time) from state $n$ to state $s$ is then
 
 $$R=\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n-\omega))+\frac{2\pi}{\hbar}|V_{sn}|^2\delta_t(\hbar(\omega_s-\omega_n+\omega)),$$
 
@@ -178,15 +177,15 @@ $$\delta(\hbar(\omega_s-\omega_n\pm\omega))=\delta(\varepsilon_f-\varepsilon_i\p
 
 Note here that we define that $\hbar\omega_s\equiv\varepsilon_f$ and $\hbar\omega_n\equiv\varepsilon_i$, the subscript $f$ and $i$ simply mean the final and initial states.
 
-By introducing a damping factor $\gamma=\hbar/\tau$ in eq. 34, and substituting eq. 34 in eq. 33 (note that we switched notation here $\vert V_{sn}\vert^2=\vert M_{fi}\vert^2$)
+By introducing a damping factor $\gamma=\hbar/\tau$ in eq. 30, and substituting eq. 30 in eq. 29 (note that we switched notation here $\vert V_{sn}\vert^2=\vert M_{fi}\vert^2$)
 
 $$R=\frac{2}{\tau}[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
 
-After accounting for the spin and the occupation probability dictated by Fermi-Dirac distribution, eq. 35 becomes
+After accounting for the spin and the occupation probability dictated by the Fermi-Dirac distribution, eq. 31 becomes
 
 $$R=\frac{4}{\tau}f(\varepsilon_i)(1-f(\varepsilon_f))[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
 
-If one considers all the possible initial states, eq. 36 would become the eq. 1 in ref. 2.
+If one considers all the possible initial states, eq. 32 would become the eq. 1 in ref. 2.
 
 Wavefunctions of Spherical Nanoparticles
 =====

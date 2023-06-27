@@ -238,7 +238,7 @@ Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, 
 
 $$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...;\qquad\hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
 
-Using the above eigenvalues, (1.31) can be transformed as
+Using the above eigenvalues, eq. 40 can be transformed as
 
 $$-\frac{\hbar^2}{2m}(\frac{\partial^2\psi}{\partial r^2}+\frac{2}{r}\frac{\partial\psi}{\partial r})+\frac{l(l+1)\hbar^2}{2mr^2}\psi+V(r)\psi=E\psi,$$
 
@@ -246,10 +246,29 @@ The eigenfunctions of $\hat{L}^2$ are spherical harmonics $Y_l^m(\theta, \phi)$,
 
 $$\psi=R(r)Y_l^m(\theta,\phi),$$
 
-Plug the variable-separated wavefunction in (1.29) and divide both sides by $Y_l^m$, one may get an ordinary differential equation for the unknown function $R(r)$
+Plug the variable-separated wavefunction in eq. 44 and divide both sides by $Y_l^m$, one may get an ordinary differential equation for the unknown function $R(r)$
 
 $$-\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[\frac{l(l+1)\hbar^2}{2mr^2}+V(r)]R=ER,$$
 
+Then we can do a little bit of transformation on eq. 46 to get help from mathematics (sometimes a friend majoring in mathematics is a plus),
+
+$$-\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[\frac{l(l+1)\hbar^2}{2mr^2}+V(r)]R=ER \\
+\Rightarrow -\frac{\hbar^2}{2m}(R''+\frac{2}{r}R')+[(V(r)-E)+\frac{l(l+1)\hbar^2}{2mr^2}]R=0 \\
+\Rightarrow R''+\frac{2}{r}R'-[\frac{2m}{\hbar^2}(V(r)-E)+\frac{l(l+1)}{r^2}]R=0 \\
+\Rightarrow r^2R''+2rR'-[\frac{2mr^2}{\hbar^2}(V(r)-E)+l(l+1)]R=0 \\
+\Rightarrow r^2R''+2rR'+[-\frac{2mr^2}{\hbar^2}(V(r)-E)-l(l+1)]R=0,$$
+
+Try $R$ as $y(x)$ and $x=kr$, $k=\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}$
+
+$$\frac{dR}{dr}=\frac{dR}{dx}\frac{dx}{dr}=\frac{dy}{dx}\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}\qquad\frac{d^2R}{dr^2}=\frac{d\frac{dR}{dr}}{dx}\frac{dx}{dr}=\frac{d^2y}{dx^2}\frac{-2m(V(r)-E)}{\hbar^2}$$
+
+Thus, (1.35) becomes
+
+$$\frac{-2m(V(r)-E)}{\hbar^2}r^2\frac{d^2y}{dx^2}+2r\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}\frac{dy}{dx}+[-\frac{2mr^2}{\hbar^2}(V(r)-E)-l(l+1)]y=0,$$
+
+Since $x=\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}r$, the above equation becomes
+
+$$x^2\frac{d^2y}{dx^2}+2x\frac{dy}{dx}+(x^2-l(l+1))y=0,$$
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

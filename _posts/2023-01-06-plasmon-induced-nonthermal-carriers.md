@@ -190,7 +190,7 @@ If one considers all the possible initial states, eq. 32 would become the eq. 1 
 Wavefunctions of Spherical Nanoparticles
 =====
 
-Then all we need to do is to find the appropriate basis set for conduction electrons in plasmonic nanoparticles. For simplicity, we consider nanoparticles with a spherical shape, this would leave us a central force problem when solving the TISE:
+Then we need to find the appropriate basis set for conduction electrons in plasmonic nanoparticles. For simplicity, we consider nanoparticles with a spherical shape, this would leave us a central force problem when solving the $\mathrm{schr\ddot{o}diner}$ equation:
 
 $$\hat{H}=\hat{T}+\hat{V}=-(\frac{\hbar^2}{2m})\nabla^2+V(r),$$
 
@@ -206,21 +206,22 @@ $$\hat{L}^2=-\hbar^2(\frac{\partial^2}{\partial\theta^2}+\cot\theta\frac{\partia
 
 where $\hat{L}$ is the angular momentum operator.
 
-Therefore, eq. 37 can be transformed as
+Therefore, eq. 33 is transformed to
 
 $$\hat{H}=-\frac{\hbar^2}{2m}(\frac{\partial^2}{\partial r^2}+\frac{2}{r}\frac{\partial}{\partial r})+\frac{1}{2mr^2}\hat{L}^2+V(r),$$
 
 And it can also be shown that 
 
-$$[\hat{H}, \hat{L}^2]=0\qquad \mathrm{if}\;V=V(r),$$
+$$[\hat{H}, \hat{L}^2]=0\qquad \mathrm{if}\;V=V(r) \\
 
-$$[\hat{H}, \hat{L_z}]=0\qquad\mathrm{if}\;V=V(r),$$
+[\hat{H}, \hat{L_z}]=0\qquad\mathrm{if}\;V=V(r),$$
 
 Thus, it is possible to have a set of simultaneous eigenfunctions of $\hat{H}$, $\hat{L}^2$, and $\hat{L}_z$ for the central-force problem. Such that
 
-$$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...;\qquad\hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
+$$\hat{H}\psi=E\psi;\qquad\hat{L}^2\psi=l(l+1)\hbar^2\psi,\;\;\;l=0,1,2,...\\
+\hat{L}_z\psi=m\hbar\psi,\;\;\;m=-l,-l+1,...,l,$$
 
-Using the above eigenvalues, eq. 40 can be transformed as
+Using the above eigenvalues, eq. 36 can be transformed as
 
 $$-\frac{\hbar^2}{2m}(\frac{\partial^2\psi}{\partial r^2}+\frac{2}{r}\frac{\partial\psi}{\partial r})+\frac{l(l+1)\hbar^2}{2mr^2}\psi+V(r)\psi=E\psi,$$
 

@@ -7,22 +7,22 @@ tags:
   - Nonthermal Carriers
 ---
 
-In the previous [blog](https://shengxiangwuplasmonic.github.io/posts/2022/09/what-is-plasmonic-nanostructure/), I mentioned that the non-radiative damping of surface plasmon was historically viewed as losses in the field of nanophotonics,<sup>1</sup> however, it is now a popular topic in the community of photocatalysis and photochemistry since people realized that the 'losses', if managed properly, can be turned into advantages to drive (uphill) chemical reactions and even demonstrate certain bond selectivity that is not accessible by thermal means. 
+In the previous [blog](https://shengxiangwuplasmonic.github.io/posts/2022/09/what-is-plasmonic-nanostructure/), I mentioned that the non-radiative damping of surface plasmon was historically viewed as losses in the field of nanophotonics,<sup>1</sup> however, it is now a popular topic in the community of photocatalysis and photochemistry - the chemists realized that the 'losses', if managed properly, can be turned into advantages to drive (uphill) chemical reactions and can even demonstrate certain bond selectivity that is not accessible by thermal means. 
 
-The advantages are associated with energetic nonthermal or hot carriers that are generated after the non-radiative damping of surface plasmons, therefore it would be nice if one can predict the energy distribution of nonthermal carriers for given plasmonic nanoparticles. Indeed, there are multiple ways to perform such a calculation from free-electron-like algorithms<sup>2, 3</sup> to more rigorous treatments based on density functional theory (DFT).<sup>4, 5</sup> 
+The advantages are associated with energetic nonthermal or hot carriers that are generated after non-radiative damping of surface plasmons, therefore it would be nice if one can predict the energy distribution of nonthermal carriers for given plasmonic nanoparticles. Indeed, there are multiple ways to perform such calculations from free-electron-like algorithms<sup>2, 3</sup> to more rigorous treatments based on density functional theory (DFT).<sup>4, 5</sup> 
 
-During my Ph.D. study and postdoctoral work, I have followed [ref. 2](https://pubs.acs.org/doi/10.1021/nn502445f) to calculate the energy profile of nonthermal carriers and then apply it to model the tunneling current<sup>6</sup> and photocatalytic performance.<sup>7</sup> It turns out that the approach used here could also be used as an extracurricular activity for first-year graduate students or senior undergraduates to strengthen their understanding of quantum chemistry. That being said, the replication of the major result of ref. 2 can be performed by combining the basic ideas of quantum chemistry and entry-level electromagnetics. Let's get started!
+During my Ph.D. study and postdoctoral work, I have followed [ref. 2](https://pubs.acs.org/doi/10.1021/nn502445f) to calculate the energy profile of nonthermal carriers and then apply it to model the tunneling current<sup>6</sup> and photocatalytic performance.<sup>7</sup> It turns out that the approach used here could also serve as an extracurricular activity for first-year graduate students or senior undergraduates to strengthen their understanding of quantum chemistry. That being said, the replication of the major result of ref. 2 can be performed by simply combining quantum chemistry and entry-level electromagnetics. Let's get started!
 
 Preliminary Knowledge
 ======
 
-**The Fermi-Golden Rule**
+**Fermi's Golden Rule**
 
 "In quantum physics, Fermi's golden rule is a formula that describes the transition rate (the probability of a transition per unit time) from one energy eigenstate of a quantum system to a group of energy eigenstates in a continuum, as a result of a weak perturbation" — Wikipedia.
 
-[The Fermi-Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, because we are interested in the transition probability of exciting an electron (hole), after a non-radiative decay of excited plasmon, from its initial state to possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of the Fermi-Golden rule. (You may find the derivation of the Fermi-Golden rule in many textbooks and online materials.)
+[Fermi's Golden rule](https://en.wikipedia.org/wiki/Fermi%27s_golden_rule) is the tool that we will use to analyze our problem, since we are interested in the transition probability of exciting an electron (hole), after non-radiative decay of excited plasmons, from its initial state to all possible final states. Therefore, before I throw you into a math puzzle, let me walk you through the fundamentals of Fermi's Golden rule. (You can also find the derivation of the Fermi-Golden rule in many textbooks and online materials.)
 
-It is essentially a perturbation problem, let's for now assume the perturbation is from the electromagnetic field of light (we will consider the effect of localized surface plasmon later), then the Hamiltonian of the system can be written as
+The modeling of plasmonic nonthermal carriers is essentially a perturbation problem, let's, for now, assume the perturbation is a constant value $H'$ (we will consider the effect of localized surface plasmon later), then the Hamiltonian of the system can be written as
 
 $$H=H_0+H',$$
 

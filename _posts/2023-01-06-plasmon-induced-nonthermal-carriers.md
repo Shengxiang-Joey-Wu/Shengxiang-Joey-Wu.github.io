@@ -245,7 +245,7 @@ Try $R$ as $y(x)$ and $x=kr$, $k=\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}$
 
 $$\frac{dR}{dr}=\frac{dR}{dx}\frac{dx}{dr}=\frac{dy}{dx}\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}\qquad\frac{d^2R}{dr^2}=\frac{d\frac{dR}{dr}}{dx}\frac{dx}{dr}=\frac{d^2y}{dx^2}\frac{-2m(V(r)-E)}{\hbar^2}$$
 
-Thus, (1.35) becomes
+Thus, eq. 42 becomes
 
 $$\frac{-2m(V(r)-E)}{\hbar^2}r^2\frac{d^2y}{dx^2}+2r\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}\frac{dy}{dx}+[-\frac{2mr^2}{\hbar^2}(V(r)-E)-l(l+1)]y=0,$$
 
@@ -253,7 +253,7 @@ Since $x=\sqrt{\frac{-2m(V(r)-E)}{\hbar^2}}r$, the above equation becomes
 
 $$x^2\frac{d^2y}{dx^2}+2x\frac{dy}{dx}+(x^2-l(l+1))y=0,$$
 
-It turns out that eq. 5 has analytical solutions: the two linearly independent solutions are spherical Bessel functions of the first kind $j_l$ and spherical Bessel functions of the second kind $y_l$.
+It turns out that eq. 45 has analytical solutions: the two linearly independent solutions are spherical Bessel functions of the first kind $j_l$ and spherical Bessel functions of the second kind $y_l$.
 
 $$j_l(x)=(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\sin{x}}{x},\qquad y_l(x)=-(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\cos{x}}{x},$$
 
@@ -262,11 +262,11 @@ $$j_l(x)=(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\sin{x}}{x},\qquad y_l(x)=-(-x)^
 
 Instead of considering infinite potential well as we usually did in quantum chemistry textbooks, here we consider a more realistic scenario (Figure 4), that is, the potential inside the spherical nanoparticles has a finite value $V_0$, and the potential outside the nanoparticle is $0$ (vacuum level).
 
-It is noted that in this scenario, $V_0$ is a negative value. And from eq. 47, one may write down the wavefunction inside the nano-sphere, which is $\psi_\mathrm{in}=j_l(kr)$ and $k=\sqrt{\frac{2m(E-V_0)}{\hbar^2}}$. Since the potential outside the sphere is $0$, the wavefunction is $\psi_\mathrm{out}=h_l(\kappa r)$ with $\kappa=\sqrt{\frac{2mE}{\hbar^2}}$. $h_l(x)$ is called the spherical Hankel function of the first kind, and it is defined as $h_l(x)=j_l(x)+iy_l(x)$.
+It is noted that in this scenario, $V_0$ is a negative value. And from eq. 46, one may write down the wavefunction inside the nano-sphere, which is $\psi_\mathrm{in}=j_l(kr)$ and $k=\sqrt{\frac{2m(E-V_0)}{\hbar^2}}$. Since the potential outside the sphere is $0$, the wavefunction is $\psi_\mathrm{out}=h_l(\kappa r)$ with $\kappa=\sqrt{\frac{2mE}{\hbar^2}}$. $h_l(x)$ is called the spherical Hankel function of the first kind, and it is defined as $h_l(x)=j_l(x)+iy_l(x)$.
 
 Alternatively, the wavefunctions outside the nano-sphere can also be viewed as the modified spherical Bessel function of the second kind, $k_l(\kappa r)$, and $\kappa=\sqrt{\frac{-2mE}{\hbar^2}}$. Note the argument difference in the spherical Hankel function of the first kind and the modified spherical Bessel function of the second kind. We will use the latter as our wavefunction outside the nano-sphere since it is purely real. 
 
-Then we need to apply boundary conditions to find eigenenergies, the wavefunction needs to be continuous and smooth. Continuous requires that wavefunctions converge on the surface of the nano-sphere, while smooth requires the first derivatives of wavefunctions also converge on the surface.
+Then we need to apply boundary conditions to find eigenenergies: the wavefunction needs to be continuous and smooth. Continuous requires that wavefunctions converge on the surface of the nano-sphere, while smooth requires the first derivatives of wavefunctions also converge on the surface.
 
 $$\mathrm{Continuous:\qquad\psi_\mathrm{in}=\psi_\mathrm{out}}\bigg\rvert_{r=r_0};\qquad \mathrm{Smooth: \frac{d\psi_\mathrm{in}}{dr}}=\frac{d\psi_\mathrm{out}}{dr}\bigg\rvert_{r=r_0},$$
 
@@ -274,11 +274,11 @@ Rather than finding the cross points for the above conditions separately, the lo
 
 $$\frac{\frac{d\psi_\mathrm{in}}{dr}}{\psi_\mathrm{in}}=\frac{\frac{d\psi_\mathrm{out}}{dr}}{\psi_\mathrm{out}}\bigg\rvert_{r=r_0},$$
 
-After the rearrangement of (1.37), one may find
+which reads
 
 $$k\frac{j_l'(kr)}{j_l(kr)}\bigg\rvert_{r=r_0}-\kappa\frac{k_l'(\kappa r)}{k_l(\kappa r)}\bigg\rvert_{r=r_0}=0,$$
 
-Then the allowed energy (implicitly included in $k$ and $\kappa$) can be found by searching roots of eq. XX. We could repeat this procedure for all possible $l$, and Figure 5a summarized these results. Furthermore, we can also visualize the convoluted density of states (DOS) as shown in Figure 5b, it matches well with the three-dimensional free-electron-gas models in solid-state physics as expected.
+Then the allowed energy (implicitly included in $k$ and $\kappa$) can be found by searching roots of eq. 49. We could repeat this procedure for all possible $l$, and Figure 5a summarized these results. Furthermore, we can also visualize the convoluted density of states (DOS) as shown in Figure 5b, it matches well with the three-dimensional free-electron-gas models in solid-state physics as expected.
 
 The parameter $V_0$ is crucial since it determines the material's work function. For $D=15\;\mathrm{nm}$ Ag nano-sphere, we choose $V_0=-10.04\;\mathrm{eV}$ to ensure the correct work function ($~4.5\;\mathrm{eV}$).  For a wavefunction to be well-behaved, we require it to be normalized, $\int_{-\infty}^\infty \psi^*\psi\mathrm{d}\tau=1$. After normalization, we can pick three random state wavefunctions (Figure 7) to visualize that the boundary conditions are fulfilled. As shown in Figure 7, the found wavefunctions are indeed continuous and smooth across the interface (solid line for inside the sphere, and dashed line for outside the sphere).
 

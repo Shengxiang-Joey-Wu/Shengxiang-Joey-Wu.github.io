@@ -88,7 +88,7 @@ Therefore,
 
 $$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
 
-For many techniques, the result of perturbation is a final state that places particle in the continuum, that is, a free particle. In this case, an explicit final state can be replaced by a density of final states. Such a density is defined as the number of energy levels per unit energy interval $\mathrm{d}E$. The *transition probability* $P(t)$ for discrete states is given as
+For many techniques, the result of perturbation is a final state that places a particle in the continuum, that is, a free particle. In this case, an explicit final state can be replaced by a density of final states. Such a density is defined as the number of energy levels per unit energy interval $\mathrm{d}E$. The *transition probability* $P(t)$ for discrete states is given as
 
 $$P(t)=\sum_s|a_s(t)|^2=4|H_{sn}'|^2\sum\sin^2(\frac{\omega_{sn}t}{2})/(\hbar^2\omega_{sn}^2),$$
 
@@ -192,6 +192,18 @@ Note that within the long time limit, we neglect interferences between the reson
 Furthermore, the Dirac delta function can be expressed in a Lorentzian function form to account for the relaxation process,
 
 $$\delta(\hbar(\omega_s-\omega_n\pm\omega))=\delta(\varepsilon_f-\varepsilon_i\pm\hbar\omega)=\frac{1}{\pi}\lim_{\gamma\rightarrow 0}\frac{\gamma}{(\varepsilon_f-\varepsilon_i\pm\hbar\omega)^2+\gamma^2},$$
+
+Note here that we define that $\hbar\omega_s\equiv\varepsilon_f$ and $\hbar\omega_n\equiv\varepsilon_i$, the subscript $f$ and $i$ simply mean the final and initial states.
+
+By introducing a damping factor $\gamma=\hbar/\tau$ in eq. 34, and substituting eq. 34 in eq. 33 (note that we switched notation here $\vert V_{sn}\vert^2=\vert M_{fi}\vert^2$)
+
+$$R=\frac{2}{\tau}[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vertM_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
+
+After accounting for the spin and the occupation probability dictated by Fermi-Dirac distribution, eq. 35 becomes
+
+$$R=\frac{4}{\tau}f(\varepsilon_i)(1-f(\varepsilon_f))[\frac{\vert M_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i-\hbar\omega)^2+(\hbar/\tau)^2}+\frac{\vertM_{fi}\vert^2}{(\varepsilon_f-\varepsilon_i+\hbar\omega)^2+(\hbar/\tau)^2}],$$
+
+If one considers all the possible initial states, eq. 36 would become the eq. 1 in ref. 2.
 
 **References**
 1. Khurgin, J. B. How to deal with the loss in plasmonics and metamaterials. *Nat Nanotechnol* **2015**, *10* (1), 2-6.

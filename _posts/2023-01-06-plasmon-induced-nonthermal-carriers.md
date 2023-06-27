@@ -156,7 +156,7 @@ The first term in eq. 24 is *absorption* while the second term is called *stimul
 Notice that the terms in eq. 24 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the transition energy between quantum states (Figure 3).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure3.jpg" width="330">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure3.jpg" width="412">
 </p>  
 
 We first analyze the absorption part:

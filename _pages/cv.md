@@ -36,7 +36,7 @@ Honors and Awards
 Skills
 ======
 * Programming Language
-  * MATLAB (MathWorks Certified MATLAB Associate)
+  * MATLAB (MathWorks Certified MATLAB Professional)
   * Python
 * Scientific Calculation and Modelling
   * Electromagnetic and Heat Transfer Simulation

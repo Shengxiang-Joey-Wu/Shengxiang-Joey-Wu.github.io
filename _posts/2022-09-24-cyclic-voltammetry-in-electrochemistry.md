@@ -159,7 +159,7 @@ $$C_\mathrm{Red,0}=C_\mathrm{Red,1}+\frac{J_\mathrm{Red}\Delta x}{D}$$
 
 The eqs. 19 and 20, along with eq. 14 dictates the whole concentration profile from the electrode surface to the bulk solution.
 
-The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Figure 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](http://ShengxiangWuPlasmonic.github.io/files/Cyclic_Voltammetry_Simulation.zip)
+The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Figure 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/blob/master/files/Cyclic_Voltammetry_Simulation.zip)
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure6.jpg" width="750">

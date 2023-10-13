@@ -8,7 +8,7 @@ tags:
   - Electrochemistry
 ---
 
-There was always a cyclic voltammetry (CV) running on the lab computer (remotely controlled by my colleagues) every time I passed by. I got really curious about the CV map, especially why there are two $y$ (current) values corresponding to one $x$ (potential) value. What got me more curious is that my colleagues can show each other the CV map and talk science about it. I was too shy to ask how they do it (don't be like me), so I decided to figure it out myself, not only because I was curious but also if I want to perform photoelectrochemistry experiments on plasmonic nanoparticles someday, I gotta know how the CV works and what it can tell me. So I write this blog to educate myself:
+There was always a cyclic voltammetry (CV) running on the lab computer (remotely controlled by my colleagues) every time I passed by. I got really curious about the CV map, especially why there are two $y$ (current) values corresponding to one $x$ (potential) value. What got me more curious is that my colleagues can show each other the CV map and talk science about it. I was too shy to ask how they do it (don't be like me), so I decided to figure it out myself, not only because I was curious but also if I wanted to perform photoelectrochemistry experiments on plasmonic nanoparticles someday, I gotta know how the CV works and what it can tell me. So I am writing this blog to educate myself:
 
 
 Preliminary Knowledge
@@ -25,7 +25,7 @@ The equilibrium constant is defined as $K=\frac{[B]}{[A]}$, and once the equilib
 
 **kinetics**
 
-At equilibrium, however, it does not mean that the reaction is 'frozen' - it is just because the forward reaction rate $v_f$ equals the backward reaction rate $v_b$ so the concentration of reactants and products do not change over time. Assuming the forward and backward reactions are both first-order reactions, then the reaction rates and the equilibrium condition can be written as:
+At equilibrium, however, it does not mean that the reaction is 'frozen' - it is just because the forward reaction rate $v_f$ equals the backward reaction rate $v_b$ so the concentration of reactants and products does not change over time. Assuming the forward and backward reactions are both first-order reactions, then the reaction rates and the equilibrium condition can be written as:
 
 $$v_f =k_f[A],\qquad v_b=k_b[B],$$
 
@@ -74,7 +74,7 @@ Imagine we are electrons, why sometimes do we flow from A to B and sometimes fro
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure2.jpg" width="542">
 </p>
 
-At this stage, it is important for us to go through this in mind: 1) electrons tend to flow from high energy to low energy, 2) for electrodes, positive potential tends to lower electron energy (electrons are more comfortable), thus preventing electrons flowing out from electrode, and *vice versa*.
+At this stage, it is important for us to keep this in mind: 1) electrons tend to flow from high energy to low energy, 2) for electrodes, positive potential tends to lower electron energy (electrons are more comfortable), thus preventing electrons flowing out from electrode, and *vice versa*.
 
 Diffusion In An Electrochemical Cell
 =====
@@ -91,17 +91,17 @@ If, for simplicity, we treat the diffusion in one dimension only, that is, we as
 
 $$\frac{\delta C}{\delta t}=D\frac{\delta^2 C}{\delta x^2},$$
 
-where $D$ is the diffusion coefficient. And the direction of diffusion is from high concentration to low concentration.
+where $D$ is the diffusion coefficient. The direction of diffusion is from high concentration to low concentration.
 
 Applied Potential Modifies Activation Energy
 =====
-There is one significant question remaining, that is, how the applied electric potential alters the PES (or equivalently, the reaction coordinates)? To illustrate this, we can consider a reduction process in which the reactant is the $\mathrm{Ox}+\mathrm{e}^-$ (assume it is a one-electron, one-step process) and the electrons are from the working electrode. As we went through together that positive potential tends to lower electron energy while negative potential raises the energy up, we can plot three scenarios in Figure 4, wherein the applied electric potential is referenced to the standard (or formal) potential $E^0$ of the redox couple under consideration.
+There is one significant question remaining, that is, how does the applied electric potential alter the PES (or equivalently, the reaction coordinates)? To illustrate this, we can consider a reduction process in which the reactant is the $\mathrm{Ox}+\mathrm{e}^-$ (assume it is a one-electron, one-step process) and the electrons are from the working electrode. As we went through together that positive potential tends to lower electron energy while negative potential raises the energy up, we can plot three scenarios in Figure 4, wherein the applied electric potential is referenced to the standard (or formal) potential $E^0$ of the redox couple under consideration.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure4.jpg" width="672">
 </p>
 
-To avoid confusion, I have replaced activation energy $E_a$ with the free energy of activation $\Delta G$ (they are the same thing here), and the subscript $c$ and $a$ stands for cathode (where reduction happens) and anode (where oxidation happens), respectively. It is shown in the lower left and middle panel in Figure 4, that if the potential is changed by $\Delta E>0$ to a new value, the relative energy of the electron resident on the electrode change by $-F\Delta E=-F(E-E^0)$; hence the $\mathrm{Ox}+\mathrm{e^-}$ curve moves down by that amount. Apparently (I hate this word), the barrier for reduction, $\Delta G_c$, has become greater than $\Delta G_c^0$, and the barrier for oxidation, $\Delta G_a$ has become less than $\Delta G_a^0$ by a fraction of the total energy change. Let us call that fraction $1-\alpha$, where $\alpha$, the *transfer coefficient*, can range from zero to unity.<sup>2</sup>
+To avoid confusion, I have replaced activation energy $E_a$ with the free energy of activation $\Delta G$ (they are the same thing here), and the subscript $c$ and $a$ stands for cathode (where reduction happens) and anode (where oxidation happens), respectively. It is shown in the lower left and middle panel in Figure 4, that if the potential is changed by $\Delta E>0$ to a new value, the relative energy of the electron resident on the electrode changes by $-F\Delta E=-F(E-E^0)$; hence the $\mathrm{Ox}+\mathrm{e^-}$ curve moves down by that amount. Apparently (I hate this word), the barrier for reduction, $\Delta G_c$, has become greater than $\Delta G_c^0$, and the barrier for oxidation, $\Delta G_a$ has become less than $\Delta G_a^0$ by a fraction of the total energy change. Let us call that fraction $1-\alpha$, where $\alpha$, the *transfer coefficient*, can range from zero to unity.<sup>2</sup>
 
 Therefore, we have the following two expressions for the activation energies for anodic and cathodic barriers:
 
@@ -126,7 +126,7 @@ $$\frac{C_j-C_i}{\Delta t}=\frac{D[C_{i-1}-2C_i+C_{i+1}]}{\Delta_x^2}$$
 
 $$C_j=C_i+\lambda(C_{i-1}-2C_i+C_{i+1})$$
 
-where $\lambda=D\Delta t/\Delta x^2$, and the distance (measured from the electrode surface) and time increments, $\Delta x$ and $\Delta t$, are originated from the point method (Figure 5a). In Figure 5b, we display the potential sweep in one cycle during CV measurement: the potential of the working electrode is swept from a high potential to a low potential (or *vice versa*), and then back to its original value. The CV measurement gets its name since during the potential sweep, the current due to redox reactions is measured simultaneously.
+where $\lambda=D\Delta t/\Delta x^2$, and the distance (measured from the electrode surface) and time increments, $\Delta x$ and $\Delta t$, are originated from the point method (Figure 5a). In Figure 5b, we display the potential sweep in one cycle during CV measurement: the working electrode's potential is swept from a high potential to a low potential (or *vice versa*), and then back to its original value. The CV measurement gets its name since during the potential sweep, the current due to redox reactions is measured simultaneously.
 
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure5.jpg" width="765">
@@ -137,11 +137,11 @@ The first column represents the concentration at the electrode surface, which ar
 Result and Discussion
 =====
 
-We are almost there, I promise. We now can work out the diffusion in its discrete form, but we need to bear in mind that the redox reactions also modify the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ at the electrode surface, and the redox current is the one my colleagues record in the CV measurement. In this sense, the redox reactions caused the concentration gradient at the electrode surface, and drives the diffusion: 
+We are almost there, I promise. We now can work out the diffusion in its discrete form, but we need to bear in mind that the redox reactions also modify the concentration of $\mathrm{Ox}$ and $\mathrm{Red}$ at the electrode surface, and the redox current is the one my colleagues record in the CV measurement. In this sense, the redox reactions caused the concentration gradient at the electrode surface, and drove the diffusion: 
 
 $$J_\mathrm{Ox}=-D[C_\mathrm{Ox,1}-C_\mathrm{Ox,0}]/\Delta x$$ 
 
-where $J$ is the current density. This equation describes that if the electrode consumes the $\mathrm{Ox}$ and then the diffusion of $\mathrm{Ox}$ occurs toward the electrode. Unfortunately, this equation cannot be used directly in the simulation because the concentration of the $\mathrm{Ox}$ at the electrode surface $(C_\mathrm{Ox,0})$ is still unknown. However, this equation can be arranged to $C_\mathrm{Ox,0}=C_\mathrm{Ox,1}+(J_\mathrm{Ox}\Delta x/D)$. Similarly, $C_\mathrm{Red,0}=C_\mathrm{Red,1}+(J_\mathrm{Red}\Delta x/D)$. Furthermore, since the flux of the oxidized form can also be written as a rate equation $(J_\mathrm{Ox}=k_fC_\mathrm{Ox,0}-k_bC_\mathrm{Red,0})$, and the substitution of the two previous equations into the rate equation, one can reach
+where $J$ is the current density, this equation describes that if the electrode consumes the $\mathrm{Ox}$ and then the diffusion of $\mathrm{Ox}$ occurs toward the electrode. Unfortunately, this equation cannot be used directly in the simulation because the concentration of the $\mathrm{Ox}$ at the electrode surface $(C_\mathrm{Ox,0})$ is still unknown. However, this equation can be arranged to $C_\mathrm{Ox,0}=C_\mathrm{Ox,1}+(J_\mathrm{Ox}\Delta x/D)$. Similarly, $C_\mathrm{Red,0}=C_\mathrm{Red,1}+(J_\mathrm{Red}\Delta x/D)$. Furthermore, since the flux of the oxidized form can also be written as a rate equation $(J_\mathrm{Ox}=k_fC_\mathrm{Ox,0}-k_bC_\mathrm{Red,0})$, and the substitution of the two previous equations into the rate equation, one can reach
 
 $$-J_\mathrm{Ox}=\frac{k_fC_\mathrm{Ox,1}-k_bC_\mathrm{Red,1}}{1+\frac{k_f\Delta x}{D}+\frac{k_b\Delta x}{D}}$$
 
@@ -165,7 +165,7 @@ The algorithm is therefore as follows: 1) use eq. 16 to calculate the current de
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure6.jpg" width="750">
 </p>
 
-Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where the potential (and resistance) dictates current. In a CV measurement, the current is originated from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, diffusion, etc, also play important roles in determining reaction rates, and thus can result in two current values for a single potential value.
+Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where the potential (and resistance) dictates current. In a CV measurement, the current originates from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, diffusion, etc, also play important roles in determining reaction rates and thus can result in two current values for a single potential value.
 
 References
 =====

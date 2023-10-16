@@ -19,9 +19,8 @@ Education
 
 Work experience
 ======
-* Jan. 2023 - Present: Postdoctoral Researcher
+* Jan. 2023 - Present: Postdoctoral Researcher (with Dr. Tianquan "Tim" Lian)
   * Emory University
-  * Advisor: Prof. Tianquan "Tim" Lian
 
 * Nov. 2020 - Oct. 2022: Postdoctoral Fellow
   * Beijing Computational Science Research Center
@@ -29,9 +28,9 @@ Work experience
 Honors and Awards
 =====
 * Division Postdoc Fellowship, Beijing Computational Science Research Center, 2021
-* Student Award, International Precious Metals Institute, 2016
-* Outstanding Graduate, Peking University, 2015
-* Gold Metal, 25th Chinese Chemistry Olympiad (CCHO), 2011
+* Honorable Mention, International Precious Metals Institute, Student Award, 2016
+* Outstanding Graduate, College of Chemistry and Molecular Engineering, 2015
+* Gold Medal, 25th Chinese Chemistry Olympiad (CCHO), 2011
 
 Skills
 ======

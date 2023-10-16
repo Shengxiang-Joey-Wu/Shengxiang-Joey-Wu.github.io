@@ -6,7 +6,7 @@ date: 2023-08-30
 venue: 'The Journal of Materials Chemistry A'
 ---
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_2023_JMCA.gjf" width="500">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/TOC_JMCA_2023.jpg" width="500">
 </p>
 
 Authors: Fan Zhang, Yingying Lan, Renjie Li, Jianlin Wang, **Shengxiang Wu**, Lejuan Cai, Yu Zhao and Wenlong Wang $^\dagger$

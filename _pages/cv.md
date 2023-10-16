@@ -22,7 +22,7 @@ Work experience
 * Jan. 2023 - Present: Postdoctoral Researcher (with Dr. Tianquan "Tim" Lian)
   * Emory University
 
-* Nov. 2020 - Oct. 2022: Postdoctoral Fellow
+* Jan. 2021 - Oct. 2022: Postdoctoral Fellow
   * Beijing Computational Science Research Center
 
 Honors and Awards

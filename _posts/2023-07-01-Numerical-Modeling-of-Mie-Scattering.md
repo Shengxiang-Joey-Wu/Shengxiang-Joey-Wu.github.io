@@ -24,4 +24,8 @@ $$\sigma_\mathrm{ext}=\frac{2\pi R^2}{x^2}\sum_{n=1}^\infty(2n+1)Re[a_n+b_n],$$
 
 where $x=2\pi Rn_\mathrm{m}/\lambda$, $n_\mathrm{m}$ is the refractive index of the medium, $R$ is the radius of the particle, and the absorption cross-section is given by $\sigma_\mathrm{abs}=\sigma_{ext}-\sigma_{sca}$. The $a_n$ and $b_n$ factors are given by
 
-$$a_n=\frac{\psi'(mx)\psi_n(x)-m\psi_n(mx)\psi_n'(x)}{\psi'_n(mx)\xi_n(x)-m\psi_n(mx)\xi'_n(x)},$$
+$$a_n=\frac{\psi'(mx)\psi_n(x)-m\psi_n(mx)\psi_n'(x)}{\psi'_n(mx)\zeta_n(x)-m\psi_n(mx)\zeta'_n(x)},$$
+
+%%b_n=\frac{m\psi'_n(mx)\spi_n(x)-\psi_n(mx)\psi'_n(x)}{m\psi'_n(mx)\zeta_n(x)-\psi_n(mx)\zeta'_n(x)},$$
+
+where $\psi_n(z)=(\pi z/2)^{1/2}\times J_{n+1/2}(z)$,

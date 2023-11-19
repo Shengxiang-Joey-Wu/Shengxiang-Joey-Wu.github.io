@@ -28,4 +28,4 @@ $$a_n=\frac{\psi'(mx)\psi_n(x)-m\psi_n(mx)\psi_n'(x)}{\psi'_n(mx)\zeta_n(x)-m\ps
 
 $$b_n=\frac{m\psi'_n(mx)\psi_n(x)-\psi_n(mx)\psi'_n(x)}{m\psi'_n(mx)\zeta_n(x)-\psi_n(mx)\zeta'_n(x)},$$
 
-where $\psi_n(z)=(\pi z/2)^{1/2}\times J_{n+1/2}(z)$,
+where $\psi_n(z)=(\pi z/2)^{1/2}\times J_{n+1/2}(z)$, $\zeta_n(z)=(\pi z/2)^{1/2}\times(J_{n+1/2}(z)-iY_{n+1/2}(z))$ and $m=n_p/n_m$, where $n_p$ is the refractive index of the particle.The different terms in eqs 1 and 2 correspond to the dipole ($n=1$), quadrupole ($n=2$), and so on.

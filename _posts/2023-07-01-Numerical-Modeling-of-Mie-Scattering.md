@@ -16,7 +16,7 @@ Mie theory
 
 Mie theory is an exact analytic solution to Maxwell's equations for spheres with an arbitrary size and thus can be used to calculate the optical spectra, which essentially is an electromagnetic problem, of spherical particles, given that the dielectric constants of the particle and the environment are known. Rather than go through the development and derivation of Mie theory, which I believe deserves another blog, let's take its solution for granted for now and keep in mind that it is an analytical approach.
 
-The general expression for the scattering and extinction cross sections from Mie theory are 
+The general expression for the scattering and extinction cross-sections from Mie theory are 
 
 $$\sigma_\mathrm{sca}=\frac{2\pi R^2}{x^2}\sum_{n=1}^\infty(2n+1){|a_n|^2+|b_n|^2},$$
 
@@ -35,4 +35,9 @@ You may wonder what if the shape of nanoparticles is not a sphere? What if the s
 Finite-Difference Time-Domain method simulation in Lumerical FDTD
 ====
 
-The Finite-Difference Time-Domain method is a direct space method, first introduced by Yee in 1966. It solves the time-domain form of Faraday's law and Ampere-Maxwell's law to obtain the time evolution of electric and magnetic fields across a spatial grid (Yee grid cell).
+The Finite-Difference Time-Domain method is a direct space method, first introduced by Yee in 1966. It solves the time-domain form of Faraday's law and Ampere-Maxwell's law (eqs. 5 and 6)to obtain the time evolution of electric and magnetic fields across a spatial grid (Yee grid cell).
+
+$$\mu\frac{\partial\mathbf{H}}{\partial t}=-\nabla\times\mathbf{E}-\mathbf{M},$$
+
+$$\varepsilon\frac{\partial\mathbf{E}}{\partial t}=\nabla\times\mathbf{H}-\mathbf{J_s}-\sigma\mathbf{E},$$
+

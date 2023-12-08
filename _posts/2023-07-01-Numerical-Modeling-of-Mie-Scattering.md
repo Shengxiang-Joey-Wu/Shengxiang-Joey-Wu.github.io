@@ -41,3 +41,16 @@ $$\mu\frac{\partial\mathbf{H}}{\partial t}=-\nabla\times\mathbf{E}-\mathbf{M},$$
 
 $$\varepsilon\frac{\partial\mathbf{E}}{\partial t}=\nabla\times\mathbf{H}-\mathbf{J_s}-\sigma\mathbf{E},$$
 
+in which $\mathbf{E}$ is the electric field, $\mathbf{H}$ is the magnetic field, $\mathbf{J_s}$ is the electric current density source and $\mathbf{M}$ is the equivalent magnetic current density. Also, note that we have three primary constitutive parameters of materials to describe the electromagnetic properties:
+
+$$\mathbf{D}=\varepsilon_0\mathbf{E}+\mathbf{P}$$
+
+$$\mathbf{B}=\mu_0(\mathbf{H}+\mathbf{M})$$
+
+$$\mathbf{J}=\sigma\mathbf{E}$$
+
+in which $\vaepsilon$ is the electric permittivity, $\mu$ is the magnetic permeability and $\sigma$ represents the conductivity. 
+
+Materials and objects of interest are generally placed into the Yee grids (Figure 1) and assigned constitutive material parameters based on the cell location. Central differencing [https://en.wikipedia.org/wiki/Finite_difference]
+
+

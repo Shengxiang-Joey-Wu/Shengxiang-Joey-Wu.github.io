@@ -57,6 +57,8 @@ Since we are interested in the absorption and scattering of electromagnetic wave
 
 $$\mathbf{E}=\mathbf{E}_\mathrm{total}=\mathbf{E}_\mathrm{background}+\mathbf{E}_\mathrm{scattered},$$
 
-It turns out that this special plane wave source is a built-in source in the Lumerical FDTD - *TFSF* source.
+It turns out that this special plane wave source is a built-in source in the Lumerical FDTD - the *TFSF* source (Figure 2).
+
+In addition to the objects (materials), grids, and sources, we then need appropriate **boundary conditions** in any numerical simulation. For instance, *perfect electric conductor* (PEC) and *perfect magnetic conductor* (PMC) reflect electromagnetic waves and can be very useful to take advantage of certain types of symmetries in simulation. *Periodic boundary conditions* (PBCs), such as Bloch boundary conditions, are useful when modeling periodic structures, e.g., metasurfaces. And *absorbing* or *radiation boundary conditions* are suitable for open-region problems to avoid infinity simulation regions and to minimize spurious reflections along the outer boundaries of the grid. 
 
 

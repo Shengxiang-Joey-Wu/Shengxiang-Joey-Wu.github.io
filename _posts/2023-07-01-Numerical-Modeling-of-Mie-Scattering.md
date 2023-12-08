@@ -49,8 +49,14 @@ $$\mathbf{B}=\mu_0(\mathbf{H}+\mathbf{M})$$
 
 $$\mathbf{J}=\sigma\mathbf{E}$$
 
-in which $\vaepsilon$ is the electric permittivity, $\mu$ is the magnetic permeability and $\sigma$ represents the conductivity. 
+in which $\varepsilon$ is the electric permittivity, $\mu$ is the magnetic permeability and $\sigma$ represents the conductivity. 
 
-Materials and objects of interest are generally placed into the Yee grids (Figure 1) and assigned constitutive material parameters based on the cell location. Central differencing [https://en.wikipedia.org/wiki/Finite_difference]
+Materials and objects of interest are generally placed into the Yee grids (Figure 1) and assigned constitutive material parameters based on the cell location. [Central differencing](https://en.wikipedia.org/wiki/Finite_difference) is then used to approximate the time and spatial partial derivatives in eqs. 5 and 6. Truncating the Taylor series expansions of the field components yields a second-order accurate scheme in both space and time.
+
+Since we are interested in the absorption and scattering of electromagnetic waves by spherical nanoparticles, we need to introduce a source in our simulation. There are numerous source options for an FDTD model, hard, soft, resistive voltage, and plane wave sources. In our case, we select plane waves as our source, and in particular, we will model the plane waves from a distant source using the total-field scattered-field formulation.
+
+$$\mathbf{E}=\mathbf{E}_\mathrm{total}=\mathbf{E}_\mathrm{background}+\mathbf{E}_\mathrm{scattered},$$
+
+It turns out that this special plane wave source is a built-in source in the Lumerical FDTD - *TFSF* source.
 
 

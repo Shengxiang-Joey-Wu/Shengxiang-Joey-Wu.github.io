@@ -120,4 +120,55 @@ The solution inside the $e^{th}$ element can be written as
 
 $$V=\sum_{j=1}^nv_j^eN_j(x),$$
 
+where $v_j^e$ are the solution values at the nodes of the element, $N_j(x)$ are the governing interpolation functions (e.g., polynomial of degree one), and $n$ is the number of nodes in the domain of the element; since we are considering a 1-D linear element, $n=2$.
+
+The weighted residual is formed by moving all terms of the differential equation above on one side, multiplying by a weight function $w(x)$, and integrating over the domain of the element. The resulting weighted residual for a single element has the following form:
+
+$$r^e=\int_{x_1^e}^{x_2^e}w[\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})+\rho_v]dx,$$
+
+where $x_1^e$ and $x_2^e$ are positions of the left and right nodes of the element, and $\varepsilon^e=\varepsilon_r^e\varepsilon_0$ is the permittivity of the medium inside the element.
+
+We then seek an approximate solution for $V$ by forcing the weighted residual to be zero and thus obtain a weighted-integral equation
+
+$$\int_{x_1^e}^{x_2^e}w[\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})+\rho_v]dx=0$$
+
+The above equation is the **strong** form since it is directly from the governing partial differential equation.
+
+For each (arbitrary) choice of weight function $w(x)$, an equation is formed with unknowns being the values of the electrostatic potential at the nodes of the element. It is often preferred that the weight functions $w(x)$ be identical to the interpolation or shape functions $N(x)$. This approach is known as the _Galerkin finite element method_.
+
+It is evident that the interpolation functions $N(x)$ must be twice differentiable. This stringent requirement can be relaxed by using integration by parts to trade the double differentiation on $V(x)$ to an evenly distributed single differentiation on both $V(x)$ and $w(x)$:
+
+$$\int_{x_1^e}^{x_2^e}w\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})dx=\int_{x_1^e}^{x_2^e}wd(\varepsilon^e\frac{dV}{dx})=w\varepsilon^e\frac{dV}{dx} \bigg|_{x_1^e}^{x_2^e}-\int_{x_1^e}^{x_2^e}(\frac{dw}{dx})\varepsilon^e(\frac{dV}{dx})dx,$$
+
+Then, the **weak** form is:
+
+$$\int_{x_1^e}^{x_2^e}(\frac{dw}{dx})\varepsilon^e(\frac{dV}{dx})dx-\int_{x_1^e}^{x_2^e}w\rho_vdx-w\varepsilon^e\frac{dV}{dx} \bigg|_{x_1^e}^{x_2^e}=0,$$
+
+One can prove that the weak and strong forms are equivalent. Thanks to the weak form, we can use linear algebra with matrix and vectors to represent the partial differential equation in that finite element, and the assembly of all finite elements leads to a global matrix equation. Once the global matrix equation is solved, we can obtain the electric potential $V$ at each node and the regions in between two nodes are interpolated using interpolation functions $N_e(x)$ from every node.
+
+Even the one-dimensional case above is complicated enough that to obtain the numerical solution below the desired numerical error, software such as MATLAB is typically used. You can imagine that for a three-dimensional problem, it would be almost impractical to do FEM by hand, and this is where COMSOL Multiphysics joins us. 
+
+COMSOL Multiphysics is a popular FEM solver and it is backed by hundreds of engineers and scientists who wrote fast and reliable algorithms so we can perform the electromagnetic simulation using FEM with affordable time and effort. COMSOL Multiphysics is also accompanied by various modules and the one we are using here is the _wave optics_ module. However, COMSOL Multiphysics is just a FEM solver, it is our job to define parameters, create objects, define material properties, and set up boundary conditions to perform simulation. 
+
+The procedures of setting up a simulation in COMSOL Multiphysics are very ‘similar’ to Lumerical FDTD - define simulation region, create objects, define material properties, introduce source, and set up appropriate boundary conditions. However, two things differs, 1) COMSOL Multiphysics allows two formulations, Full field and Scattered field in **Electromagnetic Waves, Frequency Domain (ewfd)**, one of the physics interface associated with wave optics module. By choosing _Scattered field_, we restrict ourselves to only the scattered field (eq. 10) and we need to provide the expression of the background field,  2) the scattering power is calculated similarly as in eq. 11. But because we choose _Scattered field_ formulation, the absorption power, however, is calculated using a built-in expression of total power dissipation density ```ewfd.Qh``` = ```ewfd.Qml``` + ```ewfd.Qrh```, where ```ewfd.Qml``` is the magnetic losses and ```ewfd.Qrh``` is the resistive losses.  
+
+$$\mathrm{ewfd.Qrh}=0.5\int\int\int\mathbf{J}\cdot\mathbf{E}dV,$$
+
+$$\mathrm{ewfd.Qml} = 0.5\int\int\int i\omega\mathbf{B}\cdot\mathbf{H}dV,$$
+
+Note that the volume integral is performed for the gold nanosphere only.
+
+Here are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
+
+Comparison
+===
+
+Figure 5 summarizes the results from analytical solutions (solid lines), solutions from COMSOL Multiphysics (filled circles), and solutions from Lumerical FDTD (empty squares). As expected, both numerical results match well with the analytical solution. In terms of physics, we see that the absorption process dominates in small nanospheres while the scattering process is much more prominent for larger nanoparticles. This suggests that people should use small nanoparticles to harness plasmonic hot carriers, an intermediate stage during the absorption process.
+
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure5.jpg" width="590">
+</p>
+
+Remember I said there is one more thing that I didn’t tell you - the optical constant I used in Lumerical FDTD - in order to get a better comparison, I exported the optical constant of gold that I used in COMSOL Multiphysics and imported it into Lumerical FDTD and Mie solution. Otherwise, the tiny difference in optical constants used in different approaches might result in slight discrepancies in the end.
+
 

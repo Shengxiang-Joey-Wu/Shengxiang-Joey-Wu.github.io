@@ -93,7 +93,7 @@ Therefore, the procedures for setting up Lumerical FDTD simulation for Mie scatt
 6. If one needs higher accuracy, one can override the mesh setting by inserting a user-defined mesh (**Simulation** $\rightarrow$ **Mesh**).
 7. You may also want to modify the wavelength or frequency data points so you can get a nice-looking spectrum. You can do this in **Monitors** $\rightarrow$ **Global properties**.
 
-By following the steps above, we should be able to get the simulation files looking like [these], which I have set up and finished the simulation for gold nanospheres with radii of 30 nm and 80 nm.  And the result can be viewed by right-clicking the cross section analysis groups (**Run analysis**, and then **Visualize**). There is one more thing that I didn’t tell you yet about the optical constant I used in the simulation, I will touch on that after we discussed COMSOL Multiphysics. 
+By following the steps above, we should be able to get the simulation files looking like [these](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/raw/master/files/Mie_Scattering_Lumerical_FDTD.zip), in which I have set up and finished the simulation for gold nanospheres with radii of 30 nm and 80 nm.  And the result can be viewed by right-clicking the cross section analysis groups (**Run analysis**, and then **Visualize**). There is one more thing that I didn’t tell you yet about the optical constant I used in the simulation, I will touch on that after we discussed COMSOL Multiphysics. 
 
 Finite Element Method Simulation in COMSOL Multiphysics
 =====
@@ -158,7 +158,7 @@ $$\mathrm{ewfd.Qml} = 0.5\int\int\int i\omega\mathbf{B}\cdot\mathbf{H}dV,$$
 
 Note that the volume integral is performed for the gold nanosphere only.
 
-Here are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
+[Here](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/raw/master/files/Mie_Scattering_COMSOL_Multiphysics.zip) are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
 
 Comparison
 ===

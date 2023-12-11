@@ -82,3 +82,42 @@ Seems complicated? Don't worry, it turns out that Lumerical FDTD has many built-
 <p align="center">
 <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure3.jpg" width="537">
 </p>
+
+Therefore, the procedures for setting up Lumerical FDTD simulation for Mie scatterings are:
+
+1. Set up simulation region (**Simulation** $\rightarrow$ **Add FDTD region**), and note that the outer boundary of the simulation region has defaulted to PML layers. So make sure the simulation region is large enough  so the evanescent tails of the resonant surface plasmon modes will not interact with the PML boundary conditions.
+2. Put a gold nanosphere at the center of the simulation **(Structures** $\rightarrow$ **Sphere**) and edit its radius as you want. Make sure to change the material to Au.
+3. Put a TFSF source (**Sources** $\rightarrow$ **Total-field scattered-field**) enclosing the gold nanoparticles . Set the wavelength from 400 nm to 700 nm, this wavelength range is suitable to capture the localized surface plasmon resonance of gold nanospheres.
+4. Insert a Cross section analysis group (from **Analysis** $\rightarrow$ **Optical power** $\rightarrow$ **Cross section**) inside the TFSF source, and edit its dimension to enclose the gold nanoparticles. This analysis group will calculate the absorption cross-section.
+5. Insert another Cross section analysis group to enclose the TFSF source. This analysis group will calculate the scattering cross-section.
+6. If one needs higher accuracy, one can override the mesh setting by inserting a user-defined mesh (**Simulation** $\rightarrow$ **Mesh**).
+7. You may also want to modify the wavelength or frequency data points so you can get a nice-looking spectrum. You can do this in **Monitors** $\rightarrow$ **Global properties**.
+
+By following the steps above, we should be able to get the simulation files looking like [these], which I have set up and finished the simulation for gold nanospheres with radii of 30 nm and 80 nm.  And the result can be viewed by right-clicking the cross section analysis groups (**Run analysis**, and then **Visualize**). There is one more thing that I didn’t tell you yet about the optical constant I used in the simulation, I will touch on that after we discussed COMSOL Multiphysics. 
+
+Finite Element Method Simulation in COMSOL Multiphysics
+=====
+
+The finite element method (FEM) is another numerical method that is used to solve boundary-value problems characterized by a partial differential equation and a set of boundary conditions. It is a more universal method compared with the finite-difference time-domain method, and thus can also be applied to other physics governed by other partial differential equations, such as heat transfer, stress analysis, mass diffusion, etc. In FEM, the geometrical domain of the boundary-value problem, for instance, the gold nanosphere and its surroundings in our case, is discretized using sub-domain elements, called the _finite elements_, and the differential equation is applied to a single element after it is brought to the _weak form_. Then a set of shape functions (also known as _interpolation functions_) is used to represent the primary unknown variable, e.g., the electric field $\mathbf{E}$, in the element domain. A set of linear equations is obtained for each element in the discretized domain. Finally, a global matrix system is formed after the assembly of all elements.
+
+Before we dive into the modeling process in COMSOL Multiphysics, let’s look at a one-dimensional problem of electrostatics (Figure 4) to get a better understanding of FEM. As shown in Figure 4, we are curious about the spatial profile of electric potential $V$ between two parallel conducting plates separated by a distance $d$. And the left plate is maintained at a fixed potential $V =V_0$, while the right plate is grounded $V_n = 0\;\mathrm{V}$. The subscript $n$ is due to we divide the geometry into $n$ segments. To complete the physical picture, let’s say the medium between the two plates is nonmagnetic with a dielectric constant $\varepsilon_r$ and a uniform electron volume charge density $\rho_v=-\rho_0$ is also present in the medium.
+
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure4.jpg" width="467">
+</p>
+
+The (partial) differential equation associated with the above problem is Poisson’s equation:
+
+$$\nabla(\varepsilon_r\nabla V)=-\frac{\rho_v}{\varepsilon_0},$$
+
+Since the medium between the two plates is homogeneous, linear, and isotropic, the above equation can be converted into 
+
+$$\frac{d^2V}{dx^2}=\frac{\rho_0}{\varepsilon_r\varepsilon_0},$$
+
+In FEM, briefly, we need to find solutions that satisfy the governing partial differential equation at each node, and then one may use linear interpolation to find approximate solutions between two nodes. Two common approaches for finding solutions at nodes are the variational approach and the method of weighted residual. Instead of going through every detail of FEM, let’s use the method of weighted residual as an example to demonstrate what is the weak form in the FEM. 
+
+The solution inside the $e^{th}$ element can be written as 
+
+$$V=\sum_{j=1}^nv_j^eN_j(x),$$
+
+

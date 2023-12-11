@@ -2,14 +2,14 @@
 title: 'Numerical Modeling of Mie Scattering'
 date: 2023-07-01
 permalink: /posts/2023/07/numerical_modeling-of-mie-scattering/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_TOC.jpg" width="719">
+excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_TOC.jpg" width="591">
 tags:
   - COMSOL Multiphysics
   - Finite Element Method
   - Finite-Difference Time-Domain Method
 ---
 
-After I chose plasmonic nanoparticles (NPs) as my research field back in 2015, the first thing my advisor asked me to do was to reproduce the Mie scattering of gold NPs using Lumerical FDTD, a numerical solver developed by Lumerical Inc., which was acquired by Ansys in the year (2020) of my graduation. It was the first time I realized the power of modeling or simulation. Since then I have enjoyed comparing things, e.g., comparing theory with experiment, comparing different theories or methods, etc. Now I have been an experienced user of Lumerical FDTD (sorry Ansys, I still prefer to call it Lumerical FDTD) for more than 7 years. I have also been modeling nanophotonics problems with COMSOL Multiphysics, another popular numerical solver, for a long time, I still think it is a great exercise to look at this problem, namely, Mie scattering of plasmonic nanoparticles, the phenomenon that makes plasmonic NPs colorful and interesting in nanophotonics and photocatalytic domains. In this blog, I will walk you through the modeling process and we will compare our modeling result with the analytical solution - Mie theory.
+After I chose plasmonic nanoparticles (NPs) as my research field back in 2015, the first thing my advisor asked me to do was to reproduce the Mie scattering of gold NPs using Lumerical FDTD, a numerical solver developed by Lumerical Inc., which was acquired by Ansys in the year (2020) of my graduation. It was the first time I realized the power of modeling or simulation. Since then I have enjoyed comparing things, e.g., comparing theory with experiment, comparing different theories or methods, etc. Now I have been an experienced user of Lumerical FDTD (sorry Ansys, I still prefer to call it Lumerical FDTD) for more than 7 years. I have also been modeling nanophotonics problems with COMSOL Multiphysics, another popular numerical solver, for a long time, yet I still think it is a great exercise to look at this problem, namely, Mie scattering of plasmonic nanoparticles, the phenomenon that makes plasmonic NPs colorful and interesting in nanophotonics and photocatalytic domains. In this blog, I will walk you through the modeling process and we will compare our modeling result with the analytical solution - Mie theory.
 
 Mie theory
 =====
@@ -30,7 +30,7 @@ $$b_n=\frac{m\psi'_n(mx)\psi_n(x)-\psi_n(mx)\psi'_n(x)}{m\psi'_n(mx)\zeta_n(x)-\
 
 where $\psi_n(z)=(\pi z/2)^{1/2}\times J_{n+1/2}(z)$, $\zeta_n(z)=(\pi z/2)^{1/2}\times(J_{n+1/2}(z)-iY_{n+1/2}(z))$ and $m=n_p/n_m$, where $n_p$ is the refractive index of the particle.The different terms in eqs 1 and 2 correspond to the dipole ($n=1$), quadrupole ($n=2$), and so on. Don't be intimidated if the expression of $\psi_n$ and $\zeta_n$ are complex and not familiar to you, they are just special functions (spherical Bessel and Hankel functions of the first kind) and they are usually built-in functions in scientific computing languages, e.g. MATLAB.
 
-You may wonder what if the shape of nanoparticles is not a sphere? What if the shape is complicated enough that finding an analytical solution is impractical? Well, thanks to the development of applied mathematics, we now have a general solution - the numerical approach. In fact, the numerical methods, such as the *finite-difference time-domain* (FDTD) method, *finite element* (FEM) method, and discrete dipole approximation (DDA), etc., for electromagnetic problems have led to a subject called **computational electrodynamics**. In the following sections, we will use Lumerical FDTD, as the name suggested, is a solver based on the FDTD method, and COMSOL Multiphysics, which is a FEM solver, to model the scattering phenomenon from gold nanoparticles. Since we also have the exact analytic solution, it doesn't hurt to compare the numerical results with it. So, let's go!
+You may wonder what if the shape of nanoparticles is not a sphere? What if the shape is complicated enough that finding an analytical solution is impractical? Well, thanks to the development of applied mathematics, we now have a general solution - the numerical approach. In fact, the numerical methods, such as the *finite-difference time-domain* (FDTD) method, *finite element* (FEM) method, and discrete dipole approximation (DDA), etc., for electromagnetic problems have led to a subject called **computational electromagnetics**. In the following sections, we will use Lumerical FDTD, as the name suggested, is a solver based on the FDTD method, and COMSOL Multiphysics, which is a FEM solver, to model the scattering phenomenon from gold nanoparticles. Since we also have the exact analytic solution, it doesn't hurt to compare the numerical results with it. So, let's go!
 
 Finite-Difference Time-Domain method simulation in Lumerical FDTD
 ====
@@ -53,13 +53,32 @@ in which $\varepsilon$ is the electric permittivity, $\mu$ is the magnetic perme
 
 Materials and objects of interest are generally placed into the Yee grids (Figure 1) and assigned constitutive material parameters based on the cell location. [Central differencing](https://en.wikipedia.org/wiki/Finite_difference) is then used to approximate the time and spatial partial derivatives in eqs. 5 and 6. Truncating the Taylor series expansions of the field components yields a second-order accurate scheme in both space and time, which can then be converted into frequency or wavelength domain through the Fourier transform.
 
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure1.jpg" width="410">
+</p>
+
 Since we are interested in the absorption and scattering of electromagnetic waves by spherical nanoparticles, we need to introduce a source in our simulation. There are numerous source options for an FDTD model, hard, soft, resistive voltage, and plane wave sources. In our case, we select plane waves as our source, and in particular, we will model the plane waves from a distant source using the total-field scattered-field formulation.
 
 $$\mathbf{E}=\mathbf{E}_\mathrm{total}=\mathbf{E}_\mathrm{background}+\mathbf{E}_\mathrm{scattered},$$
 
 It turns out that this special plane wave source is a built-in source in the Lumerical FDTD - the *TFSF* source (Figure 2).
 
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure2.jpg" width="551">
+</p>
+
 In addition to the objects (materials), grids, and sources, we need appropriate **boundary conditions** in any numerical simulation. For instance, *perfect electric conductor* (PEC) and *perfect magnetic conductor* (PMC) reflect electromagnetic waves and can be very useful to take advantage of certain types of symmetries in simulation. *Periodic boundary conditions* (PBCs), such as Bloch boundary conditions, are useful when modeling periodic structures, e.g., metasurfaces. And *absorbing* or *radiation boundary conditions* are suitable for open-region problems to avoid infinity simulation regions and to minimize spurious reflections along the outer boundaries of the grid. Among many absorbing boundary conditions, the **perfectly matched layer** (PML) is the most popular one because of its overall efficiency and robustness, and we will use it in our Mie scattering simulation. And guess what, the PML boundary conditions are the default boundary conditions once we add an FDTD region in Lumerical FDTD.
 
-It should be noted that usually one or several dependent variables are solved in any numerical solver, for instance, we solve for $\mathbf{E}$ and $\mathbf{E}$ in Lumerical FDTD, it is then our job to connect the dependent variables to the quantities we want - the cross-sections in Mie scattering.
+It should be noted that usually one or several dependent variables are solved in any numerical solver, for instance, we solve for $\mathbf{E}$ and $\mathbf{E}$ in Lumerical FDTD, it is then our job to connect the dependent variables to the quantities we want - the cross-sections in Mie scattering. Since the cross-sections are defined as the ratio of power (either absorbed or scattered, unit: $\mathrm{W}$) to input power density (unit: $\mathrm{W/m^2}$), and the input power density is a parameter we can control in the simulation, we just need to know the absorbed or scattered power. We can make the connection between dependent variables $\mathbf{E}$ & \mathbf{H}$ to power through Poynting vectors:
 
+$$P=\int\int(\mathbf{n}\cdot\mathbf{S})dS,$$
+
+where $$P$$ is power, $\mathbf{n}$ is the normal vector of the surface under study, $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ is the Poynting vector, and $dS$ is the surface element. Let's assume the input power density is $I_0$, then the cross-sections are calculated as:
+
+$$\sigma=\frac{P}{I_0}=\frac{1}{I_0}\int\int(\mathbf{n}\cdot\mathbf{S})dS,$$
+
+Seems complicated? Don't worry, it turns out that Lumerical FDTD has many built-in functions and even analysis groups to help us out. For instance, the ```transmission``` script command can be applied to a power monitor (an object we can place in Lumerical FDTD) to get the amount of power transmitted through it. And the built-in **Cross section** analysis group consists of 6 power monitors enclosing a region and analyzing the net power flowing into or out from that enclosed region (Figure 3). Note that for absorption the output cross-section is a negative quantity but it is just due to the convention used in Lumerical FDTD. So it becomes that we just need to put one cross section analysis group inside the TFSF soruce to capture the absorption cross-section, and put another outside the TFSF source, where only the scattered field is present (Figure 2), to calculate the scattering cross-section.
+
+<p align="center">
+<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure3.jpg" width="537">
+</p>

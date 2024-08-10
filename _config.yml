@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Plasmonics for Clean Energy"
+title                    : "This is a title"
 title_separator          : "-"
 name                     : &name "Shengxiang Wu"
 description              : &description "This is the academic website of Shengxiang Wu"
-url                      : https://ShengxiangWuPlasmonic.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://Shengxiang-Joey-Wu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io"
+repository               : "Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160

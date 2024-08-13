@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "This is a title"
+title                    : "HOWDY"
 title_separator          : "-"
 name                     : &name "Shengxiang Wu"
 description              : &description "This is the personal website of Shengxiang Wu"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Shengxiang Wu"
   avatar           : "cartoon_photo.jpg"
-  bio              : "Process Engineer | Material Scientist"
+  bio              : "Process Engineer | Material Scientist | Nanophotonics Enthusiast"
   location         : "Seattle, Washington"
   employer         :
   pubmed           : 

@@ -2,13 +2,13 @@
 title: 'Plasmon Induced Nonthermal Carriers'
 date: 2023-01-06
 permalink: /posts/2023/01/plasmon-induced-nonthermal-carriers/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_TOC.jpg" width="598">
+excerpt: <img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_TOC.jpg" width="598">
 tags:
   - Plasmonics
   - Nonthermal Carriers
 ---
 
-In the previous [blog](https://shengxiangwuplasmonic.github.io/posts/2022/09/what-is-plasmonic-nanostructure/), I mentioned that the non-radiative damping of surface plasmon was historically viewed as losses in the field of nanophotonics,<sup>1</sup> however, it is now a popular topic in the community of photocatalysis and photochemistry - the chemists realized that the 'losses', if managed properly, can be turned into advantages to drive (uphill) chemical reactions and can even demonstrate certain bond selectivity that is not accessible by thermal means. 
+In the previous [blog](https://shengxiang-joey-wu.github.io/posts/2022/09/what-is-plasmonic-nanostructure/), I mentioned that the non-radiative damping of surface plasmon was historically viewed as losses in the field of nanophotonics,<sup>1</sup> however, it is now a popular topic in the community of photocatalysis and photochemistry - the chemists realized that the 'losses', if managed properly, can be turned into advantages to drive (uphill) chemical reactions and can even demonstrate certain bond selectivity that is not accessible by thermal means. 
 
 The advantages are associated with energetic nonthermal or hot carriers that are generated after non-radiative damping of surface plasmons, therefore it would be nice if one can predict the energy distribution of nonthermal carriers for given plasmonic nanoparticles. Indeed, there are multiple ways to perform such calculations from free-electron-like algorithms<sup>2, 3</sup> to more rigorous treatments based on density functional theory (DFT).<sup>4, 5</sup> 
 
@@ -133,7 +133,7 @@ Eq. 20 is indeed the well-known Fermi's Golden Rule.
 So far, we've only considered the constant perturbation, that is, $H'$ is independent of time once it is turned on. Now we consider the interaction with an oscillating perturbation turned on at time $t_0=0$ (Figure 2). The results will be used to describe how a light field induces transitions in a system through dipole interactions.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure2.jpg" width="458">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure2.jpg" width="458">
 </p>  
 
 Again, we want to know the rate of transition between states $n$ and $s$. Here, we treat the light field classically:
@@ -156,7 +156,7 @@ The first term in eq. 24 is *absorption* while the second term is called *stimul
 Notice that the terms in eq. 24 are only significant when $\omega\approx\pm\omega_{sn}$, that is, a matching of the frequency of the harmonic interaction with the transition energy between quantum states (Figure 3).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure3.jpg" width="412">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure3.jpg" width="412">
 </p>  
 
 We first analyze the absorption part:
@@ -276,7 +276,7 @@ $$j_l(x)=(-x)^l(\frac{1}{x}\frac{d}{dx})^l\frac{\sin{x}}{x},\qquad y_l(x)=-(-x)^
 Instead of considering infinite potential well as we usually did in quantum chemistry textbooks, here we consider a more realistic scenario (Figure 4), that is, the potential inside the spherical nanoparticles has a finite value $V_0$, and the potential outside the nanoparticle is $0$ (vacuum level).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure4.jpg" width="400">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure4.jpg" width="400">
 </p>  
 
 It is noted that in this scenario, $V_0$ is a negative value. And from eq. 46, one may write down the wavefunction inside the nano-sphere, which is $\psi_\mathrm{in}=j_l(kr)$ and $k=\sqrt{\frac{2m(E-V_0)}{\hbar^2}}$. Since the potential outside the sphere is $0$, the wavefunction is $\psi_\mathrm{out}=h_l(\kappa r)$ with $\kappa=\sqrt{\frac{2mE}{\hbar^2}}$. $h_l(x)$ is called the spherical Hankel function of the first kind, and it is defined as $h_l(x)=j_l(x)+iy_l(x)$.
@@ -298,13 +298,13 @@ $$k\frac{j_l'(kr)}{j_l(kr)}\bigg\rvert_{r=r_0}-\kappa\frac{k_l'(\kappa r)}{k_l(\
 Then the allowed energy (implicitly included in $k$ and $\kappa$) can be found by searching roots of eq. 49. We could repeat this procedure for all possible $l$, and Figure 5a summarized these results. Furthermore, we can also visualize the convoluted density of states (DOS) as shown in Figure 5b, it matches well with the three-dimensional free-electron-gas models in solid-state physics as expected.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure5.jpg" width="683">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure5.jpg" width="683">
 </p>  
 
 The parameter $V_0$ is crucial since it determines the material's work function. For $D=15\;\mathrm{nm}$ Ag nano-sphere, we choose $V_0=-10.04\;\mathrm{eV}$ to ensure the correct work function ($~4.5\;\mathrm{eV}$).  For a wavefunction to be well-behaved, we require it to be normalized, $\int_{-\infty}^\infty \psi^*\psi\mathrm{d}\tau=1$. After normalization, we can pick three random state wavefunctions (Figure 6) to visualize that the boundary conditions are fulfilled. As shown in Figure 6, the found wavefunctions are indeed continuous and smooth across the interface (solid line for inside the sphere, and dashed line for outside the sphere).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure6.jpg" width="420">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure6.jpg" width="420">
 </p>  
 
 Nonthermal Carrier Generation
@@ -329,7 +329,7 @@ where $l_\mathrm{min}$ is the smaller value between $l_f$ and $l_i$. Note the se
 **Finally**, we can put everything together and evaluate the transition probability per unit time (equivalently, the excitation rate) using eq. 32 (Figure 7). For comparison, we also put the results from ref. 2 side by side. 
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure7.jpg" width="611">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure7.jpg" width="611">
 </p>  
 
 If you are interested in the detailed MATLAB code to perform this calculation, please email me at shengxiangwu996@gmail.com.

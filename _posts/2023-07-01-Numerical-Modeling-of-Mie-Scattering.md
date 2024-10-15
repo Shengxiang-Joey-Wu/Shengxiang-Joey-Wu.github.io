@@ -1,7 +1,7 @@
 ---
 title: 'Numerical Modeling of Mie Scattering'
 date: 2023-07-01
-permalink: /posts/2023/07/numerical_modeling-of-mie-scattering/
+permalink: /posts/2023/07/numerical-modeling-of-mie-scattering/
 excerpt: <img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_TOC.jpg" width="591">
 tags:
   - COMSOL Multiphysics

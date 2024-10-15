@@ -2,7 +2,7 @@
 title: 'Numerical Modeling of Mie Scattering'
 date: 2023-07-01
 permalink: /posts/2023/07/numerical_modeling-of-mie-scattering/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_TOC.jpg" width="591">
+excerpt: <img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_TOC.jpg" width="591">
 tags:
   - COMSOL Multiphysics
   - Finite Element Method
@@ -54,7 +54,7 @@ in which $\varepsilon$ is the electric permittivity, $\mu$ is the magnetic perme
 Materials and objects of interest are generally placed into the Yee grids (Figure 1) and assigned constitutive material parameters based on the cell location. [Central differencing](https://en.wikipedia.org/wiki/Finite_difference) is then used to approximate the time and spatial partial derivatives in eqs. 5 and 6. Truncating the Taylor series expansions of the field components yields a second-order accurate scheme in both space and time, which can then be converted into frequency or wavelength domain through the Fourier transform.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure1.jpg" width="410">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_Figure1.jpg" width="410">
 </p>
 
 Since we are interested in the absorption and scattering of electromagnetic waves by spherical nanoparticles, we need to introduce a source in our simulation. There are numerous source options for an FDTD model, hard, soft, resistive voltage, and plane wave sources. In our case, we select plane waves as our source, and in particular, we will model the plane waves from a distant source using the total-field scattered-field formulation.
@@ -64,7 +64,7 @@ $$\mathbf{E}=\mathbf{E}_\mathrm{total}=\mathbf{E}_\mathrm{background}+\mathbf{E}
 It turns out that this special plane wave source is a built-in source in the Lumerical FDTD - the *TFSF* source (Figure 2).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure2.jpg" width="551">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_Figure2.jpg" width="551">
 </p>
 
 In addition to the objects (materials), grids, and sources, we need appropriate **boundary conditions** in any numerical simulation. For instance, *perfect electric conductor* (PEC) and *perfect magnetic conductor* (PMC) reflect electromagnetic waves and can be very useful to take advantage of certain types of symmetries in simulation. *Periodic boundary conditions* (PBCs), such as Bloch boundary conditions, are useful when modeling periodic structures, e.g., metasurfaces. And *absorbing* or *radiation boundary conditions* are suitable for open-region problems to avoid infinity simulation regions and to minimize spurious reflections along the outer boundaries of the grid. Among many absorbing boundary conditions, the **perfectly matched layer** (PML) is the most popular one because of its overall efficiency and robustness, and we will use it in our Mie scattering simulation. And guess what, the PML boundary conditions are the default boundary conditions once we add an FDTD region in Lumerical FDTD.
@@ -80,7 +80,7 @@ $$\sigma=\frac{P}{I_0}=\frac{1}{I_0}\int\int(\mathbf{n}\cdot\mathbf{S})dS,$$
 Seems complicated? Don't worry, it turns out that Lumerical FDTD has many built-in functions and even analysis groups to help us out. For instance, the ```transmission``` script command can be applied to a power monitor (an object we can place in Lumerical FDTD) to get the amount of power transmitted through it. And the built-in **Cross section** analysis group consists of 6 power monitors enclosing a region and analyzing the net power flowing into or out from that enclosed region (Figure 3). Note that for absorption the output cross-section is a negative quantity but it is just due to the convention used in Lumerical FDTD. So it becomes that we just need to put one cross section analysis group inside the TFSF soruce to capture the absorption cross-section, and put another outside the TFSF source, where only the scattered field is present (Figure 2), to calculate the scattering cross-section.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure3.jpg" width="537">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_Figure3.jpg" width="537">
 </p>
 
 Therefore, the procedures for setting up Lumerical FDTD simulation for Mie scatterings are:
@@ -93,7 +93,7 @@ Therefore, the procedures for setting up Lumerical FDTD simulation for Mie scatt
 6. If one needs higher accuracy, one can override the mesh setting by inserting a user-defined mesh (**Simulation** $\rightarrow$ **Mesh**).
 7. You may also want to modify the wavelength or frequency data points so you can get a nice-looking spectrum. You can do this in **Monitors** $\rightarrow$ **Global properties**.
 
-By following the steps above, we should be able to get the simulation files looking like [these](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/raw/master/files/Mie_Scattering_Lumerical_FDTD.zip), in which I have set up and finished the simulation for gold nanospheres with radii of 30 nm and 80 nm.  And the result can be viewed by right-clicking the cross section analysis groups (**Run analysis**, and then **Visualize**). There is one more thing that I didn’t tell you yet about the optical constant I used in the simulation, I will touch on that after we discussed COMSOL Multiphysics. 
+By following the steps above, we should be able to get the simulation files looking like [these](https://github.com/Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io/raw/master/files/Mie_Scattering_Lumerical_FDTD.zip), in which I have set up and finished the simulation for gold nanospheres with radii of 30 nm and 80 nm.  And the result can be viewed by right-clicking the cross section analysis groups (**Run analysis**, and then **Visualize**). There is one more thing that I didn’t tell you yet about the optical constant I used in the simulation, I will touch on that after we discussed COMSOL Multiphysics. 
 
 Finite Element Method Simulation in COMSOL Multiphysics
 =====
@@ -103,7 +103,7 @@ The finite element method (FEM) is another numerical method that is used to solv
 Before we dive into the modeling process in COMSOL Multiphysics, let’s look at a one-dimensional problem of electrostatics (Figure 4) to get a better understanding of FEM. As shown in Figure 4, we are curious about the spatial profile of electric potential $V$ between two parallel conducting plates separated by a distance $d$. And the left plate is maintained at a fixed potential $V =V_0$, while the right plate is grounded $V_n = 0\;\mathrm{V}$. The subscript $n$ is due to we divide the geometry into $n$ segments. To complete the physical picture, let’s say the medium between the two plates is nonmagnetic with a dielectric constant $\varepsilon_r$ and a uniform electron volume charge density $\rho_v=-\rho_0$ is also present in the medium.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure4.jpg" width="467">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_Figure4.jpg" width="467">
 </p>
 
 The (partial) differential equation associated with the above problem is Poisson’s equation:
@@ -158,7 +158,7 @@ $$\mathrm{ewfd.Qml} = 0.5\int\int\int i\omega\mathbf{B}\cdot\mathbf{H}dV,$$
 
 Note that the volume integral is performed for the gold nanosphere only.
 
-[Here](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/raw/master/files/Mie_Scattering_COMSOL_Multiphysics.zip) are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
+[Here](https://github.com/Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io/raw/master/files/Mie_Scattering_COMSOL_Multiphysics.zip) are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
 
 Comparison
 ===
@@ -166,7 +166,7 @@ Comparison
 Figure 5 summarizes the results from analytical solutions (solid lines), solutions from COMSOL Multiphysics (filled circles), and solutions from Lumerical FDTD (empty squares). As expected, both numerical results match well with the analytical solution. In terms of physics, we see that the absorption process dominates in small nanospheres while the scattering process is much more prominent for larger nanoparticles. This suggests that people should use small nanoparticles to harness plasmonic hot carriers, an intermediate stage during the absorption process.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/nmoms_Figure5.jpg" width="590">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/nmoms_Figure5.jpg" width="590">
 </p>
 
 Remember I said there is one more thing that I didn’t tell you - the optical constant I used in Lumerical FDTD - in order to get a better comparison, I exported the optical constant of gold that I used in COMSOL Multiphysics and imported it into Lumerical FDTD and Mie solution. Otherwise, the tiny difference in optical constants used in different approaches might result in slight discrepancies in the end.

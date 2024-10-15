@@ -19,7 +19,10 @@ Education
 
 Work experience
 ======
-* Jan. 2023 - Present: Postdoctoral Researcher (with Dr. Tianquan "Tim" Lian)
+* May 2024 - Now: Process Engineer
+  * Reality Labs @ Meta (Contingent Worker)
+
+* Jan. 2023 - Apr. 2024: Postdoctoral Researcher (with Dr. Tianquan "Tim" Lian)
   * Emory University
 
 * Jan. 2021 - Oct. 2022: Postdoctoral Fellow
@@ -45,14 +48,15 @@ Skills
     * GPAW + ASE
     * Gaussian 16
 * NANOFABRICATION
-  * Electron Beam Lithography (EBL)
+  * Electron Beam Lithography
   * Photolithography
-  * Atomic Layer Deposition (ALD)
+  * Atomic Layer Deposition
 * Material Characterization
-  * Raman Spectroscopy
-  * Atomic Force Microscopy (AFM)
-  * Scanning Electron Microscopy (SEM)
-  * X-Ray Powder Diffraction (XRD)
+  * Raman Spectroscopy (Witec alpha300 RA)
+  * Atomic Force Microscopy (Bruker Nanoscope)
+  * Ellipsometry (Woollam RC2)
+  * Scanning Electron Microscopy
+  * X-Ray Powder Diffraction
 
 Publications
 ======

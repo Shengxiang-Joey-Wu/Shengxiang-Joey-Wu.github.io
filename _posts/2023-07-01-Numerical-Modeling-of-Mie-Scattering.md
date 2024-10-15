@@ -130,7 +130,7 @@ where $x_1^e$ and $x_2^e$ are positions of the left and right nodes of the eleme
 
 We then seek an approximate solution for $V$ by forcing the weighted residual to be zero and thus obtain a weighted-integral equation
 
-$$\int_{x_1^e}^{x_2^e}w[\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})+\rho_v]dx=0$$
+$$\int_{x_1^e}^{x_2^e}w[\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})+\rho_v]dx=0,$$
 
 The above equation is the **strong** form since it is directly from the governing partial differential equation.
 

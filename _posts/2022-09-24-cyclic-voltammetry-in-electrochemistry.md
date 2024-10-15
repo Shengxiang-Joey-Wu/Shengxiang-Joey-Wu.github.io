@@ -2,7 +2,7 @@
 title: 'Cyclic Voltammetry in Electrochemistry'
 date: 2022-09-24
 permalink: /posts/2022/09/cyclic-voltammetry-in-electrochemistry/
-excerpt: <img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_TOC.jpg" width="728">
+excerpt: <img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_TOC.jpg" width="728">
 tags:
   - Cyclic Voltammetry
   - Electrochemistry
@@ -38,7 +38,7 @@ where the $k_f$ and $k_b$ are the rate constants of forward and backward reactio
 In most cases, there is a 'hill' that reactant A needs to surpass before forming product B even if the reaction is energetic favorable $(\Delta_rG<0)$. The peak of the 'hill' is usually represented by a transition state (TS) or activated complex, and we can therefore define activation energies for forward $(E_{a,f})$ and backward $(E_{a,b})$. reactions. This is the basis of the transition state theory (Figure 1).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure1.jpg" width="329">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure1.jpg" width="329">
 </p>
 
 [The Arrhenius equation](https://en.wikipedia.org/wiki/Arrhenius_equation) states that the rate constant is related to the activation energy and absolute temperature through
@@ -71,7 +71,7 @@ $$\mathrm{Ox_1}+\mathrm{e^-}\rightarrow \mathrm{Red_1}$$
 Imagine we are electrons, why sometimes do we flow from A to B and sometimes from B to A? What is the driving force behind that? Well, simply put, we always want to flow to somewhere we feel more comfortable (low potential energy). This is universal regardless if it is a homogeneous electron transfer or heterogeneous electron transfer (Figure 2): To reduce $\mathrm{Ox_1}$ to $\mathrm{Red_1}$, the electrons may be injected from another reducing agent $\mathrm{Red_2}$ where the electrons are more uncomfortable (high potential energy) or from an electrode that is purposely maintained at the high (negative) potential.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure2.jpg" width="542">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure2.jpg" width="542">
 </p>
 
 At this stage, it is important for us to keep this in mind: 1) electrons tend to flow from high energy to low energy, 2) for electrodes, positive potential tends to lower electron energy (electrons are more comfortable), thus preventing electrons flowing out from electrode, and *vice versa*.
@@ -82,7 +82,7 @@ Diffusion In An Electrochemical Cell
 Now we are ready to see what my colleagues usually do in the lab: constructing an electrochemical (EC) cell and performing analysis such as CV. A representative EC cell (3-electrode configuration) is shown in Figure 3. As the name suggests, it contains three electrodes: the working electrode is the one we are primarily interested in as it drives the targeted redox reactions (either the electrolyte or the electrode itself), the counter electrode is just for circuit connection purposes (it can extract or inject electrons to electrolyte solutions easily), and the reference electrode tells us what is the potential now of working electrode, that is, when reporting potential we usually write *vs. reference electrode*.  
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure3.jpg" width="663">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure3.jpg" width="663">
 </p>
 
 There is one key difference between an EC cell and an ordinary electric circuit: the current measured in an EC cell is dictated by the reaction rates of oxidation of $\mathrm{Red}$ (inject electrons to the electrode) and reduction of $\mathrm{Ox}$ (extract electrons from the electrode) occurred on the electrode surface, while the current measured in an ordinary electric circuit is determined by the voltage drop and the resistance (Ohm's law). In an EC cell, therefore, the currents depend on the reaction rates, which are further related to the concentrations of Ox and Red species and the potential provided by the working electrode (see below). What's important is that besides the reactions that consume or produce redox couples, both Ox and Red are suffered from diffusion in the EC cell (see inset in Figure 3).
@@ -98,7 +98,7 @@ Applied Potential Modifies Activation Energy
 There is one significant question remaining, that is, how does the applied electric potential alter the PES (or equivalently, the reaction coordinates)? To illustrate this, we can consider a reduction process in which the reactant is the $\mathrm{Ox}+\mathrm{e}^-$ (assume it is a one-electron, one-step process) and the electrons are from the working electrode. As we went through together that positive potential tends to lower electron energy while negative potential raises the energy up, we can plot three scenarios in Figure 4, wherein the applied electric potential is referenced to the standard (or formal) potential $E^0$ of the redox couple under consideration.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure4.jpg" width="672">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure4.jpg" width="672">
 </p>
 
 To avoid confusion, I have replaced activation energy $E_a$ with the free energy of activation $\Delta G$ (they are the same thing here), and the subscript $c$ and $a$ stands for cathode (where reduction happens) and anode (where oxidation happens), respectively. It is shown in the lower left and middle panel in Figure 4, that if the potential is changed by $\Delta E>0$ to a new value, the relative energy of the electron resident on the electrode changes by $-F\Delta E=-F(E-E^0)$; hence the $\mathrm{Ox}+\mathrm{e^-}$ curve moves down by that amount. Apparently (I hate this word), the barrier for reduction, $\Delta G_c$, has become greater than $\Delta G_c^0$, and the barrier for oxidation, $\Delta G_a$ has become less than $\Delta G_a^0$ by a fraction of the total energy change. Let us call that fraction $1-\alpha$, where $\alpha$, the *transfer coefficient*, can range from zero to unity.<sup>2</sup>
@@ -129,7 +129,7 @@ $$C_j=C_i+\lambda(C_{i-1}-2C_i+C_{i+1})$$
 where $\lambda=D\Delta t/\Delta x^2$, and the distance (measured from the electrode surface) and time increments, $\Delta x$ and $\Delta t$, are originated from the point method (Figure 5a). In Figure 5b, we display the potential sweep in one cycle during CV measurement: the working electrode's potential is swept from a high potential to a low potential (or *vice versa*), and then back to its original value. The CV measurement gets its name since during the potential sweep, the current due to redox reactions is measured simultaneously.
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure5.jpg" width="765">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure5.jpg" width="765">
 </p>
 
 The first column represents the concentration at the electrode surface, which are calculated values discussed below. The boundary conditions are applied in order to use the point method: 1) the last column contains concentrations furthest from the electrode surface and is thus filled with the bulk concentration. The top row of the grid contains concentration values at the start of the simulation, and it is filled with the bulk concentration as well. Equation 14 is then used to fill the rest of the grid (it should be combined with consumption or production due to redox reactions, otherwise there will be no diffusion and you will fill the grid with bulk conditions everywhere).
@@ -159,10 +159,10 @@ $$C_\mathrm{Red,0}=C_\mathrm{Red,1}+\frac{J_\mathrm{Red}\Delta x}{D}$$
 
 The eqs. 19 and 20, along with eq. 14 dictates the whole concentration profile from the electrode surface to the bulk solution.
 
-The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Figure 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](https://github.com/ShengxiangWuPlasmonic/ShengxiangWuPlasmonic.github.io/raw/master/files/Cyclic_Voltammetry_Simulation.zip)
+The algorithm is therefore as follows: 1) use eq. 16 to calculate the current density (the $y$ values in CV measurement), 2) use eqs. 14, 19, and 20 to update concentration profiles (after $\Delta t$), 3) repeat steps 1 and 2 until the sweep cycle is finished. A typical simulated CV map is shown in Figure 6, along with the concentration profiles of $\mathrm{Ox}$ and $\mathrm{Red}$. [Download sample MATLAB code here](https://github.com/Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io/raw/master/files/Cyclic_Voltammetry_Simulation.zip)
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/cvie_Figure6.jpg" width="750">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/cvie_Figure6.jpg" width="750">
 </p>
 
 Remember what gets us here? Why there are two $y$ values for one $x$ value? Now we have the answer: it is not like an ordinary circuit where the potential (and resistance) dictates current. In a CV measurement, the current originates from the redox reactions at the electrode surface, its sign depends on the type of reaction (oxidation or reduction), and its magnitude depends on the reaction rate. Therefore, the potential itself is just one parameter that controls the reaction type and rate, other parameters such as the initial condition in the EC cell, diffusion, etc, also play important roles in determining reaction rates and thus can result in two current values for a single potential value.

@@ -138,7 +138,7 @@ For each (arbitrary) choice of weight function $w(x)$, an equation is formed wit
 
 It is evident that the interpolation functions $N(x)$ must be twice differentiable. This stringent requirement can be relaxed by using integration by parts to trade the double differentiation on $V(x)$ to an evenly distributed single differentiation on both $V(x)$ and $w(x)$:
 
-$$\int_{x_1^e}^{x_2^e}w\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})dx=\int_{x_1^e}^{x_2^e}wd(\varepsilon^e\frac{dV}{dx})=w\varepsilon^e\frac{dV}{dx}\bigg|_{x_1^e}^{x_2^e}$$
+$$\int_{x_1^e}^{x_2^e}w\frac{d}{dx}(\varepsilon^e\frac{dV}{dx})dx=\int_{x_1^e}^{x_2^e}wd(\varepsilon^e\frac{dV}{dx})=w\varepsilon^e\frac{dV}{dx}\bigg|_{x_1^e}^{x_2^e}-\int_{x_1^e}^{x_2^e}(\frac{dw}{dx})$$
 
 Then, the **weak** form is:
 

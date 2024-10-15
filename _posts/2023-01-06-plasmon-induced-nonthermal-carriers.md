@@ -107,7 +107,7 @@ $$\vert a_s(t)\vert^2=4\vert H'_{sn}\vert^2\sin^2(\frac{\omega_{sn}t}{2})/(\hbar
 Here, we've defined $\Delta E=E_s-E_n=\omega_{sn}\hbar$. Let us further define a function $D_t(\Delta E)\equiv4\sin^2(\frac{\Delta Et}{2\hbar})/(\Delta E)^2$, we plot $D_t(\Delta E)$ vs. $\Delta E$ to visualize its properties (Figure 1).
 
 <p align="center">
-<img src="http://ShengxiangWuPlasmonic.github.io/images/blogImages/pinc_Figure1.jpg" width="331">
+<img src="http://Shengxiang-Joey-Wu.github.io/images/blogImages/pinc_Figure1.jpg" width="331">
 </p>  
 
 Figure 1 shows that $D_t(\Delta E)$ has large values only for $-2\pi\hbar/t<\Delta E<2\pi\hbar/t$ (the region between dashed lines), where the maximum $D_t(0)=t^2/\hbar^2$ increases rapidly with time. Furthermore, since $\int_{-\infty}^\infty D_t(x)\mathrm{d}x=2\pi t/\hbar$, we define another function

@@ -158,7 +158,7 @@ $$\mathrm{ewfd.Qml} = 0.5\int\int\int i\omega\mathbf{B}\cdot\mathbf{H}dV,$$
 
 Note that the volume integral is performed for the gold nanosphere only.
 
-[Here](https://github.com/Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io/raw/master/files/Mie_Scattering_COMSOL_Multiphysics.zip) are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
+[Here](https://github.com/Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io/files/Mie_Scattering_COMSOL_Multiphysics.zip) are the simulation files in COMSOL Multiphysics that solved the Mie scattering of gold nanospheres with radii of 30 nm and 80 nm.
 
 Comparison
 ===

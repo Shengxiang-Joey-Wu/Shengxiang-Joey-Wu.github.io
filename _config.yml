@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "HOWDY"
+title                    : "Shengxiang (Joey) Wu | Nanophotonics Engineer"
 title_separator          : "-"
-name                     : &name "Shengxiang Wu"
-description              : &description "This is the personal website of Shengxiang Wu"
+name                     : &name "Shengxiang (Joey) Wu"
+description              : &description "Shengxiang (Joey) Wu - metasurface and nanophotonics design engineer who designs, fabricates, and measures nanophotonic devices"
 url                      : https://Shengxiang-Joey-Wu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Shengxiang-Joey-Wu/Shengxiang-Joey-Wu.github.io"
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shengxiang Wu"
-  avatar           : "cartoon_photo.jpg"
-  bio              : "Process Engineer | Material Scientist | Nanophotonics Enthusiast"
-  location         : "Seattle, Washington"
+  name             : "Shengxiang (Joey) Wu, Ph.D."
+  avatar           : "profile_photo.jpg"
+  bio              : "Metasurface & Nanophotonics Design Engineer | Simulation, Nanofabrication, Optical Metrology"
+  location         : "Redmond, WA (relocating)"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=beyb6qUAAAAJ&hl=en&oi=ao"
-  email            : "shengxiangwu996@gmail.com"
+  email            : "joeysxwu@gmail.com"
   researchgate     :  
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "shengxiangwu"
   orcid            : "https://orcid.org/0000-0002-1173-5569"
   pinterest        :
   soundcloud       :

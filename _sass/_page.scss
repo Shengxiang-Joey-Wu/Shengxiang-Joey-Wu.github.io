@@ -20,7 +20,7 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0.5 of 12);
   }
 
   .page__inner-wrap {
@@ -398,4 +398,19 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+   Justified body text (tutorials), left-aligned on phone-width screens
+   ========================================================================== */
+
+.page__content--justified {
+  @include breakpoint($small) {
+    p:not([align]),
+    li {
+      text-align: justify;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+  }
 }

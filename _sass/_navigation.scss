@@ -202,13 +202,14 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    min-width: 100%; /* name at the left edge, links at the right */
 
     li {
-      display: table-cell;
-      vertical-align: middle;
-
       &:first-child {
+        margin-right: auto;
         font-weight: bold;
 
         a {
@@ -247,6 +248,11 @@
                 transform: scaleX(1); /* reveal*/
       }
     }
+  }
+
+  /* while links are overflowing into the dropdown, shrink-wrap the list so the overflow script can measure it */
+  button:not(.hidden) ~ .visible-links {
+    min-width: 0;
   }
 
   .hidden-links {

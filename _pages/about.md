@@ -8,12 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Howdy! Welcome to my website. My name is Shengxiang "Joey" Wu, an experienced research scientist with a special interest in plasmonic nanoparticles and optical spectroscopy. During my Ph.D. study and postdoctoral research, I find that the plasmonic nanoparticle is a great example that bridges theoretical calculation/simulation and experimental efforts. For instance, the optical response of plasmonic nanoparticles is determined by the dielectric constants which can be calculated either using a simple Drude model or through linear response theory. Once the optical constants are determined, one may feed them into a numerical solver, such as COMSOL Multiphysics or Lumerical FDTD, that solves the Maxwell equation which in turn reports the optical spectra (scatterings, absorption, etc) that can be measured experimentally. In the experimental part, plasmonic nanoparticles can be either synthesized using a wet-chemistry method or through top-down lithography (photolithography and electron beam lithography, EBL), and to me, the active comparison between experiments and theories is the most intriguing part of plasmonic nanoparticles.
+Summary
+======
+Nanophotonics engineer with expertise spanning electromagnetic simulation, nanofabrication, and optical characterization. Designs metasurfaces and diffractive nanostructures using Lumerical FDTD, COMSOL, and MEEP, with hands-on experience translating simulated designs into fabricated and experimentally validated devices. Combines optical metrology experience at Meta Reality Labs with nanoimprint process and tool development at Applied Materials to account for fabrication constraints, process variations, and real-world optical performance. Proficient in Python and MATLAB for simulation, optimization, and measurement automation.
 
-
-This website is meant to mark milestones in my career and also share knowledge - on my [blog posts](https://shengxiang-joey-wu.github.io/year-archive/), I will post blogs with topics spanning over multiple domains, from physical insights to scientific calculation using programming languages such as MATLAB and Python, as well as numerical modeling using COMSOL multiphysics and Lumerical FDTD. The associated MATLAB and Python codes will be free to download in most cases. 
-
-
-That being said, I am not restricted to plasmonic nanoparticles or Raman spectroscopy (my other expertise area), instead, I am always open to new and exciting areas. If you have specific questions that you wish me to write an educational blog, please let me know by emailing me at shengxiangwu996@gmail.com.
-
-
+Technical skills
+======
+* **Electromagnetic Design & Simulation:** Ansys Lumerical FDTD (MODE / RCWA), COMSOL Multiphysics (Wave Optics, RF), MEEP; metasurface and meta-atom design, surface-relief gratings (SRG), plasmonic nanostructures
+* **Design Optimization & Programming:** Parametric sweeps, inverse design, MATLAB (MathWorks<span>&#174;</span> Certified Professional), Python (NumPy, SciPy, lumapi)
+* **Nanofabrication & Process Development:** Electron-beam lithography (EBL), nanoimprint lithography (NIL), thin-film deposition (inkjet printing, sputtering, e-beam evaporation), 10+ years of cleanroom experience
+* **Optical Metrology & Characterization:** Zygo / ÄPRE interferometry, Keyence VHX / VK-X3000 laser microscope, AFM, SEM, ellipsometry, angle-resolved scatterometry / BSDF (CASI), optical and Raman spectroscopy
+* **Manufacturing & Process Control:** Design of experiments (DOE), statistical process control (SPC), regression analysis (JMP)

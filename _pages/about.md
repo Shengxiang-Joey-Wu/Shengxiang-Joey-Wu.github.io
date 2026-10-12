@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-Summary
-======
-Nanophotonics engineer with expertise spanning electromagnetic simulation, nanofabrication, and optical characterization. Designs metasurfaces and diffractive nanostructures using Lumerical FDTD, COMSOL, and MEEP, with hands-on experience translating simulated designs into fabricated and experimentally validated devices. Combines optical metrology experience at Meta Reality Labs with nanoimprint process and tool development at Applied Materials to account for fabrication constraints, process variations, and real-world optical performance. Proficient in Python and MATLAB for simulation, optimization, and measurement automation.
+Howdy! I’m Joey, a nanophotonics engineer working across the full optical device cycle: electromagnetic simulation, nanofabrication in the cleanroom, and optical metrology. I design metasurfaces and diffractive nanostructures using Lumerical FDTD, COMSOL, and MEEP. The most satisfying part is seeing those designs fabricated and tested, and then watching the measured results line up with the simulations.
+
+I previously worked on optical metrology for AR waveguides at Meta Reality Labs. Now I’m a Physicist/Scientist at Applied Materials, working on nanoimprint tool development and process optimization.
+
+On the programming side, I build simulation, design optimization, and automated data analysis tools in Python and MATLAB, and I’m a MathWorks Certified MATLAB Professional.
 
 Technical skills
 ======
@@ -19,3 +21,4 @@ Technical skills
 * **Nanofabrication & Process Development:** Electron-beam lithography (EBL), nanoimprint lithography (NIL), thin-film deposition (inkjet printing, sputtering, e-beam evaporation), 10+ years of cleanroom experience
 * **Optical Metrology & Characterization:** Zygo / ÄPRE interferometry, Keyence VHX / VK-X3000 laser microscope, AFM, SEM, ellipsometry, angle-resolved scatterometry / BSDF (CASI), optical and Raman spectroscopy
 * **Manufacturing & Process Control:** Design of experiments (DOE), statistical process control (SPC), regression analysis (JMP)
+* **Hardware & Prototyping:** SolidWorks CAD, additive manufacturing (3D printing), Beckhoff TwinCAT 3 / EtherCAT for data acquisition and control (Beckhoff TR3029 training)
